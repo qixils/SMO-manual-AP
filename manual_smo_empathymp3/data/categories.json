@@ -1,0 +1,208 @@
+{
+    "Paragoomba": {
+        "hidden": true
+    },
+    "Bullet Bill": {
+        "hidden": true
+    },
+    "Knucklotec's Fist": {
+        "hidden": true
+    },
+    "Lakitu": {
+        "hidden": true
+    },
+    "Goomba": {
+        "hidden": true
+    },
+    "Jaxi": {
+        "hidden": true
+    },
+    "Cactus": {
+        "hidden": true
+    },
+    "Sombrero": {
+        "hidden": true
+    },
+    "Mini Rocket": {
+        "hidden": true
+    },
+    "Zipper": {
+        "hidden": true
+    },
+    "Cheep Cheep": {
+        "hidden": true
+    },
+    "Puzzle Part": {
+        "hidden": true
+    },
+    "Swimwear": {
+        "hidden": true
+    },
+    "Sherm": {
+        "hidden": true
+    },
+    "Uproot": {
+        "hidden": true
+    },
+    "Glydon": {
+        "hidden": true
+    },
+    "Coin Coffer": {
+        "hidden": true
+    },
+    "Tree": {
+        "hidden": true
+    },
+    "Explorer": {
+        "hidden": true
+    },
+    "Picture Match Part": {
+        "hidden": true
+    },
+    "Tropical Wiggler": {
+        "hidden": true
+    },
+    "Manhole": {
+        "hidden": true
+    },
+    "RC Car": {
+        "hidden": true
+    },
+    "Builder": {
+        "hidden": true
+    },
+    "Taxi": {
+        "hidden": true
+    },
+    "Ty-foo": {
+        "hidden": true
+    },
+    "Shiverian Racer": {
+        "hidden": true
+    },
+    "Snowsuit": {
+        "hidden": true
+    },
+    "Bowser": {
+        "hidden": true
+    },
+    "Gushen": {
+        "hidden": true
+    },
+    "Lighthouse": {
+        "hidden": true
+    },
+    "Resort": {
+        "hidden": true
+    },
+    "Hammer Bro": {
+        "hidden": true
+    },
+    "Meat": {
+        "hidden": true
+    },
+    "Lava Bubble": {
+        "hidden": true
+    },
+    "Chef": {
+        "hidden": true
+    },
+    "Fire Bro": {
+        "hidden": true
+    },
+    "Volbonan": {
+        "hidden": true
+    },
+    "Pokino": {
+        "hidden": true
+    },
+    "Jizo": {
+        "hidden": true
+    },
+    "Samurai": {
+        "hidden": true
+    },
+    "Bowser Statue": {
+        "hidden": true
+    },
+    "Parabones": {
+        "hidden": true
+    },
+    "Banzai Bill": {
+        "hidden": true
+    },
+    "Sand Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Lake Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Wooded Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Night Metro": {
+        "hidden": true
+    },
+    "Metro Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Snow Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Seaside Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Snow/Seaside Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Luncheon Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Bowser's Peace": {
+        "yaml_option": [
+            "include_post_peace_moons"
+        ],
+        "hidden": true
+    },
+    "Capture": {
+        "yaml_option": [
+            "capturesanity"
+        ]
+    },
+    "Coin": {
+        "yaml_option": [
+            "coin_shops"
+        ],
+        "hidden": true
+    },
+    "Regional": {
+        "yaml_option": [
+            "regional_shops"
+        ],
+        "hidden": true
+    }
+}

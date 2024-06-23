@@ -1,0 +1,932 @@
+[
+	{
+		"name": "Cap Kingdom Power Moon",
+		"count":11,
+		"category": ["Moon"],
+		"filler": true
+	},
+	{
+		"name": "Cascade Kingdom Power Moon",
+		"count":19,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Cascade Kingdom Multi-Moon",
+		"count":1,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Sand Kingdom Power Moon",
+		"count":60,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Sand Kingdom Multi-Moon",
+		"count":2,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Lake Kingdom Power Moon",
+		"count":26,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Lake Kingdom Multi-Moon",
+		"count":1,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Wooded Kingdom Power Moon",
+		"count":48,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Wooded Kingdom Multi-Moon",
+		"count":2,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Cloud Kingdom Power Moon",
+		"count":1,
+		"category": ["Moon"],
+		"filler": true
+	},
+	{
+		"name": "Lost Kingdom Power Moon",
+		"count":21,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Metro Kingdom Power Moon",
+		"count":51,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Metro Kingdom Multi-Moon",
+		"count":2,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Snow Kingdom Power Moon",
+		"count":33,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Snow Kingdom Multi-Moon",
+		"count":1,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Seaside Kingdom Power Moon",
+		"count":49,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Seaside Kingdom Multi-Moon",
+		"count":1,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Luncheon Kingdom Power Moon",
+		"count":47,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Luncheon Kingdom Multi-Moon",
+		"count":2,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Ruined Kingdom Power Moon",
+		"count":3,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Ruined Kingdom Multi-Moon",
+		"count":1,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Bowser's Kingdom Power Moon",
+		"count":37,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Bowser's Kingdom Multi-Moon",
+		"count":1,
+		"category": ["Moon"],
+		"progression": true
+	},
+	{
+		"name": "Moon Kingdom Power Moon",
+		"count":14,
+		"category": ["Moon"],
+		"filler": true
+	},
+	{
+		"name": "Mushroom Kingdom Power Moon",
+		"count":1,
+		"category": ["Moon"],
+		"filler": true
+	},
+	{
+		"name": "Paragoomba",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Binoculars",
+		"category": ["Capture"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Bullet Bill",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Jaxi",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Moe-Eye",
+		"category": ["Capture"],
+		"count":1,
+		"useful": true
+	},
+	{
+		"name": "Cactus",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Goomba",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Knucklotec's Fist",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Mini Rocket",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Glydon",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Lakitu",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Zipper",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Cheep Cheep",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Puzzle Part",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Poison Piranha Plant",
+		"category": ["Capture"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Uproot",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Fire Bro",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Sherm",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Coin Coffer",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Tree",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Boulder",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Picture Match Part",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Tropical Wiggler",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Pole",
+		"category": ["Capture"],
+		"count":1,
+		"useful": true
+	},
+	{
+		"name": "Manhole",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Taxi",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "RC Car",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Ty-foo",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Shiverian Racer",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Snow Cheep Cheep",
+		"category": ["Capture"],
+		"count":1,
+		"useful": true
+	},
+	{
+		"name": "Gushen",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Lava Bubble",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Volbonan",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Hammer Bro",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Meat",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Fire Piranha Plant",
+		"category": ["Capture"],
+		"count":1,
+		"useful": true
+	},
+	{
+		"name": "Pokio",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Jizo",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Bowser Statue",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Parabones",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Banzai Bill",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Chargin' Chuck",
+		"category": ["Capture"],
+		"count":1,
+		"useful": true
+	},
+	{
+		"name": "Bowser",
+		"category": ["Capture"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Black Top Hat",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Black Tuxedo",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Caveman Headwear",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Caveman Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Sombrero",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Poncho",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Cowboy Hat",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Cowboy Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Swim Goggles",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Swimwear",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Explorer Hat",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Explorer Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Scientist Visor",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Scientist Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Aviator Cap",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Aviator Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Builder Helmet",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Builder Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Golf Cap",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Golf Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Snow Hood",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Snow Suit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Resort Hat",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Resort Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Sailor Hat",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Sailor Suit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Chef Hat",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Chef Suit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Painter's Cap",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Painter's Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Samurai Helmet",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Samurai Armor",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Happi Headband",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Happi Outfit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Space Helmet",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Space Suit",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Employee Cap",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Employee Uniform",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Boxer Shorts",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"progression": true
+	},
+	{
+		"name": "Fashionable Cap",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Fashionable Outfit",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Mechanic Cap",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Mechanic Outfit",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Black Fedora",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Black Suit",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Pirate Hat",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Pirate Outfit",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Clown Hat",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Clown Suit",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Football Helmet",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Football Uniform",
+		"category": ["Shop","Coin"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Plush Frog",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Bonneton Tower Model",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "T-Rex Model",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Triceratops Trophy",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Inverted Pyramid Model",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Jaxi Statue",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Underwater Dome",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Rubber Dorrie",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Flowers from Steam Gardens",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Steam Gardener Watering Can",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Potted Palm Tree",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Butterfly Mobile",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Pauline Statue",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "New Donk City Hall Model",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Shiverian Rug",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Shiverian Nesting Dolls",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Sand Jar",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Glass Tower Model",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Souvenir Forks",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Vegetable Plate",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Paper Lantern",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Jizo Statue",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Moon Rock Fragment",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Moon Lamp",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Cap Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Cascade Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Sand Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Lake Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Wooded Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Lost Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Metro Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Snow Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Seaside Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Luncheon Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Bowser's Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	},
+	{
+		"name": "Moon Kingdom Sticker",
+		"category": ["Shop","Regional"],
+		"count":1,
+		"filler": true
+	}
+]
