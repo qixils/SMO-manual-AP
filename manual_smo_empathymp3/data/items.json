@@ -696,14 +696,6 @@
 		"progression": true
 	},
 	{
-		"name": "Enter Pipe (2D)",
-		"category": [
-			"Action"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
 		"name": "Jaxi",
 		"category": [
 			"Action"

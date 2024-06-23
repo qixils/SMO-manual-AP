@@ -43,7 +43,7 @@ class RegionalShops(Toggle):
     display_name = "Regional Shops"
 
 class ActionRando(Toggle):
-    """Shuffle all Basic Actions (as listed in the Action Guide) into the pool. You start with the "Capture" action. There are 2 locations for getting on Jaxi and the Motor scooter."""
+    """Shuffle all Basic Actions (as listed in the Action Guide) into the pool. You start with the "Capture" and "Enter Pipe" actions. There are 2 locations for getting on Jaxi and the Motor scooter."""
     display_name = "Action Rando"
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
