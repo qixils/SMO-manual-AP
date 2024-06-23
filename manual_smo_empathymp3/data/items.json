@@ -200,55 +200,7 @@
 		"filler": true
 	},
 	{
-		"name": "Frog",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
-		"name": "Wire",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
 		"name": "Paragoomba",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
-		"name": "Chain Chomp",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
-		"name": "Big Chain Chomp",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
-		"name": "Broode's Chain Chomp",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
-		"name": "T-Rex",
 		"category": [
 			"Capture"
 		],
@@ -265,14 +217,6 @@
 	},
 	{
 		"name": "Bullet Bill",
-		"category": [
-			"Capture"
-		],
-		"count": 1,
-		"progression": true
-	},
-	{
-		"name": "Jaxi",
 		"category": [
 			"Capture"
 		],
@@ -587,6 +531,190 @@
 		"name": "Bowser",
 		"category": [
 			"Capture"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Long Jump",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Roll",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Ground Pound",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Dive",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Ground Pound Jump",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Upward Throw",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Downward Throw",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Spin Throw",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Cap Throw and Hold",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Cap Jump",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Homing Cap Throw",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Backward Somersault",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Side Somersault",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Triple Jump",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Wall Jump",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Hold/Throw",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Swim",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Quick Swim",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Spin",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Dash (2D)",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Enter Pipe (2D)",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Jaxi",
+		"category": [
+			"Action"
+		],
+		"count": 1,
+		"progression": true
+	},
+	{
+		"name": "Motor scooter",
+		"category": [
+			"Action"
 		],
 		"count": 1,
 		"progression": true

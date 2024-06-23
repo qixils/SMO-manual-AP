@@ -204,5 +204,10 @@
             "regional_shops"
         ],
         "hidden": true
+    },
+    "Action": {
+        "yaml_option": [
+            "action_rando"
+        ]
     }
 }

@@ -2,17 +2,5 @@
     "game": "SMO",
     "creator": "empathymp3",
     "filler_item_name": "Coin",
-    "death_link": true,
-    "starting_items": [
-        {
-            "items": [
-                "Frog",
-                "Wire",
-                "Chain Chomp",
-                "Big Chain Chomp",
-                "Broode's Chain Chomp",
-                "T-Rex"
-            ]
-        }
-    ]
+    "death_link": true
 }

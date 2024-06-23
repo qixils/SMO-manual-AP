@@ -45,7 +45,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     locations_to_remove = []
 
     for location in world.location_table:
-        if location["name"] == "__Manual Game Complete__": continue
+        if location["name"] == "Moon: Defeat Bowser": continue
         if "Capture" in location.get("category", []) and not capturesanity:
             locations_to_remove.append(location["name"])
         elif "Coin" in location.get("category", []) and coin_shops:
@@ -116,7 +116,7 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         addReq(region_table["Moon Kingdom"], "|Pokio|")
 
     for location in world.location_table:
-        if location["name"] == "__Manual Game Complete__":
+        if location["name"] == "Moon: Defeat Bowser":
             if capturesanity:
                 addReq(location, "|Bowser|")
             continue

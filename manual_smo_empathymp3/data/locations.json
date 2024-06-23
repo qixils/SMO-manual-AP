@@ -3740,59 +3740,11 @@
 		"requires": []
 	},
 	{
-		"name": "Capture: Frog",
-		"category": [
-			"Capture"
-		],
-		"region": "Cap Kingdom",
-		"requires": []
-	},
-	{
-		"name": "Capture: Wire",
-		"category": [
-			"Capture"
-		],
-		"region": "Cap Kingdom",
-		"requires": []
-	},
-	{
 		"name": "Capture: Paragoomba",
 		"category": [
 			"Capture"
 		],
 		"region": "Cap Kingdom",
-		"requires": []
-	},
-	{
-		"name": "Capture: Chain Chomp",
-		"category": [
-			"Capture"
-		],
-		"region": "Cascade Kingdom",
-		"requires": []
-	},
-	{
-		"name": "Capture: Big Chain Chomp",
-		"category": [
-			"Capture"
-		],
-		"region": "Cascade Kingdom",
-		"requires": []
-	},
-	{
-		"name": "Capture: Broode's Chain Chomp",
-		"category": [
-			"Capture"
-		],
-		"region": "Cascade Kingdom",
-		"requires": []
-	},
-	{
-		"name": "Capture: T-Rex",
-		"category": [
-			"Capture"
-		],
-		"region": "Cascade Kingdom",
 		"requires": []
 	},
 	{
@@ -3812,9 +3764,9 @@
 		"requires": []
 	},
 	{
-		"name": "Capture: Jaxi",
+		"name": "Action: Jaxi",
 		"category": [
-			"Capture"
+			"Action"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -3969,6 +3921,14 @@
 			"Capture"
 		],
 		"region": "Lost Kingdom",
+		"requires": []
+	},
+	{
+		"name": "Action: Scooter",
+		"category": [
+			"Action"
+		],
+		"region": "Metro Kingdom",
 		"requires": []
 	},
 	{

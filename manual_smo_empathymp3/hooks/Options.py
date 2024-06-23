@@ -31,7 +31,7 @@ class IncludePostPeaceMoons(DefaultOnToggle):
     display_name = "Include Post-Peace Moons"
 
 class Capturesanity(Toggle):
-    """Shuffle all captures (and Jaxi) into the pool. Captures found in Cap or Cascade on the first visit are considered to be given for free and will not grant checks."""
+    """Shuffle all captures into the pool. Captures found in Cap or Cascade on the first visit are considered to be given for free and will not grant checks."""
     display_name = "Capturesanity"
 
 class CoinShops(Toggle):
@@ -42,6 +42,9 @@ class RegionalShops(Toggle):
     """Shuffles all clothing, souvenirs, and stickers that can be purchased with regional coins."""
     display_name = "Regional Shops"
 
+class ActionRando(Toggle):
+    """Shuffle all Basic Actions (as listed in the Action Guide) into the pool. You start with the "Capture" action. There are 2 locations for getting on Jaxi and the Motor scooter."""
+    display_name = "Action Rando"
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
@@ -49,6 +52,7 @@ def before_options_defined(options: dict) -> dict:
     options["capturesanity"] = Capturesanity
     options["coin_shops"] = CoinShops
     options["regional_shops"] = RegionalShops
+    options["action_rando"] = ActionRando
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
