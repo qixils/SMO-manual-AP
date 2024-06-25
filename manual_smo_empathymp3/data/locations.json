@@ -1579,13 +1579,14 @@
 	{
 		"name": "Lost: On a Tree in the Swamp",
 		"category": [
-			"Lost Kingdom"
+			"Lost Kingdom",
+			"Tropical Wiggler or Wall Jump"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
 	},
 	{
-		"name": "Lost: Over the Fuzzies, Above the Swap",
+		"name": "Lost: Over the Fuzzies, Above the Swamp",
 		"category": [
 			"Lost Kingdom"
 		],
@@ -1611,7 +1612,8 @@
 	{
 		"name": "Lost: Enjoying the View of Forgotten Isle",
 		"category": [
-			"Lost Kingdom"
+			"Lost Kingdom",
+			"Wall Jump"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
@@ -1643,7 +1645,8 @@
 	{
 		"name": "Lost: A Butterfly's Treasure",
 		"category": [
-			"Lost Kingdom"
+			"Lost Kingdom",
+			"Wall Jump"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
@@ -1659,7 +1662,8 @@
 	{
 		"name": "Lost: Cave Gardening",
 		"category": [
-			"Lost Kingdom"
+			"Lost Kingdom",
+			"Wall Jump"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
@@ -1676,7 +1680,8 @@
 	{
 		"name": "Lost: Peeking Out from Under the Bridge",
 		"category": [
-			"Lost Kingdom"
+			"Lost Kingdom",
+			"Tropical Wiggler or Dive"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
@@ -1694,7 +1699,8 @@
 		"name": "Lost: Soaring Over Forgotten Isle!",
 		"category": [
 			"Lost Kingdom",
-			"Glydon"
+			"Glydon",
+			"Wall Jump"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
@@ -1719,7 +1725,8 @@
 	{
 		"name": "Lost: Shopping on Forgotten Isle",
 		"category": [
-			"Lost Kingdom"
+			"Lost Kingdom",
+			"Wall Jump"
 		],
 		"region": "Lost Kingdom",
 		"requires": []
