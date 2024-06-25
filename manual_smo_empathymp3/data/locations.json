@@ -813,7 +813,9 @@
 	{
 		"name": "Lake: Broodals Over the Lake",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -821,7 +823,9 @@
 	{
 		"name": "Lake: Dorrie-Back Rider",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake",
+			"Swim"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -829,7 +833,8 @@
 	{
 		"name": "Lake: Cheep Cheep Crossing",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Swim"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -838,7 +843,8 @@
 		"name": "Lake: End of the Hidden Passage",
 		"category": [
 			"Lake Kingdom",
-			"Zipper"
+			"Zipper",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -846,7 +852,8 @@
 	{
 		"name": "Lake: What's in the Box?",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -854,7 +861,8 @@
 	{
 		"name": "Lake: On the Lakeshore",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Ground Pound"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -862,7 +870,9 @@
 	{
 		"name": "Lake: From the Broken Pillar",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake",
+			"Cheep Cheep or Ground Pound"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -870,7 +880,9 @@
 	{
 		"name": "Lake: Treasure in the Spiky Waterway",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -879,7 +891,9 @@
 		"name": "Lake: Lake Gardening: Spiky Passage Seed",
 		"category": [
 			"Lake Kingdom",
-			"Lake Peace"
+			"Lake Peace",
+			"Into the Lake",
+			"Swim"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -888,7 +902,9 @@
 		"name": "Lake: Lake Kingdom Timer Challenge 1",
 		"category": [
 			"Lake Kingdom",
-			"Lake Peace"
+			"Lake Peace",
+			"Into the Lake",
+			"Ground Pound"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -897,7 +913,9 @@
 		"name": "Lake: Lake Kingdom Timer Challenge 2",
 		"category": [
 			"Lake Kingdom",
-			"Lake Peace"
+			"Lake Peace",
+			"Into the Lake",
+			"Side Somersault or Backward Somersault or (Wall Jump and Dive) or (Ground Pound and Ground Poung Jump)"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -905,7 +923,9 @@
 	{
 		"name": "Lake: Moon Shards in the Lake",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake",
+			"Cheep Cheep or Swim"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -913,7 +933,8 @@
 	{
 		"name": "Lake: Taking Notes: Dive and Swim",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Swim"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -921,7 +942,8 @@
 	{
 		"name": "Lake: Taking Notes: In the Cliffside",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Dash (2D)"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -931,7 +953,8 @@
 		"category": [
 			"Lake Kingdom",
 			"Lake Peace",
-			"Lakitu"
+			"Lakitu",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -941,7 +964,8 @@
 		"category": [
 			"Lake Kingdom",
 			"Lake Peace",
-			"Cheep Cheep"
+			"Cheep Cheep",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -949,7 +973,8 @@
 	{
 		"name": "Lake: Our Secret Little Room",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -958,7 +983,8 @@
 		"name": "Lake: Let's Go Swimming, Captain Toad!",
 		"category": [
 			"Lake Kingdom",
-			"Cheep Cheep"
+			"Cheep Cheep or Ground Pound",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -966,7 +992,8 @@
 	{
 		"name": "Lake: Shopping in Lake Lamode",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -976,7 +1003,8 @@
 		"category": [
 			"Lake Kingdom",
 			"Lake Peace",
-			"Puzzle Part"
+			"Puzzle Part",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -985,7 +1013,8 @@
 		"name": "Lake: I Feel Underdressed",
 		"category": [
 			"Lake Kingdom",
-			"Swimwear"
+			"Swimwear",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -994,7 +1023,8 @@
 		"name": "Lake: Unzip the Chasm",
 		"category": [
 			"Lake Kingdom",
-			"Zipper"
+			"Zipper",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -1003,7 +1033,8 @@
 		"name": "Lake: Super-Secret Zipper",
 		"category": [
 			"Lake Kingdom",
-			"Zipper"
+			"Zipper",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -1011,7 +1042,8 @@
 	{
 		"name": "Lake: Jump, Grab, Cling, and Climb",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -1019,7 +1051,8 @@
 	{
 		"name": "Lake: Jump, Grab, and Climb Some More",
 		"category": [
-			"Lake Kingdom"
+			"Lake Kingdom",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -1037,7 +1070,8 @@
 		"name": "Lake: Found with Lake Kingdom Art",
 		"category": [
 			"Lake Kingdom",
-			"Lake Peace"
+			"Lake Peace",
+			"Ground Pound"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -1045,7 +1079,8 @@
 	{
 		"name": "Wooded: Road to Sky Garden",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1053,7 +1088,8 @@
 	{
 		"name": "Wooded: Flower Thieves of Sky Garden",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1062,7 +1098,8 @@
 		"name": "Wooded: Path to the Secret Flower Field",
 		"category": [
 			"Wooded Kingdom",
-			"Sherm"
+			"Sherm",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1072,7 +1109,8 @@
 		"category": [
 			"Wooded Kingdom",
 			"Sherm",
-			"Uproot"
+			"Uproot",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1081,7 +1119,8 @@
 		"name": "Wooded: Behind the Rock Wall",
 		"category": [
 			"Wooded Kingdom",
-			"Sherm"
+			"Sherm",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1089,7 +1128,8 @@
 	{
 		"name": "Wooded: Back Way Up the Mountain",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1113,7 +1153,8 @@
 	{
 		"name": "Wooded: Thanks for the Charge!",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1130,7 +1171,8 @@
 	{
 		"name": "Wooded: Tucked Away Inside the Tunnel",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Uproot or Fire Bro"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1138,7 +1180,9 @@
 	{
 		"name": "Wooded: Over the Cliff's Edge",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip",
+			"Sherm"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1146,7 +1190,8 @@
 	{
 		"name": "Wooded: The Nut 'Round the Corner",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1172,7 +1217,8 @@
 	{
 		"name": "Wooded: The Nut at the Dead End",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Uproot"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1180,7 +1226,8 @@
 	{
 		"name": "Wooded: Cracked Nut on a Crumbling Tower",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1188,7 +1235,8 @@
 	{
 		"name": "Wooded: The Nut that Grew on the Tall Fence",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1206,7 +1254,8 @@
 		"category": [
 			"Wooded Kingdom",
 			"Wooded Peace",
-			"Glydon"
+			"Glydon",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1215,7 +1264,8 @@
 		"name": "Wooded: Love in the Forest Ruins",
 		"category": [
 			"Wooded Kingdom",
-			"Goomba"
+			"Goomba",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1240,7 +1290,8 @@
 	{
 		"name": "Wooded: Nut Planted in the Tower",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Uproot or (Ground Pound and Ground Pound Jump) or Backwards Somersault or Side Somersault or Wall Jump"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1257,7 +1308,8 @@
 	{
 		"name": "Wooded: Spinning-Platforms Treasure",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1266,7 +1318,8 @@
 		"name": "Wooded: Make the Secret Flower Field Bloom",
 		"category": [
 			"Wooded Kingdom",
-			"Wooded Peace"
+			"Wooded Peace",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1274,7 +1327,8 @@
 	{
 		"name": "Wooded: Rolling Rock in the Deep Woods",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1282,7 +1336,8 @@
 	{
 		"name": "Wooded: Glowing in the Deep Woods",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1290,7 +1345,8 @@
 	{
 		"name": "Wooded: Past the Peculiar Pipes",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1298,7 +1354,8 @@
 	{
 		"name": "Wooded: By the Babbling Brook in Deep Woods",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1306,7 +1363,8 @@
 	{
 		"name": "Wooded: The Hard Rock in Deep Woods",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1315,7 +1373,8 @@
 		"name": "Wooded: A Treasure Made from Coins",
 		"category": [
 			"Wooded Kingdom",
-			"Coin Coffer"
+			"Coin Coffer",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1324,7 +1383,8 @@
 		"name": "Wooded: Beneath the Roots of the Moving Tree",
 		"category": [
 			"Wooded Kingdom",
-			"Tree"
+			"Tree",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1332,7 +1392,8 @@
 	{
 		"name": "Wooded: Deep Woods Treasure Trap",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1341,7 +1402,8 @@
 		"name": "Wooded: Exploring for Treasure",
 		"category": [
 			"Wooded Kingdom",
-			"Explorer"
+			"Explorer",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1350,7 +1412,8 @@
 		"name": "Wooded: Wooded Kingdom Timer Challenge 1",
 		"category": [
 			"Wooded Kingdom",
-			"Wooded Peace"
+			"Wooded Peace",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1367,7 +1430,8 @@
 	{
 		"name": "Wooded: Flooding Pipeway",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Wall Jump"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1375,7 +1439,8 @@
 	{
 		"name": "Wooded: Flooding Pipeway Ceiling Secret",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Wall Jump and (Sideflip or Backflip or (Ground Pound and Ground Pound Jump) or (Dive and Cap Jump)"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1385,7 +1450,8 @@
 		"category": [
 			"Wooded Kingdom",
 			"Mini Rocket",
-			"Paragoomba"
+			"Paragoomba",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1403,7 +1469,9 @@
 	{
 		"name": "Wooded: Flower Road Run",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Wall Jump",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1412,7 +1480,8 @@
 		"name": "Wooded: Flower Road Reach",
 		"category": [
 			"Wooded Kingdom",
-			"Goomba"
+			"Goomba",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1421,7 +1490,8 @@
 		"name": "Wooded: Elevator Escalation",
 		"category": [
 			"Wooded Kingdom",
-			"Sherm"
+			"Sherm",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1430,7 +1500,8 @@
 		"name": "Wooded: Elevator Blind Spot",
 		"category": [
 			"Wooded Kingdom",
-			"Sherm"
+			"Sherm",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1457,7 +1528,8 @@
 		"name": "Wooded: Secret Path to the Steam Gardens!",
 		"category": [
 			"Wooded Kingdom",
-			"Snow/Seaside Peace"
+			"Snow/Seaside Peace",
+			"Maze Skip"
 		],
 		"region": "Metro Kingdom",
 		"requires": "|Metro Kingdom Power Moon:20| OR ( |Metro Kingdom Multi-Moon| AND |Metro Kingdom Power Moon:17| ) OR ( |Metro Kingdom Multi-Moon:2| AND |Metro Kingdom Power Moon:14| )"
@@ -1465,7 +1537,8 @@
 	{
 		"name": "Wooded: Found With Wooded Kingdom Art",
 		"category": [
-			"Wooded Kingdom"
+			"Wooded Kingdom",
+			"Ground Pound"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -3239,7 +3312,8 @@
 	{
 		"name": "Luncheon: Secret Path to Mount Volbono",
 		"category": [
-			"Luncheon Kingdom"
+			"Luncheon Kingdom",
+			"Maze Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": "|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| )"
