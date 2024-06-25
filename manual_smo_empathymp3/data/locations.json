@@ -165,7 +165,7 @@
 		"name": "Cascade: Cascade Kingdom Timer Challenge 2",
 		"category": [
 			"Cascade Kingdom",
-			"Triple Jump or (Wall Jump and Dive) or (Ground Pound and Ground Pound Jump) or Backward Somersault or Side Somersault"
+			"Scale a Wall"
 		],
 		"region": "Cascade Kingdom",
 		"requires": []
@@ -281,7 +281,7 @@
 		"name": "Sand: Showdown on the Inverted Pyramid",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Dive and Cap Jump and Long Jump)"
+			"Bullet Bill Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -340,7 +340,7 @@
 		"name": "Sand: Secret of the Inverted Mural",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Dive and Cap Jump and Long Jump)"
+			"Bullet Bill Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -357,7 +357,7 @@
 		"name": "Sand: From a Crate in the Ruins",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Dive and Cap Jump)"
+			"Bullet Bill Small Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -375,7 +375,7 @@
 		"name": "Sand: On the Statue's Tail",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Dive and Cap Jump and Long Jump)"
+			"Bullet Bill Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -519,8 +519,7 @@
 		"name": "Sand: Sand Kingdom Timer Challenge 3",
 		"category": [
 			"Sand Kingdom",
-			"Sand Peace",
-			"Jaxi or (Long Jump and Roll)"
+			"Sand Peace"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -663,7 +662,7 @@
 		"name": "Sand: Hidden Room in the Inverted Pyramid",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Dive and Cap Jump and Long Jump)"
+			"Bullet Bill Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -750,7 +749,7 @@
 		"name": "Sand: The Bullet Bill Maze: Break Through!",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Wall Jump and Dive) or (Triple Jump and Dive)"
+			"Bullet Bill Maze"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -759,7 +758,7 @@
 		"name": "Sand: The Bullet Bill Maze: Side Path",
 		"category": [
 			"Sand Kingdom",
-			"Bullet Bill or (Wall Jump and Dive) or (Triple Jump and Dive)"
+			"Bullet Bill Maze"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -915,7 +914,7 @@
 			"Lake Kingdom",
 			"Lake Peace",
 			"Into the Lake",
-			"Side Somersault or Backward Somersault or (Wall Jump and Dive) or (Ground Pound and Ground Poung Jump)"
+			"Scale a Wall (No Triple Jump)"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -925,7 +924,7 @@
 		"category": [
 			"Lake Kingdom",
 			"Into the Lake",
-			"Cheep Cheep or Swim"
+			"Swim or Cheep Cheep"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -1274,7 +1273,8 @@
 		"name": "Wooded: Inside a Rock in the Forest",
 		"category": [
 			"Wooded Kingdom",
-			"Wooded Peace"
+			"Wooded Peace",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1290,8 +1290,7 @@
 	{
 		"name": "Wooded: Nut Planted in the Tower",
 		"category": [
-			"Wooded Kingdom",
-			"Uproot or (Ground Pound and Ground Pound Jump) or Backwards Somersault or Side Somersault or Wall Jump"
+			"Wooded Kingdom"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1431,7 +1430,8 @@
 		"name": "Wooded: Flooding Pipeway",
 		"category": [
 			"Wooded Kingdom",
-			"Wall Jump"
+			"Wall Jump",
+			"Swim"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -1439,8 +1439,7 @@
 	{
 		"name": "Wooded: Flooding Pipeway Ceiling Secret",
 		"category": [
-			"Wooded Kingdom",
-			"Wall Jump and (Sideflip or Backflip or (Ground Pound and Ground Pound Jump) or (Dive and Cap Jump)"
+			"Wooded Kingdom"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -2177,6 +2176,16 @@
 			"Metro Kingdom"
 		],
 		"region": "Metro Kingdom",
+		"requires": []
+	},
+	{
+		"name": "Complete the Festival",
+		"category": [
+			"Metro Kingdom",
+			"Manhole"
+		],
+		"region": "Metro Kingdom",
+		"victory": true,
 		"requires": []
 	},
 	{
@@ -3832,7 +3841,7 @@
 		"requires": []
 	},
 	{
-		"name": "Moon: Defeat Bowser",
+		"name": "Defeat Bowser and Escape the Moon",
 		"category": [
 			"Moon Kingdom",
 			"Bowser"

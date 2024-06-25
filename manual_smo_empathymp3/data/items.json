@@ -581,7 +581,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Downward Throw",
@@ -597,7 +597,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Cap Throw and Hold",
@@ -605,7 +605,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Cap Jump",
@@ -613,7 +613,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Homing Cap Throw",
@@ -621,7 +621,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Backward Somersault",
@@ -677,7 +677,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Spin",
@@ -685,7 +685,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Dash (2D)",
