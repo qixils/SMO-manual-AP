@@ -117,6 +117,8 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         addReq(region_table["Wooded Kingdom"], "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
         # requirements to leave lost kingdom
         addReq(region_table["Metro Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
+        addReq(region_table["Snow Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
+        addReq(region_table["Seaside Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
 
     elif action_rando and not capturesanity:
         # ensuring you can enter the lake in lake kingdom before you go to wooded kingdom
@@ -170,12 +172,24 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     addReq(location, "|Ground Pound| or |Cheep Cheep|")
                 elif category == "Maze Skip":
                     addReq(location, "|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backwards Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backwards Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )")
+                elif category == "Sherm or Long Jump":
+                    addReq(location, "|Sherm| or |Long Jump|")
+                elif category == "Post-Trumpeter":
+                    addReq(location, "|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
+                elif category == "Metro Peace":
+                    addReq(location, "|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
+                elif category == "From the Top of the Tower":
+                    addReq(location, "|Long Jump| or (|Pole| and |Motor scooter|) or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|"),
+                elif category == "Wall Jump or Pole":
+                    addReq(location, "|Wall Jump| or |Pole|")
         elif action_rando and not capturesanity:
             for category in location.get("category", []):
                 if "Kingdom" in category:
                     continue
                 elif category == "Into the Lake":
                     addReq(location, "(|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|")
+                elif category == "From the Top of the Tower":
+                    addReq(location, "|Long Jump| or |Motor scooter| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
         if action_rando:
             for category in location.get("category", []):
                 if "Kingdom" in category:

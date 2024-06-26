@@ -1765,7 +1765,8 @@
 	{
 		"name": "Metro: Trumpeter on Board!",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Post-Trumpeter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1774,7 +1775,8 @@
 		"name": "Metro: Powering Up the Station",
 		"category": [
 			"Metro Kingdom",
-			"Manhole"
+			"Manhole",
+			"Post-Trumpeter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1783,7 +1785,8 @@
 		"name": "Metro: A Traditional Festival!",
 		"category": [
 			"Metro Kingdom",
-			"Manhole"
+			"Manhole",
+			"Post-Trumpeter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1810,7 +1813,8 @@
 		"name": "Metro: Girder Sandwich",
 		"category": [
 			"Metro Kingdom",
-			"Night Metro"
+			"Night Metro",
+			"Sherm or Long Jump"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1818,7 +1822,8 @@
 	{
 		"name": "Metro: Glittering Above the Pool",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"From the Top of the Tower"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1842,7 +1847,8 @@
 	{
 		"name": "Metro: Who Piled Garbage on This?",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Ground Pound"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1850,7 +1856,8 @@
 	{
 		"name": "Metro: Hidden in the Scrap",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Ground Pound"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1867,7 +1874,8 @@
 		"name": "Metro: Caught Hopping on a Building!",
 		"category": [
 			"Metro Kingdom",
-			"Metro Peace"
+			"Metro Peace",
+			"Wall Jump or Pole"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1875,7 +1883,8 @@
 	{
 		"name": "Metro: How Do They Take Out the Trash?",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"From the Top of the Tower"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1893,7 +1902,8 @@
 		"name": "Metro: Metro Kingdom Timer Challenge 2",
 		"category": [
 			"Metro Kingdom",
-			"Metro Peace"
+			"Metro Peace",
+			"Motor Scooter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1901,7 +1911,8 @@
 	{
 		"name": "Metro: City Gardening: Building Planter",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1909,7 +1920,8 @@
 	{
 		"name": "Metro: City Gardening: Plaza Planter",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1917,7 +1929,9 @@
 	{
 		"name": "Metro: City Gardening: Rooftop Planter",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Hold/Throw",
+			"Wall Jump or Pole"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -1933,7 +1947,8 @@
 	{
 		"name": "Metro: Free Parking: Rooftop Hop",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Motor scooter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2009,7 +2024,8 @@
 		"name": "Metro: City Hall Lost & Found",
 		"category": [
 			"Metro Kingdom",
-			"Night Metro"
+			"Night Metro",
+			"Wall Jump"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2018,7 +2034,8 @@
 		"name": "Metro: Sewer Treasure",
 		"category": [
 			"Metro Kingdom",
-			"Manhole"
+			"Manhole",
+			"Post-Trumpeter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2027,7 +2044,8 @@
 		"name": "Metro: Celebrating in the Streets",
 		"category": [
 			"Metro Kingdom",
-			"Manhole"
+			"Manhole",
+			"Post-Trumpeter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2097,7 +2115,8 @@
 		"name": "Metro: Outside the Rotating Maze",
 		"category": [
 			"Metro Kingdom",
-			"Manhole"
+			"Manhole",
+			"Scale a Wall"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2115,7 +2134,8 @@
 		"name": "Metro: Vaulting up a High-Rise",
 		"category": [
 			"Metro Kingdom",
-			"Mini Rocket"
+			"Mini Rocket",
+			"Wall Jump"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2131,7 +2151,8 @@
 	{
 		"name": "Metro: One Man's Trash...",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Bullet Bill Skip"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2139,7 +2160,8 @@
 	{
 		"name": "Metro: Motor Scooter: Escape!",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Motor scooter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2147,7 +2169,8 @@
 	{
 		"name": "Metro: Big Jump: Escape!",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Motor scooter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2155,7 +2178,8 @@
 	{
 		"name": "Metro: Secret Path to New Donk City!",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Bullet Bill Skip"
 		],
 		"region": "Sand Kingdom",
 		"requires": []
@@ -2173,7 +2197,9 @@
 	{
 		"name": "Metro: Found with Metro Kingdom Art",
 		"category": [
-			"Metro Kingdom"
+			"Metro Kingdom",
+			"Post-Trumpeter",
+			"Ground Pound"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2182,7 +2208,8 @@
 		"name": "Complete the Festival",
 		"category": [
 			"Metro Kingdom",
-			"Manhole"
+			"Manhole",
+			"Post-Trumpeter"
 		],
 		"region": "Metro Kingdom",
 		"victory": true,
