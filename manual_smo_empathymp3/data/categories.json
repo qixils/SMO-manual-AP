@@ -209,5 +209,101 @@
         "yaml_option": [
             "action_rando"
         ]
+    },
+    "Bullet Bill Skip": {
+        "hidden": true
+    },
+    "Bullet Bill Small Skip": {
+        "hidden": true
+    },
+    "Bullet Bill Maze": {
+        "hidden": true
+    },
+    "Into the Lake": {
+        "hidden": true
+    },
+    "Swim and Cheep Cheep": {
+        "hidden": true
+    },
+    "Cheep Cheep or Ground Pound": {
+        "hidden": true
+    },
+    "Maze Skip": {
+        "hidden": true
+    },
+    "Sherm or Long Jump": {
+        "hidden": true
+    },
+    "Post-Trumpeter": {
+        "hidden": true
+    },
+    "From the Top of the Tower": {
+        "hidden": true
+    },
+    "Wall Jump or Pole": {
+        "hidden": true
+    },
+    "Ty-foo or Scale a Tall Wall": {
+        "hidden": true
+    },
+    "Scale a Wall": {
+        "hidden": true
+    },
+    "Scale a Wall (No Triple Jump)": {
+        "hidden": true
+    },
+    "Swim or Cap Jump": {
+        "hidden": true
+    },
+    "Long Jump": {
+        "hidden": true
+    },
+    "Roll": {
+        "hidden": true
+    },
+    "Ground Pound": {
+        "hidden": true
+    },
+    "Dive": {
+        "hidden": true
+    },
+    "Ground Pound Jump": {
+        "hidden": true
+    },
+    "Backward Somersault": {
+        "hidden": true
+    },
+    "Side Somersault": {
+        "hidden": true
+    },
+    "Triple Jump": {
+        "hidden": true
+    },
+    "Wall Jump": {
+        "hidden": true
+    },
+    "Hold/Throw": {
+        "hidden": true
+    },
+    "Swim": {
+        "hidden": true
+    },
+    "Motor scooter": {
+        "hidden": true
+    },
+    "Uproot or Fire Bro": {
+        "hidden": true
+    },
+    "Dash (2D)": {
+        "hidden": true
+    },
+    "Tropical Wiggler or Dive": {
+        "hidden": true
+    },
+    "Tropical Wiggler or Wall Jump": {
+        "hidden": true
+    },
+    "Swim or Cheep Cheep": {
+        "hidden": true
     }
 }

@@ -1903,7 +1903,7 @@
 		"category": [
 			"Metro Kingdom",
 			"Metro Peace",
-			"Motor Scooter"
+			"Motor scooter"
 		],
 		"region": "Metro Kingdom",
 		"requires": []
@@ -2261,7 +2261,8 @@
 	{
 		"name": "Snow: Entrance to Shiveria",
 		"category": [
-			"Snow Kingdom"
+			"Snow Kingdom",
+			"Scale a Wall"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2277,7 +2278,8 @@
 	{
 		"name": "Snow: Shining in the Snow in Town",
 		"category": [
-			"Snow Kingdom"
+			"Snow Kingdom",
+			"Ground Pound"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2285,7 +2287,8 @@
 	{
 		"name": "Snow: Atop a Blustery Arch",
 		"category": [
-			"Snow Kingdom"
+			"Snow Kingdom",
+			"Ty-foo or Scale a Tall Wall"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2328,7 +2331,8 @@
 		"name": "Snow: Snow Kingdom Timer Challenge 2",
 		"category": [
 			"Snow Kingdom",
-			"Snow Peace"
+			"Snow Peace",
+			"Swim"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2418,7 +2422,8 @@
 		"name": "Snow: Dashing Over Cold Water!",
 		"category": [
 			"Snow Kingdom",
-			"Snow Peace"
+			"Snow Peace",
+			"Swim or Cap Jump"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2427,7 +2432,8 @@
 		"name": "Snow: Dashing Above and Beyond!",
 		"category": [
 			"Snow Kingdom",
-			"Snow Peace"
+			"Snow Peace",
+			"Swim or Cap Jump"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2436,7 +2442,8 @@
 		"name": "Snow: Jump 'n' Swim in the Freezing Water",
 		"category": [
 			"Snow Kingdom",
-			"Snow Peace"
+			"Snow Peace",
+			"Swim"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2445,7 +2452,8 @@
 		"name": "Snow: Freezing Water Near the Ceiling",
 		"category": [
 			"Snow Kingdom",
-			"Snow Peace"
+			"Snow Peace",
+			"Swim"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -2507,7 +2515,8 @@
 	{
 		"name": "Snow: Found with Snow Kingdom Art",
 		"category": [
-			"Snow Kingdom"
+			"Snow Kingdom",
+			"Ground Pound"
 		],
 		"region": "Snow Kingdom",
 		"requires": []
@@ -3968,7 +3977,8 @@
 	{
 		"name": "Capture: Zipper",
 		"category": [
-			"Capture"
+			"Capture",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -3976,7 +3986,8 @@
 	{
 		"name": "Capture: Cheep Cheep",
 		"category": [
-			"Capture"
+			"Capture",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -3984,7 +3995,8 @@
 	{
 		"name": "Capture: Puzzle Part",
 		"category": [
-			"Capture"
+			"Capture",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -3992,7 +4004,8 @@
 	{
 		"name": "Capture: Poison Piranha Plant",
 		"category": [
-			"Capture"
+			"Capture",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -4008,7 +4021,8 @@
 	{
 		"name": "Capture: Fire Bro",
 		"category": [
-			"Capture"
+			"Capture",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -4016,7 +4030,8 @@
 	{
 		"name": "Capture: Sherm",
 		"category": [
-			"Capture"
+			"Capture",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -4024,7 +4039,8 @@
 	{
 		"name": "Capture: Coin Coffer",
 		"category": [
-			"Capture"
+			"Capture",
+			"Maze Skip"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -4032,7 +4048,8 @@
 	{
 		"name": "Capture: Tree",
 		"category": [
-			"Capture"
+			"Capture",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []
@@ -4040,7 +4057,8 @@
 	{
 		"name": "Capture: Boulder",
 		"category": [
-			"Capture"
+			"Capture",
+			"Hold/Throw"
 		],
 		"region": "Wooded Kingdom",
 		"requires": []

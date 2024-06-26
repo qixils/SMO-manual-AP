@@ -179,9 +179,11 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                 elif category == "Metro Peace":
                     addReq(location, "|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
                 elif category == "From the Top of the Tower":
-                    addReq(location, "|Long Jump| or (|Pole| and |Motor scooter|) or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|"),
+                    addReq(location, "|Long Jump| or (|Pole| and |Motor scooter|) or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
                 elif category == "Wall Jump or Pole":
                     addReq(location, "|Wall Jump| or |Pole|")
+                elif category == "Ty-foo or Scale a Tall Wall":
+                    addReq(location, "|Ty-foo| or ((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and |Dive|)")
         elif action_rando and not capturesanity:
             for category in location.get("category", []):
                 if "Kingdom" in category:
@@ -200,8 +202,10 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     addReq(location, "|Triple Jump| or (|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|")
                 elif category == "Scale a Wall (No Triple Jump)":
                     addReq(location, "(|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|")
-                elif category in ["Long Jump", "Roll", "Ground Pound", "Dive", "Ground Pound Jump", "Backward Somersault", "Side Somersault", "Triple Jump", "Wall Jump", "Hold/Throw", "Swim", "Jaxi", "Motor scooter"]:
+                elif category in ["Long Jump", "Roll", "Ground Pound", "Dive", "Ground Pound Jump", "Backward Somersault", "Side Somersault", "Triple Jump", "Wall Jump", "Hold/Throw", "Swim", "Jaxi", "Motor scooter", "Dash (2D)"]:
                     addReq(location, "|" + category + "|")
+                elif category == "Swim or Cap Jump":
+                    addReq(location, "|Swim| or |Cap Jump|")
                 
         if capturesanity:
             if location["region"] == "Metro Kingdom" and "Night Metro" not in location.get("category", []):
