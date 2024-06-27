@@ -117,8 +117,8 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         addReq(region_table["Wooded Kingdom"], "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
         # requirements to leave lost kingdom
         addReq(region_table["Metro Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
-        addReq(region_table["Snow Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
-        addReq(region_table["Seaside Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
+        # ensuring you can do seaside kingdom stuff before you go to snow kingdom
+        addReq(region_table["Snow Kingdom"], "|Swim| or |Gushen| or |Cheep Cheep|")
 
     elif action_rando and not capturesanity:
         # ensuring you can enter the lake in lake kingdom before you go to wooded kingdom
@@ -154,6 +154,18 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
             if action_rando and capturesanity:
                 addReq(location, "|Tropical Wiggler| or |Dive|")
             continue
+        elif location["name"] == "Seaside: Ride the Jetstream":
+            if action_rando and capturesanity:
+                addReq(location, "|Gushen| or (|Wall Jump| and |Long Jump| and |Cap Jump| and |Dive|)")
+            continue
+        elif location["name"] == "Seaside: On the Cliff Overlooking the Beach":
+            if action_rando and capturesanity:
+                addReq(location, "|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|)")
+            continue
+        elif location["name"] == "Seaside: Secret Path to Bubblaine!":
+            if action_rando:
+                addReq(location, "|Wall Jump| and |Cap Jump| and |Dive|")
+            continue
         if action_rando and capturesanity:
             for category in location.get("category", []):
                 if "Kingdom" in category:
@@ -184,6 +196,9 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     addReq(location, "|Wall Jump| or |Pole|")
                 elif category == "Ty-foo or Scale a Tall Wall":
                     addReq(location, "|Ty-foo| or ((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and |Dive|)")
+                elif category == "Regional":
+                    if location["region"] == "Metro Kingdom":
+                        addReq(location, "(|Long Jump| and |Dive| and |Cap Jump|) or (|Pole| and |Wall Jump|)")
         elif action_rando and not capturesanity:
             for category in location.get("category", []):
                 if "Kingdom" in category:
@@ -202,11 +217,23 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     addReq(location, "|Triple Jump| or (|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|")
                 elif category == "Scale a Wall (No Triple Jump)":
                     addReq(location, "(|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backwards Somersault| or |Side Somersault|")
-                elif category in ["Long Jump", "Roll", "Ground Pound", "Dive", "Ground Pound Jump", "Backward Somersault", "Side Somersault", "Triple Jump", "Wall Jump", "Hold/Throw", "Swim", "Jaxi", "Motor scooter", "Dash (2D)"]:
+                elif category in ["Long Jump", "Roll", "Ground Pound", "Dive", "Ground Pound Jump", "Backward Somersault", "Side Somersault", "Triple Jump", "Wall Jump", "Hold/Throw", "Swim", "Jaxi", "Motor scooter", "Dash (2D)", "Quick Swim"]:
                     addReq(location, "|" + category + "|")
+                elif category == "Seaside Peace":
+                    addReq(location, "|Ground Pound|")
                 elif category == "Swim or Cap Jump":
                     addReq(location, "|Swim| or |Cap Jump|")
-                
+                elif category == "Regional":
+                    if location["region"] == "Sand Kingdom":
+                        addReq(location, "|Jaxi|")
+                    elif location["region"] == "Lake Kingdom":
+                        addReq(location, "|Swim|")
+                    elif location["region"] == "Wooded Kingdom":
+                        addReq(location, "|Sherm| and |Uproot| and |Boulder|")
+                    elif location["region"] == "Lost Kingdom":
+                        addReq(location, "|Wall Jump|")
+                    elif location["region"] == "Seaside Kingdom":
+                        addReq(location, "|Swim|")
         if capturesanity:
             if location["region"] == "Metro Kingdom" and "Night Metro" not in location.get("category", []):
                 addReq(location, "|Sherm|")
@@ -233,7 +260,7 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     if location["region"] == "Cap Kingdom":
                         addReq(location, "|Paragoomba|")
                     elif location["region"] == "Sand Kingdom":
-                        addReq(location, "|Bullet Bill| and |Knucklotec's Fist| and |Jaxi| and |Mini Rocket| and |Goomba|")
+                        addReq(location, "|Bullet Bill| and |Knucklotec's Fist| and |Mini Rocket| and |Goomba|")
                     elif location["region"] == "Lake Kingdom":
                         addReq(location, "|Zipper|")
                     elif location["region"] == "Wooded Kingdom":

@@ -2560,7 +2560,8 @@
 		"name": "Seaside: The Glass is Half Full!",
 		"category": [
 			"Seaside Kingdom",
-			"Gushen"
+			"Gushen",
+			"Ground Pound"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2584,7 +2585,8 @@
 	{
 		"name": "Seaside: Ocean-Bottom Maze: Treasure",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2592,7 +2594,8 @@
 	{
 		"name": "Seaside: Ocean-Bottom Maze: Hidden Room",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2636,7 +2639,8 @@
 	{
 		"name": "Seaside: Merci, Dorrie!",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2653,7 +2657,8 @@
 	{
 		"name": "Seaside: Under a Dangerous Ceiling",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2661,7 +2666,8 @@
 	{
 		"name": "Seaside: What the Waves Left Behind",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Ground Pound"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2677,7 +2683,8 @@
 	{
 		"name": "Seaside: Bubblaine Northern Reaches",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Cheep Cheep or Ground Pound"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2685,7 +2692,8 @@
 	{
 		"name": "Seaside: Wriggling on the Sandy Bottom",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Ground Pound"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2693,7 +2701,8 @@
 	{
 		"name": "Seaside: Glass Palace Treasure Chest",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2701,7 +2710,8 @@
 	{
 		"name": "Seaside: Treasure Trap Hidden in the Inlet",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2709,7 +2719,8 @@
 	{
 		"name": "Seaside: Sea Gardening: Inlet Seed",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2733,7 +2744,8 @@
 	{
 		"name": "Seaside: Sea Gardening: Ocean Trench Seed",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2750,7 +2762,9 @@
 		"name": "Seaside: Seaside Kingdom Timer Challenge 2",
 		"category": [
 			"Seaside Kingdom",
-			"Seaside Peace"
+			"Seaside Peace",
+			"Quick Swim",
+			"Swim"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2767,7 +2781,8 @@
 	{
 		"name": "Seaside: Moon Shards in the Sea",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2811,7 +2826,8 @@
 	{
 		"name": "Seaside: Ocean Quiz: Good!",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim or Cheep Cheep"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2819,7 +2835,8 @@
 	{
 		"name": "Seaside: Shopping in Bubblaine",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
@@ -2854,7 +2871,8 @@
 	{
 		"name": "Seaside: The Sphynx's Underwater Vault",
 		"category": [
-			"Seaside Kingdom"
+			"Seaside Kingdom",
+			"Swim"
 		],
 		"region": "Seaside Kingdom",
 		"requires": []
