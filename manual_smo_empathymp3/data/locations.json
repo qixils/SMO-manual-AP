@@ -2986,7 +2986,9 @@
 		"name": "Luncheon: Big Pot on the Volcano: Dive In!",
 		"category": [
 			"Luncheon Kingdom",
-			"Meat"
+			"Meat",
+			"Hammer Bro",
+			"Climb to the Meat"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -2996,7 +2998,8 @@
 		"category": [
 			"Luncheon Kingdom",
 			"Meat",
-			"Lava Bubble"
+			"Lava Bubble",
+			"Climb to the Meat"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3006,7 +3009,8 @@
 		"category": [
 			"Luncheon Kingdom",
 			"Meat",
-			"Lava Bubble"
+			"Lava Bubble",
+			"Climb to the Meat"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3038,7 +3042,8 @@
 	{
 		"name": "Luncheon: Is This an Ingredient Too?!",
 		"category": [
-			"Luncheon Kingdom"
+			"Luncheon Kingdom",
+			"Scale a Wall"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3055,7 +3060,8 @@
 		"name": "Luncheon: Surrounded by Tall Mountains",
 		"category": [
 			"Luncheon Kingdom",
-			"Hammer Bro"
+			"Hammer Bro",
+			"Climb to the Meat"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3072,7 +3078,8 @@
 	{
 		"name": "Luncheon: Overlooking a Bunch of Ingredients",
 		"category": [
-			"Luncheon Kingdom"
+			"Luncheon Kingdom",
+			"Climb to the Meat"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3090,7 +3097,8 @@
 	{
 		"name": "Luncheon: Golden Turnip Recipe 1",
 		"category": [
-			"Luncheon Kingdom"
+			"Luncheon Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3098,7 +3106,8 @@
 	{
 		"name": "Luncheon: Golden Turnip Recipe 2",
 		"category": [
-			"Luncheon Kingdom"
+			"Luncheon Kingdom",
+			"Hold/Throw"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3107,7 +3116,8 @@
 		"name": "Luncheon: Golden Turnip Recipe 3",
 		"category": [
 			"Luncheon Kingdom",
-			"Hammer Bro"
+			"Hammer Bro",
+			"Hold/Throw"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3115,7 +3125,8 @@
 	{
 		"name": "Luncheon: Luncheon Kingdom Timer Challenge 1",
 		"category": [
-			"Luncheon Kingdom"
+			"Luncheon Kingdom",
+			"Wall Jump"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3133,7 +3144,8 @@
 		"name": "Luncheon: Luncheon Kingdom Timer Challenge 3",
 		"category": [
 			"Luncheon Kingdom",
-			"Luncheon Peace"
+			"Luncheon Peace",
+			"Jump High"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3172,7 +3184,8 @@
 		"name": "Luncheon: Love Above the Lava",
 		"category": [
 			"Luncheon Kingdom",
-			"Goomba"
+			"Goomba",
+			"Very Early Luncheon"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -3403,7 +3416,9 @@
 		"name": "Luncheon: Found with Luncheon Kingdom Art",
 		"category": [
 			"Luncheon Kingdom",
-			"Meat"
+			"Meat",
+			"Climb to the Meat",
+			"Cheep Cheep or Swim"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -4172,7 +4187,8 @@
 	{
 		"name": "Capture: Lava Bubble",
 		"category": [
-			"Capture"
+			"Capture",
+			"Very Early Luncheon"
 		],
 		"region": "Luncheon Kingdom",
 		"requires": []
@@ -4334,7 +4350,8 @@
 		"name": "Shop: Swim Goggles",
 		"category": [
 			"Shop",
-			"Regional"
+			"Regional",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
@@ -4343,7 +4360,8 @@
 		"name": "Shop: Swimwear",
 		"category": [
 			"Shop",
-			"Regional"
+			"Regional",
+			"Into the Lake"
 		],
 		"region": "Lake Kingdom",
 		"requires": []
