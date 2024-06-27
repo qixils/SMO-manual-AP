@@ -206,6 +206,8 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     addReq(location, "|Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))")
                 elif category == "Luncheon Peace":
                     addReq(location, "|Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))")
+                elif category == "Nice Frame":
+                    addReq(location, "|Lakitu| or |Long Jump| or |Roll|")
         elif action_rando and not capturesanity:
             for category in location.get("category", []):
                 if "Kingdom" in category:

@@ -3518,7 +3518,8 @@
 	{
 		"name": "Bowser's: From the Side Above the Castle Gate",
 		"category": [
-			"Bowser's Kingdom"
+			"Bowser's Kingdom",
+			"Scale a Wall"
 		],
 		"region": "Bowser's Kingdom",
 		"requires": []
@@ -3526,7 +3527,8 @@
 	{
 		"name": "Bowser's: Sunken Treasure in the Moat",
 		"category": [
-			"Bowser's Kingdom"
+			"Bowser's Kingdom",
+			"Swim"
 		],
 		"region": "Bowser's Kingdom",
 		"requires": []
@@ -3544,7 +3546,8 @@
 		"name": "Bowser's: Above the Poison Swamp",
 		"category": [
 			"Bowser's Kingdom",
-			"Bowser's Peace"
+			"Bowser's Peace",
+			"Nice Frame"
 		],
 		"region": "Bowser's Kingdom",
 		"requires": []
@@ -3553,7 +3556,8 @@
 		"name": "Bowser's: Knocking Down the Nice Frame",
 		"category": [
 			"Bowser's Kingdom",
-			"Bowser's Peace"
+			"Bowser's Peace",
+			"Nice Frame"
 		],
 		"region": "Bowser's Kingdom",
 		"requires": []
@@ -3761,7 +3765,8 @@
 		"category": [
 			"Bowser's Kingdom",
 			"Jizo",
-			"Bowser's Peace"
+			"Bowser's Peace",
+			"Wall Jump"
 		],
 		"region": "Bowser's Kingdom",
 		"requires": []
@@ -3771,7 +3776,8 @@
 		"category": [
 			"Bowser's Kingdom",
 			"Jizo",
-			"Bowser's Peace"
+			"Bowser's Peace",
+			"Wall Jump"
 		],
 		"region": "Bowser's Kingdom",
 		"requires": []
