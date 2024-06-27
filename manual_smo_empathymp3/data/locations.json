@@ -3817,7 +3817,10 @@
 	{
 		"name": "Moon: The Tip of a White Spire",
 		"category": [
-			"Moon Kingdom"
+			"Moon Kingdom",
+			"Banzai Bill",
+			"Parabones Skip",
+			"Wall Jump"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3849,7 +3852,8 @@
 	{
 		"name": "Moon: Moon Kingdom Timer Challenge 1",
 		"category": [
-			"Moon Kingdom"
+			"Moon Kingdom",
+			"Long Jump"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3857,7 +3861,8 @@
 	{
 		"name": "Moon: Taking Notes: On the Moon's Surface",
 		"category": [
-			"Moon Kingdom"
+			"Moon Kingdom",
+			"Long Jump"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3884,7 +3889,8 @@
 		"name": "Moon: Around the Barrier Wall",
 		"category": [
 			"Moon Kingdom",
-			"Banzai Bill"
+			"Banzai Bill",
+			"Parabones Skip"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3893,7 +3899,8 @@
 		"name": "Moon: On Top of the Cannon",
 		"category": [
 			"Moon Kingdom",
-			"Banzai Bill"
+			"Banzai Bill",
+			"Parabones Skip"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3902,7 +3909,8 @@
 		"name": "Moon: Fly to the Treasure Chest and Back",
 		"category": [
 			"Moon Kingdom",
-			"Banzai Bill"
+			"Banzai Bill",
+			"Parabones Skip"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3910,7 +3918,10 @@
 	{
 		"name": "Moon: Up in the Rafters",
 		"category": [
-			"Moon Kingdom"
+			"Moon Kingdom",
+			"Banzai Bill",
+			"Parabones Skip",
+			"Wall Jump"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -3919,7 +3930,9 @@
 		"name": "Defeat Bowser and Escape the Moon",
 		"category": [
 			"Moon Kingdom",
-			"Bowser"
+			"Bowser",
+			"Banzai Bill",
+			"Parabones Skip"
 		],
 		"region": "Moon Kingdom",
 		"victory": true,
@@ -4259,7 +4272,8 @@
 	{
 		"name": "Capture: Banzai Bill",
 		"category": [
-			"Capture"
+			"Capture",
+			"Parabones Skip"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -4267,7 +4281,9 @@
 	{
 		"name": "Capture: Chargin' Chuck",
 		"category": [
-			"Capture"
+			"Capture",
+			"Parabones Skip",
+			"Banzai Bill"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -4275,7 +4291,9 @@
 	{
 		"name": "Capture: Bowser",
 		"category": [
-			"Capture"
+			"Capture",
+			"Parabones Skip",
+			"Banzai Bill"
 		],
 		"region": "Moon Kingdom",
 		"requires": []
@@ -5065,6 +5083,27 @@
 			"Regional"
 		],
 		"region": "Moon Kingdom",
+		"requires": []
+	},
+	{
+		"name": "World Peace",
+		"category": [
+			"Moon Kingdom",
+			"Bowser",
+			"Banzai Bill",
+			"Parabones Skip",
+			"Sand Peace",
+			"Lake Peace",
+			"Wooded Peace",
+			"Metro Peace",
+			"Snow Peace",
+			"Seaside Peace",
+			"Snow/Seaside Peace",
+			"Luncheon Peace",
+			"Into the Lake"
+		],
+		"region": "Moon Kingdom",
+		"victory": true,
 		"requires": []
 	}
 ]

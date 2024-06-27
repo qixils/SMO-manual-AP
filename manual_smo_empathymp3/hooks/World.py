@@ -167,9 +167,22 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
             if action_rando:
                 addReq(location, "|Wall Jump| and |Cap Jump| and |Dive|")
             continue
-        if action_rando and capturesanity:
+        elif location["name"] == "Capture: Mini Rocket":
+            if action_rando and capturesanity:
+                location["requires"] = "( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ) and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)))"
+            continue
+        elif location["name"] == "Capture: Glydon":
+            if action_rando and capturesanity:
+                location["requires"] = "( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ) and ((((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|))) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )) and (|Wall Jump| or |Tropical Wiggler|))"
+            continue
+        elif location["name"] == "Capture: Lakitu":
+            if action_rando and capturesanity:
+                location["requires"] = "( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )))"
+            continue
+        elif action_rando and capturesanity:
             if location["region"] == "Luncheon Kingdom" and "Very Early Luncheon" not in location.get("category", []):
                 addReq(location, "|Lava Bubble| or (|Dive| and |Cap Jump|)")
+                continue
             for category in location.get("category", []):
                 if "Kingdom" in category:
                     continue
@@ -180,6 +193,8 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                 elif category == "Bullet Bill Maze":
                     addReq(location, "|Bullet Bill| or (|Dive| and (|Wall Jump| or |Triple Jump|))")
                 elif category == "Into the Lake":
+                    addReq(location, "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
+                elif category == "Lake Peace":
                     addReq(location, "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
                 elif category == "Swim or Cheep Cheep":
                     addReq(location, "|Swim| or |Cheep Cheep|")
@@ -208,6 +223,8 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     addReq(location, "|Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))")
                 elif category == "Nice Frame":
                     addReq(location, "|Lakitu| or |Long Jump| or |Roll|")
+                elif category == "Parabones Skip":
+                    addReq(location, "|Parabones| or (|Long Jump| and |Cap Jump| and |Dive|)")
         elif action_rando and not capturesanity:
             for category in location.get("category", []):
                 if "Kingdom" in category:

@@ -67,7 +67,7 @@
 		]
 	},
 	"Ruined Kingdom": {
-		"requires": "( |Luncheon Kingdom Power Moon:20| OR ( |Luncheon Kingdom Multi-Moon| AND |Luncheon Kingdom Power Moon:15| ) OR ( |Luncheon Kingdom Multi-Moon:2| AND |Luncheon Kingdom Power Moon:12| ) )",
+		"requires": "( |Luncheon Kingdom Power Moon:18| OR ( |Luncheon Kingdom Multi-Moon| AND |Luncheon Kingdom Power Moon:15| ) OR ( |Luncheon Kingdom Multi-Moon:2| AND |Luncheon Kingdom Power Moon:12| ) )",
 		"connects_to": [
 			"Bowser's Kingdom"
 		]

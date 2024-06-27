@@ -600,14 +600,6 @@
 		"useful": true
 	},
 	{
-		"name": "Cap Throw and Hold",
-		"category": [
-			"Action"
-		],
-		"count": 1,
-		"useful": true
-	},
-	{
 		"name": "Cap Jump",
 		"category": [
 			"Action"
@@ -685,7 +677,7 @@
 			"Action"
 		],
 		"count": 1,
-		"useful": true
+		"filler": true
 	},
 	{
 		"name": "Dash (2D)",
