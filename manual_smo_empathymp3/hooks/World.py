@@ -41,6 +41,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     capturesanity = get_option_value(multiworld, player, "capturesanity") or False
     coin_shops = get_option_value(multiworld, player, "coin_shops") or False
     regional_shops = get_option_value(multiworld, player, "regional_shops") or False
+    action_rando = get_option_value(multiworld, player, "action_rando") or False
 
     locations_to_remove = []
 
@@ -51,6 +52,8 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         elif "Coin" in location.get("category", []) and coin_shops:
             locations_to_remove.append(location["name"])
         elif "Regional" in location.get("category", []) and regional_shops:
+            locations_to_remove.append(location["name"])
+        elif "Action" in location.get("category", []) and not action_rando:
             locations_to_remove.append(location["name"])
         elif not include_post_peace_moons:
             if not set(["Sand Peace", "Lake Peace", "Wooded Peace", "Metro Peace", "Snow Peace", "Seaside Peace", "Snow/Seaside Peace", "Luncheon Peace", "Bowser's Peace"]).isdisjoint(location.get("category", [])):
