@@ -17,6 +17,8 @@ from ..Helpers import is_option_enabled, get_option_value
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
 
+from worlds.generic.Rules import set_rule
+
 ########################################################################################
 ## Order of method calls when the world generates:
 ##    1. create_regions - Creates regions and locations
@@ -108,236 +110,57 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     regional_shops = get_option_value(multiworld, player, "regional_shops") or False
     action_rando = get_option_value(multiworld, player, "action_rando") or False
 
-    def addReq(loc, req):
-        if loc["requires"] == []:
-            loc["requires"] = req
-        else:
-            loc["requires"] = "(" + loc["requires"] + ") and (" + req + ")"
+    def ground_pound_and_jump(state: CollectionState):
+        if action_rando:
+            return state.has_all(["Ground Pound", "Ground Pound Jump"], player)
+        return True
+    
+    def wall_jump_and_dive(state: CollectionState):
+        if action_rando:
+            return state.has_all(["Wall Jump", "Dive"], player)
+        return True
+
+    def lake_entrance(state: CollectionState):
+        if capturesanity and action_rando:
+            return state.has("Uproot", player, 1) or ( ( (state.has_any(["Backward Somersault","Side Somersault"], player)) or ground_pound_and_jump(state) or wall_jump_and_dive(state) ) and state.has_all(["Cap Jump","Dive"], player) and  state.has_any(["Backward Somersault","Side Somersault","Long Jump","Triple Jump"], player))
+        return True
+
+    def wooded_entrance(state: CollectionState):
+        if capturesanity and action_rando:
+            return ( ( state.has_any(["Triple Jump", "Backward Somersault", "Side Somersault"],player) or ground_pound_and_jump(state) ) and state.has_all(["Wall Jump","Cap Jump"], player) and state.has_any(["Dive","Goomba"],player) ) or state.has_all(["Zipper","Swim"],player)
+        elif action_rando and not capturesanity:
+            return ( ( state.has_any(["Triple Jump", "Backward Somersault", "Side Somersault"],player) or ground_pound_and_jump(state) ) and state.has_all(["Wall Jump","Cap Jump"],player) ) or state.has("Swim",player,1)
+        return True
+    
+    def metro_entrance(state: CollectionState):
+        if capturesanity and action_rando:
+            return state.has_any(["Wall Jump", "Tropical Wiggler"],player)
+        return True    
+
+    def snow_entrance(state: CollectionState):
+        if capturesanity and action_rando:
+            return state.has_any(["Swim", "Gushen", "Cheep Cheep"],player)
+        return True
+    
+    def ruined_entrance(state: CollectionState):
+        if capturesanity and action_rando:
+            return state.has("Lava Bubble",player,1) or state.has_all(["Dive","Cap Jump"],player)
+        return True
 
     if action_rando and capturesanity:
-        # ensuring you can do lake kingdom stuff before you go to wooded kingdom or vice versa
-        addReq(region_table["Lake Kingdom"], "|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )")
-        addReq(region_table["Wooded Kingdom"], "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
-        # requirements to leave lost kingdom
-        addReq(region_table["Metro Kingdom"], "|Wall Jump| or |Tropical Wiggler|")
-        # ensuring you can do seaside kingdom stuff before you go to snow kingdom
-        addReq(region_table["Snow Kingdom"], "|Swim| or |Gushen| or |Cheep Cheep|")
-        addReq(region_table["Ruined Kingdom"], "|Lava Bubble| or (|Dive| and |Cap Jump|)")
-
+        for exit_obj in multiworld.get_region("Lake Kingdom", player).exits:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), lake_entrance)
+        for exit_obj in multiworld.get_region("Wooded Kingdom", player).exits:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), wooded_entrance)
+        for exit_obj in multiworld.get_region("Metro Kingdom", player).exits:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), metro_entrance)
+        for exit_obj in multiworld.get_region("Snow Kingdom", player).exits:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), snow_entrance)
+        for exit_obj in multiworld.get_region("Ruined Kingdom", player).exits:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), ruined_entrance)
     elif action_rando and not capturesanity:
-        # ensuring you can enter the lake in lake kingdom before you go to wooded kingdom
-        addReq(region_table["Wooded Kingdom"], "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump|) or |Swim|")
-
-    if action_rando:
-        # ensuring you don't get stuck without Cappy in Lost Kingdom
-        addReq(region_table["Lost Kingdom"], "|Ground Pound|")
-
-    if capturesanity:
-        addReq(region_table["Snow Kingdom"], "|Sherm|")
-        addReq(region_table["Seaside Kingdom"], "|Sherm|")
-        addReq(region_table["Moon Kingdom"], "|Pokio|")
-
-    for location in world.location_table:
-        if location["name"] == "Sand: Sand Kingdom Timer Challenge 3":
-            if action_rando:
-                addReq(location, "|Jaxi| or (|Long Jump| and |Roll|)")
-            continue
-        elif location["name"] == "Wooded: Nut Planted in the Tower":
-            if action_rando and capturesanity:
-                addReq(location, "|Uproot| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault| or |Wall Jump|")
-            continue
-        elif location["name"] == "Wooded: Flooding Pipeway Ceiling Secret":
-            if action_rando:
-                addReq(location, "|Swim| and |Wall Jump| and ((|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault| or (|Dive| and |Cap Jump|))")
-            continue
-        elif location["name"] == "Lost: On a Tree in a Swamp":
-            if action_rando and capturesanity:
-                addReq(location, "|Tropical Wiggler| or (|Cap Jump| and |Dive|) or (|Wall Jump| and |Glydon|)")
-            continue
-        elif location["name"] == "Lost: Peeking Out from Under the Bridge":
-            if action_rando and capturesanity:
-                addReq(location, "|Tropical Wiggler| or |Dive|")
-            continue
-        elif location["name"] == "Seaside: Ride the Jetstream":
-            if action_rando and capturesanity:
-                addReq(location, "|Gushen| or (|Wall Jump| and |Long Jump| and |Cap Jump| and |Dive|)")
-            continue
-        elif location["name"] == "Seaside: On the Cliff Overlooking the Beach":
-            if action_rando and capturesanity:
-                addReq(location, "|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|)")
-            continue
-        elif location["name"] == "Seaside: Secret Path to Bubblaine!":
-            if action_rando:
-                addReq(location, "|Wall Jump| and |Cap Jump| and |Dive|")
-            continue
-        elif location["name"] == "Capture: Mini Rocket":
-            if action_rando and capturesanity:
-                location["requires"] = "( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ) and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)))"
-            continue
-        elif location["name"] == "Capture: Glydon":
-            if action_rando and capturesanity:
-                location["requires"] = "( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ) and ((((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|))) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )) and (|Wall Jump| or |Tropical Wiggler|))"
-            continue
-        elif location["name"] == "Capture: Lakitu":
-            if action_rando and capturesanity:
-                location["requires"] = "( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )))"
-            continue
-        elif action_rando and capturesanity:
-            if location["region"] == "Luncheon Kingdom" and "Very Early Luncheon" not in location.get("category", []):
-                addReq(location, "|Lava Bubble| or (|Dive| and |Cap Jump|)")
-                continue
-            for category in location.get("category", []):
-                if "Kingdom" in category:
-                    continue
-                elif category == "Bullet Bill Skip":
-                    addReq(location, "|Bullet Bill| or (|Dive| and |Cap Jump| and |Long Jump|)")
-                elif category == "Bullet Bill Small Skip":
-                    addReq(location, "|Bullet Bill| or (|Dive| and |Cap Jump|)")
-                elif category == "Bullet Bill Maze":
-                    addReq(location, "|Bullet Bill| or (|Dive| and (|Wall Jump| or |Triple Jump|))")
-                elif category == "Into the Lake":
-                    addReq(location, "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
-                elif category == "Lake Peace":
-                    addReq(location, "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)")
-                elif category == "Swim or Cheep Cheep":
-                    addReq(location, "|Swim| or |Cheep Cheep|")
-                elif category == "Cheep Cheep or Ground Pound":
-                    addReq(location, "|Ground Pound| or |Cheep Cheep|")
-                elif category == "Maze Skip":
-                    addReq(location, "|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )")
-                elif category == "Sherm or Long Jump":
-                    addReq(location, "|Sherm| or |Long Jump|")
-                elif category == "Post-Trumpeter":
-                    addReq(location, "|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
-                elif category == "Metro Peace":
-                    addReq(location, "|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
-                elif category == "From the Top of the Tower":
-                    addReq(location, "|Long Jump| or (|Pole| and |Motor scooter|) or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
-                elif category == "Wall Jump or Pole":
-                    addReq(location, "|Wall Jump| or |Pole|")
-                elif category == "Ty-foo or Scale a Tall Wall":
-                    addReq(location, "|Ty-foo| or ((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and |Dive|)")
-                elif category == "Regional":
-                    if location["region"] == "Metro Kingdom":
-                        addReq(location, "(|Long Jump| and |Dive| and |Cap Jump|) or (|Pole| and |Wall Jump|)")
-                elif category == "Climb to the Meat":
-                    addReq(location, "|Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))")
-                elif category == "Luncheon Peace":
-                    addReq(location, "|Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))")
-                elif category == "Nice Frame":
-                    addReq(location, "|Lakitu| or |Long Jump| or |Roll|")
-                elif category == "Parabones Skip":
-                    addReq(location, "|Parabones| or (|Long Jump| and |Cap Jump| and |Dive|)")
-        elif action_rando and not capturesanity:
-            for category in location.get("category", []):
-                if "Kingdom" in category:
-                    continue
-                elif category == "Into the Lake":
-                    addReq(location, "(|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|")
-                elif category == "From the Top of the Tower":
-                    addReq(location, "|Long Jump| or |Motor scooter| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|")
-        if action_rando:
-            for category in location.get("category", []):
-                if "Kingdom" in category:
-                    continue
-                elif category in ["Sombrero", "Swimwear", "Explorer", "Builder", "Boxers", "Snowsuit", "Resort", "Chef", "Samurai", "Lake Peace", "Night Metro", "Pokino", "Bowser's Peace", "Capture", "Shop", "Coin"]:
-                    continue
-                elif category == "Scale a Wall":
-                    addReq(location, "|Triple Jump| or (|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|")
-                elif category == "Scale a Wall (No Triple Jump)":
-                    addReq(location, "(|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|")
-                elif category in ["Long Jump", "Roll", "Ground Pound", "Dive", "Ground Pound Jump", "Backward Somersault", "Side Somersault", "Triple Jump", "Wall Jump", "Hold/Throw", "Swim", "Jaxi", "Motor scooter", "Dash (2D)", "Quick Swim"]:
-                    addReq(location, "|" + category + "|")
-                elif category == "Seaside Peace":
-                    addReq(location, "|Ground Pound|")
-                elif category == "Swim or Cap Jump":
-                    addReq(location, "|Swim| or |Cap Jump|")
-                elif category == "Regional":
-                    if location["region"] == "Sand Kingdom":
-                        addReq(location, "|Jaxi|")
-                    elif location["region"] == "Lake Kingdom":
-                        addReq(location, "|Swim|")
-                    elif location["region"] == "Wooded Kingdom":
-                        addReq(location, "|Sherm| and |Uproot| and |Boulder|")
-                    elif location["region"] == "Lost Kingdom":
-                        addReq(location, "|Wall Jump|")
-                    elif location["region"] == "Seaside Kingdom":
-                        addReq(location, "|Swim|")
-                    elif category == "Jump High":
-                        addReq(location, "(|Ground Pound Jump| and |Ground Pound|) or |Backward Somersault| or |Side Somersault| or |Triple Jump|")
-        if capturesanity:
-            if location["region"] == "Metro Kingdom" and "Night Metro" not in location.get("category", []):
-                addReq(location, "|Sherm|")
-            elif location["region"] == "Bowser's Kingdom" and "Pokino" not in location.get("category", []):
-                addReq(location, "|Pokio|")
-            for category in location.get("category", []):
-                if "Kingdom" in category:
-                    continue
-                elif category == "Sand Peace":
-                    addReq(location, "|Bullet Bill| and |Knucklotec's Fist|")
-                elif category == "Wooded Peace":
-                    addReq(location, "|Sherm| and |Uproot|")
-                elif category == "Metro Peace":
-                    addReq(location, "|Manhole|")
-                elif category == "Snow Peace":
-                    addReq(location, "|Ty-foo| and |Shiverian Racer|")
-                elif category == "Seaside Peace":
-                    addReq(location, "|Gushen|")
-                elif category == "Snow/Seaside Peace":
-                    addReq(location, "((|Ty-foo| and |Shiverian Racer| and (|Seaside Kingdom Power Moon:10| OR (|Seaside Kingdom Multi-Moon| AND |Seaside Kingdom Power Moon:7|))) or (|Gushen| and (|Snow Kingdom Power Moon:10| OR (|Snow Kingdom Multi-Moon| AND |Snow Kingdom Power Moon:7|))))")
-                elif category == "Luncheon Peace":
-                    addReq(location, "|Hammer Bro| and |Meat| and |Lava Bubble|")
-                elif category == "Regional":
-                    if location["region"] == "Cap Kingdom":
-                        addReq(location, "|Paragoomba|")
-                    elif location["region"] == "Sand Kingdom":
-                        addReq(location, "|Bullet Bill| and |Knucklotec's Fist| and |Mini Rocket| and |Goomba|")
-                    elif location["region"] == "Lake Kingdom":
-                        addReq(location, "|Zipper|")
-                    elif location["region"] == "Wooded Kingdom":
-                        addReq(location, "|Sherm| and |Uproot| and |Boulder|")
-                    elif location["region"] == "Lost Kingdom":
-                        addReq(location, "|Glydon| and |Tropical Wiggler|")
-                    elif location["region"] == "Metro Kingdom":
-                        addReq(location, "|Manhole| and |Mini Rocket|")
-                    elif location["region"] == "Snow Kingdom":
-                        addReq(location, "|Ty-foo| and |Goomba|")
-                    elif location["region"] == "Seaside Kingdom":
-                        addReq(location, "|Gushen| and |Cheep Cheep|")
-                    elif location["region"] == "Luncheon Kingdom":
-                        addReq(location, "|Hammer Bro| and |Volbonan| and |Meat| and |Lava Bubble|")
-                    elif location["region"] == "Bowser's Kingdom":
-                        addReq(location, "|Lakitu|")
-                    elif location["region"] == "Moon Kingdom":
-                        addReq(location, "|Parabones| and |Tropical Wiggler| and |Banzai Bill|")
-                elif category == "Meat":
-                    addReq(location, "|Hammer Bro| and |Meat|")
-                elif category == "Uproot or Fire Bro":
-                    addReq(location, "|Uproot| or |Fire Bro|")
-                elif category == "Lighthouse":
-                    addReq(location, "(|Gushen| or |Cheep Cheep|)")
-                elif category in ["Paragoomba", "Bullet Bill", "Cactus", "Goomba", "Knucklotec's Fist", "Mini Rocket", "Glydon", "Lakitu", "Zipper", "Cheep Cheep", "Puzzle Part", "Uproot", "Fire Bro", "Sherm", "Coin Coffer", "Tree", "Boulder", "Picture Match Part", "Tropical Wiggler", "Manhole", "Taxi", "RC Car", "Ty-foo", "Shiverian Racer", "Gushen", "Lava Bubble", "Volbonan", "Hammer Bro", "Meat", "Pokio", "Jizo", "Bowser Statue", "Parabones", "Banzai Bill", "Bowser"]:
-                    addReq(location, "|" + category + "|")
-        if regional_shops:
-            if "Sombrero" in location.get("category", []):
-                addReq(location, "|Sombrero| and |Poncho|")
-            if "Explorer" in location.get("category", []):
-                addReq(location, "|Explorer Hat| and |Explorer Outfit|")
-            if "Builder" in location.get("category", []):
-                addReq(location, "|Builder Helmet| and |Builder Outfit|")
-            if "Snowsuit" in location.get("category", []):
-                addReq(location, "|Snow Hood| and |Snow Suit|")
-            if "Resort" in location.get("category", []):
-                addReq(location, "|Resort Hat| and |Resort Outfit|")
-            if "Chef" in location.get("category", []):
-                addReq(location, "|Chef Hat| and |Chef Suit|")
-            if "Samurai" in location.get("category", []):
-                addReq(location, "|Samurai Helmet| and |Samurai Armor|")
-        if coin_shops:
-            if "Boxers" in location.get("category", []):
-                addReq(location, "|Boxer Shorts|")
-        if "Swimwear" in location.get("category", []) and regional_shops and coin_shops:
-            addReq(location, "((|Swim Goggles| and |Swimwear|) or |Boxer Shorts|)")
+        for exit_obj in multiworld.get_region("Wooded Kingdom", player).exits:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), wooded_entrance)
 
     def Example_Rule(state: CollectionState) -> bool:
         # Calculated rules take a CollectionState object and return a boolean

@@ -589,7 +589,7 @@
 			"Action"
 		],
 		"count": 1,
-		"progression": true
+		"useful": true
 	},
 	{
 		"name": "Spin Throw",
@@ -605,7 +605,7 @@
 			"Action"
 		],
 		"count": 1,
-		"useful": true
+		"progression": true
 	},
 	{
 		"name": "Homing Cap Throw",
