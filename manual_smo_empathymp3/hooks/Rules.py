@@ -33,79 +33,125 @@ def YamlDisabled(world: World, multiworld: MultiWorld, state: CollectionState, p
 
 def BulletBillSkip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do certain jumps without a bullet bill (or with a bullet bill)"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Bullet Bill| or (|Dive| and |Cap Jump| and |Long Jump|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Bullet Bill| or (|Dive| and |Cap Jump| and |Long Jump|)"
+    return True
 
 def BulletBillSmallSkip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do certain small jumps without a bullet bill (or with a bullet bill)"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Bullet Bill| or (|Dive| and |Cap Jump|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Bullet Bill| or (|Dive| and |Cap Jump|)"
+    return True
 
-def BulletBillSmallSkip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+def BulletBillMaze(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do the bullet bill maze without a bullet bill (or with a bullet bill)"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Bullet Bill| or (|Dive| and (|Wall Jump| or |Triple Jump|))"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Bullet Bill| or (|Dive| and (|Wall Jump| or |Triple Jump|))"
+    return True
 
 def SandPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do sand peace"""
-    return "|Bullet Bill| and |Knucklotec's Fist|"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Bullet Bill| and |Knucklotec's Fist|"
+    return True
 
 def IntoTheLake(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player enter the lake kingdom lake"""
-    return "{YamlDisabled(action_rando)} or ({YamlDisabled(capturesanity)} and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|))) or (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)"
+    elif YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|"
+    return True
 
 def LakePeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do lake peace"""
-    return "{IntoTheLake()} and {SwimOrCheepCheep()}"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") or YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "{IntoTheLake()} and {SwimOrCheepCheep()}"
+    return True
 
 def SwimOrCheepCheep(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """swim or cheep cheep"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Swim| or |Cheep Cheep|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Swim| or |Cheep Cheep|"
+    return True
 
 def SwimOrCapJump(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """swim or cap jump"""
-    return "{YamlDisabled(action_rando)} or |Cap Jump|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando"):
+        return "|Cap Jump| or |Swim|"
+    return True
 
 def CheepCheepOrGroundPound(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """cheep cheep or ground pound"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Ground Pound| or |Cheep Cheep|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Ground Pound| or |Cheep Cheep|"
+    return True
 
 def MazeSkip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get past the maze in wooded kingdom"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )"
+    return True
 
 def ShermOrLongJump(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do sherm or long jump"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Sherm| or |Long Jump|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Sherm| or |Long Jump|"
+    return True
 
 def PostNightMetro(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get post-night metro moons"""
-    return "{YamlDisabled(capturesanity)} or |Sherm|"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Sherm|"
+    return True
 
 def PostTrumpeter(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get the trumpeter in metro kingdom"""
-    return "{PostNightMetro()} and ({YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "{PostNightMetro()} and (|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|)"
+    return True
 
 def MetroPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get metro peace"""
-    return "({YamlDisabled(capturesanity)} or |Sherm|) and {PostTrumpeter()}"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") or YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "{PostTrumpeter()}"
+    return True
 
 def FromTheTopOfTheTower(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player jump frm the top of metro tower"""
-    return "{YamlDisabled(action_rando)} or (|Long Jump| or (|Pole| and |Motor scooter|) or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|) or ({YamlDisabled(capturesanity)} and (|Long Jump| or |Motor scooter| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|))"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "(|Long Jump| or (|Pole| and |Motor scooter|) or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|)"
+    elif YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "(|Long Jump| or |Motor scooter| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|)"
+    return True
 
 def WallJumpOrPole(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do wall jump or pole"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Wall Jump| or |Pole|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Wall Jump| or |Pole|"
+    return True
 
 def TyfooOrScaleATallWall(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do tyfoo or scale a tall wall"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Ty-foo| or ((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and |Dive|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Ty-foo| or ((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and |Dive|)"
+    return True
 
 def SnowPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get snow peace"""
-    return "{YamlDisabled(capturesanity)} or (|Ty-foo| and |Shiverian Racer|)"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Ty-foo| and |Shiverian Racer|"
+    return True
 
 def SeasidePeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do seaside Peace"""
-    return "({YamlDisabled(action_rando)} or |Ground Pound|) and ({YamlDisabled(capturesanity)} or |Gushen|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Ground Pound| and |Gushen|"
+    elif YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "|Ground Pound|"
+    elif YamlDisabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Gushen|"
+    return True
 
 def SnowSeasidePeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do snow or seaside Peace"""
@@ -113,43 +159,63 @@ def SnowSeasidePeace(world: World, multiworld: MultiWorld, state: CollectionStat
 
 def PostEarlyLuncheon(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get more moons in luncheon than the very first ones"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Lava Bubble| or (|Dive| and |Cap Jump|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Lava Bubble| or (|Dive| and |Cap Jump|)"
+    return True
 
 def ClimbToTheMeat(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player climb to the meat"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Volbonan| or (|Dive| and |Wall Jump| and (|Triple Jump| or |Ground Pound Jump| or |Backward Somersault| or |Side Somersault|))"
+    return True
 
 def LuncheonPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get snow peace"""
-    return "{ClimbToTheMeat()} and ({YamlDisabled(capturesanity)} or (|Hammer Bro| and |Meat| and |Lava Bubble|))"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "{ClimbToTheMeat()} and (|Hammer Bro| and |Meat| and |Lava Bubble|)"
+    return "{ClimbToTheMeat()}"
 
 def JumpHigh(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player jump high"""
-    return "{YamlDisabled(action_rando)} or ((|Ground Pound Jump| and |Ground Pound|) or |Backward Somersault| or |Side Somersault| or |Triple Jump|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando"):
+        return "(|Ground Pound Jump| and |Ground Pound|) or |Backward Somersault| or |Side Somersault| or |Triple Jump|"
+    return True
 
 def ScaleAWall(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player scale a wall"""
-    return "{YamlDisabled(action_rando)} or (|Triple Jump| or (|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando"):
+        return "|Triple Jump| or (|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|"
+    return True
 
 def ScaleAWallNoTripleJump(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player scale a wall without triple jump"""
-    return "{YamlDisabled(action_rando)} or ((|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando"):
+        return "(|Wall Jump| and |Dive|) or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|"
+    return True
 
 def NiceFrame(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player knock down the nice frame (and get the other nearby moon)"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Lakitu| or |Long Jump| or |Roll|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Lakitu| or |Long Jump| or |Roll|"
+    return True
 
 def ParabonesSkip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player skip the parabones (or use it)"""
-    return "{YamlDisabled(action_rando)} or {YamlDisabled(capturesanity)} or |Parabones| or (|Long Jump| and |Cap Jump| and |Dive|)"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Parabones| or (|Long Jump| and |Cap Jump| and |Dive|)"
+    return True
 
 def BowserPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get bowser peace"""
-    return "{YamlDisabled(capturesanity)} or (|Pokio|)"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Pokio|"
+    return True
 
 def RegionalCap(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in cap"""
-    return "{YamlDisabled(capturesanity)} or |Paragoomba|"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Paragoomba|"
+    return True
 
 def RegionalCascade(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in cascade"""
@@ -157,87 +223,148 @@ def RegionalCascade(world: World, multiworld: MultiWorld, state: CollectionState
 
 def RegionalSand(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in sand"""
-    return "({YamlDisabled(action_rando)} or |Jaxi|) and ({YamlDisabled(capturesanity)} or (|Bullet Bill| and |Knucklotec's Fist| and |Mini Rocket| and |Goomba|))"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Jaxi| and |Bullet Bill| and |Knucklotec's Fist| and |Mini Rocket| and |Goomba|"
+    elif YamlDisabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Bullet Bill| and |Knucklotec's Fist| and |Mini Rocket| and |Goomba|"
+    elif YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "|Jaxi|"
+    return True
 
 def RegionalLake(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in lake"""
-    return "({YamlDisabled(action_rando)} or |Swim|) and {IntoTheLake()} and ({YamlDisabled(capturesanity)} or |Zipper|) and {CheepCheepOrSwim()}"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Swim| and {IntoTheLake()} and |Zipper| and {CheepCheepOrSwim()}"
+    elif YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "|Swim| and {IntoTheLake()}"
+    elif YamlDisabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Zipper|"
+    return True
 
 def RegionalWooded(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in wooded"""
-    return "({YamlDisabled(action_rando)} or |Hold/Throw|) and ({YamlDisabled(capturesanity)} and |Sherm| and |Uproot| and |Boulder|) and {MazeSkip()}"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Hold/Throw| and |Sherm| and |Uproot| and |Boulder|"
+    elif YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "|Hold/Throw|"
+    elif YamlDisabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Sherm| and |Uproot| and |Boulder|"
+    return True
 
 def RegionalLost(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in lost"""
-    return "({YamlDisabled(action_rando)} or |Wall Jump|) and ({YamlDisabled(capturesanity)} or (|Glydon| and |Tropical Wiggler|))"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Wall Jump| and |Glydon| and |Tropical Wiggler|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "|Glydon| and |Tropical Wiggler|"
+    if YamlDisabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Wall Jump|"
+    return True
 
 def RegionalMetro(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in metro"""
-    return "({YamlDisabled(action_rando)} or (|Long Jump| and |Dive| and |Cap Jump|) or (({YamlDisabled(capturesanity)} or |Pole|) and |Wall Jump|)) and {PostTrumpeter()} and ({YamlDisabled(capturesanity)} or (|Manhole| and |Mini Rocket|))"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "((|Long Jump| and |Dive| and |Cap Jump|) or (|Pole| and |Wall Jump|)) and {PostTrumpeter()} and |Manhole| and |Mini Rocket|"
+    if YamlEnabled(world, multiworld, state, player, "action_rando") and YamlDisabled(world, multiworld, state, player, "capturesanity"):
+        return "((|Long Jump| and |Dive| and |Cap Jump|) or |Wall Jump|) and {PostTrumpeter()}"
+    if YamlDisabled(world, multiworld, state, player, "action_rando") and YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Manhole| and |Mini Rocket|"
+    return True
 
 def RegionalSnow(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in snow"""
-    return "{YamlDisabled(capturesanity)} or (|Ty-foo| and |Goomba|)"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Ty-foo| and |Goomba|"
+    return True
 
 def RegionalLuncheon(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in luncheon"""
-    return "{LuncheonPeace()} and {YamlDisabled(capturesanity)} or (|Hammer Bro| and |Volbonan| and |Meat| and |Lava Bubble|)"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "{LuncheonPeace()} and (|Hammer Bro| and |Volbonan| and |Meat| and |Lava Bubble|)"
+    return "{LuncheonPeace()}"
 
 def RegionalBowser(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in bowser"""
-    return "{YamlDisabled(capturesanity)} or (|Pokio| and {NiceFrame()})"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Pokio| and {NiceFrame()}"
+    return "{NiceFrame()}"
 
 def RegionalMoon(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in bowser"""
-    return "{YamlDisabled(capturesanity)} or (|Parabones| and |Tropical Wiggler| and |Banzai Bill| and |Sherm|)"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Parabones| and |Tropical Wiggler| and |Banzai Bill| and |Sherm|"
+    return True
 
 def Meat(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get meat moon"""
-    return "({YamlDisabled(capturesanity)} or (|Hammer Bro| and |Meat|)) and {ClimbToTheMeat()}"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Hammer Bro| and |Meat| and {ClimbToTheMeat()}"
+    return "{ClimbToTheMeat()}"
 
 def UprootOrFireBro(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """uproot or fire bro"""
-    return "{YamlDisabled(capturesanity)} or |Uproot| or |Fire Bro|"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "|Uproot| or |Fire Bro|"
+    return True
 
 def Lighthouse(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get to the lighthouse"""
-    return "{YamlDisabled(capturesanity)} or (|Gushen| or |Cheep Cheep|)"
+    if YamlEnabled(world, multiworld, state, player, "capturesanity"):
+        return "(|Gushen| or |Cheep Cheep|)"
+    return True
 
-def Sombero(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+def Sombrero(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Sombrero| and |Poncho|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Sombrero| and |Poncho|"
+    return True
 
 def Explorer(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Explorer Hat| and |Explorer Outfit|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Explorer Hat| and |Explorer Outfit|"
+    return True
 
 def Builder(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Builder Helmet| and |Builder Outfit|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Builder Helmet| and |Builder Outfit|"
+    return True
 
 def Snowsuit(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Snow Hood| and |Snow Suit|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Snow Hood| and |Snow Suit|"
+    return True
 
 def Resort(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Resort Hat| and |Resort Outfit|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Resort Hat| and |Resort Outfit|"
+    return True
 
 def Chef(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Chef Hat| and |Chef Suit|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Chef Hat| and |Chef Suit|"
+    return True
 
 def Samurai(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or (|Samurai Helmet| and |Samurai Armor|)"
+    if YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "|Samurai Helmet| and |Samurai Armor|"
+    return True
 
 def Boxers(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(coin_shops)} or |Boxer Shorts|"
+    if YamlEnabled(world, multiworld, state, player, "coin_shops"):
+        return "|Boxer Shorts|"
+    return True
 
 def Swimwear(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    return "{YamlDisabled(regionalshops)} or {YamlDisabled(coin_shops)} or ((|Swim Goggles| and |Swimwear|) or |Boxer Shorts|)"
+    if YamlEnabled(world, multiworld, state, player, "coin_shops") and YamlEnabled(world, multiworld, state, player, "regionalshops"):
+        return "(|Swim Goggles| and |Swimwear|) or |Boxer Shorts|"
 
 # You can also return a string from your function, and it will be evaluated as a requires string.
 def requiresMelee(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
