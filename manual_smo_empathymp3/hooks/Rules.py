@@ -1,35 +1,10 @@
 from typing import Optional
 from worlds.AutoWorld import World
-from ..Helpers import clamp, get_items_with_value, is_option_enabled
+from ..Helpers import clamp, get_items_with_value
 from BaseClasses import MultiWorld, CollectionState
 
 import re
 
-# Sometimes you have a requirement that is just too messy or repetitive to write out with boolean logic.
-# Define a function here, and you can use it in a requires string with {function_name()}.
-def overfishedAnywhere(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
-    """Has the player collected all fish from any fishing log?"""
-    for cat, items in world.item_name_groups:
-        if cat.endswith("Fishing Log") and state.has_all(items, player):
-            return True
-    return False
-
-# You can also pass an argument to your function, like {function_name(15)}
-# Note that all arguments are strings, so you'll need to convert them to ints if you want to do math.
-def anyClassLevel(world: World, multiworld: MultiWorld, state: CollectionState, player: int, level: str):
-    """Has the player reached the given level in any class?"""
-    for item in ["Figher Level", "Black Belt Level", "Thief Level", "Red Mage Level", "White Mage Level", "Black Mage Level"]:
-        if state.count(item, player) >= int(level):
-            return True
-    return False
-
-def YamlEnabled(world: World, multiworld: MultiWorld, state: CollectionState, player: int, param: str) -> bool:
-    """Is a yaml option enabled?"""
-    return is_option_enabled(multiworld, player, param)
-
-def YamlDisabled(world: World, multiworld: MultiWorld, state: CollectionState, player: int, param: str) -> bool:
-    """Is a yaml option disabled?"""
-    return not is_option_enabled(multiworld, player, param)
 
 def BulletBillSkip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player do certain jumps without a bullet bill (or with a bullet bill)"""
@@ -383,11 +358,6 @@ def Swimwear(world: World, multiworld: MultiWorld, state: CollectionState, playe
         return "(|Swim Goggles| and |Swimwear|) or |Boxer Shorts|"
     return True
 
-# You can also return a string from your function, and it will be evaluated as a requires string.
-def requiresMelee(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
-    """Returns a requires string that checks if the player has unlocked the tank."""
-    return "|Figher Level:15| or |Black Belt Level:15| or |Thief Level:15|"
-
 def ItemValue(world: World, multiworld: MultiWorld, state: CollectionState, player: int, args: str):
     """When passed a string with this format: 'valueName:int',
     this function will check if the player has collect at least 'int' valueName worth of items\n
@@ -488,3 +458,10 @@ def OptAll(world: World, multiworld: MultiWorld, state: CollectionState, player:
     for function in functions:
         requires_list = requires_list.replace("{" + function + "(temp)}", "{" + func_name + "(" + functions[func_name] + ")}")
     return requires_list
+
+# Rule to expose the can_reach_location core function
+def canReachLocation(world: World, multiworld: MultiWorld, state: CollectionState, player: int, location: str):
+    """Can the player reach the given location?"""
+    if state.can_reach_location(location, player):
+        return True
+    return False

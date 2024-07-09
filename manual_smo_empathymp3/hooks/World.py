@@ -39,13 +39,14 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
+    # Use this hook to remove locations from the world
     include_post_peace_moons = get_option_value(multiworld, player, "include_post_peace_moons") or True
     capturesanity = get_option_value(multiworld, player, "capturesanity") or False
     coin_shops = get_option_value(multiworld, player, "coin_shops") or False
     regional_shops = get_option_value(multiworld, player, "regional_shops") or False
     action_rando = get_option_value(multiworld, player, "action_rando") or False
 
-    locations_to_remove = []
+    locationNamesToRemove = []
 
     for location in world.location_table:
         if location["name"] == "Moon: Defeat Bowser": continue
@@ -60,12 +61,16 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         elif not include_post_peace_moons:
             if not set(["Sand Peace", "Lake Peace", "Wooded Peace", "Metro Peace", "Snow Peace", "Seaside Peace", "Snow/Seaside Peace", "Luncheon Peace", "Bowser's Peace"]).isdisjoint(location.get("category", [])):
                 locations_to_remove.append(location["name"])
-    
+
+    # Add your code here to calculate which locations to remove
+
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
-                if location.name in locations_to_remove:
+                if location.name in locationNamesToRemove:
                     region.locations.remove(location)
+    if hasattr(multiworld, "clear_location_cache"):
+        multiworld.clear_location_cache()
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:

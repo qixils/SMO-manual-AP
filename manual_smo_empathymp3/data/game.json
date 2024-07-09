@@ -1,6 +1,7 @@
 {
-    "game": "SMO",
-    "creator": "empathymp3",
-    "filler_item_name": "The Will to Do Trick Jumps",
-    "death_link": true
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "game": "SMO",
+  "creator": "empathymp3",
+  "filler_item_name": "The Will to Do Trick Jumps",
+  "death_link": true
 }
