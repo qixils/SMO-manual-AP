@@ -2190,7 +2190,7 @@
 			"Snow Peace"
 		],
 		"region": "Snow Kingdom",
-		"requires": "{SnowPeace()} and {Boxers()})"
+		"requires": "{SnowPeace()} and {Boxers()}"
 	},
 	{
 		"name": "Snow: Shopping in Shiveria",
@@ -3116,7 +3116,7 @@
 			"Luncheon Kingdom"
 		],
 		"region": "Luncheon Kingdom",
-		"requires": "{Meat()} and {CheepCheepOrSwim()}"
+		"requires": "{Meat()} and {SwimOrCheepCheep()}"
 	},
 	{
 		"name": "Mushroom: Secret Path to Peach's Castle!",

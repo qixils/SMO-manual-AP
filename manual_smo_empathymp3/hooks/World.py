@@ -106,8 +106,6 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 # Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     capturesanity = get_option_value(multiworld, player, "capturesanity") or False
-    coin_shops = get_option_value(multiworld, player, "coin_shops") or False
-    regional_shops = get_option_value(multiworld, player, "regional_shops") or False
     action_rando = get_option_value(multiworld, player, "action_rando") or False
 
     def ground_pound_and_jump(state: CollectionState):
