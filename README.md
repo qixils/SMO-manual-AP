@@ -4,7 +4,7 @@ Heavily borrows code from [MarioManTAW's apworld in the Manual for Archipelago S
 
 Welcome to the Manual Randomizer for Super Mario Odyssey!
 The way it works is: you send out checks by collecting moons, and cannot leave a Kingdom until you have the required amount of moons/multimoons as items.
-Every moon other than Post-Game moons are randomized, though you can turn off Post-World Peace moons.
+Every moon other than Post-Game moons are randomized, though you can turn off Post-World Peace moons. (but like, don't do that. it breaks everything.)
 
 ## Where is the settings page?
 
@@ -43,7 +43,7 @@ Make sure a copy of the Manual world is in the lib/world directory of your clien
 1. Launch the launcher.
 2. Click on Manual client on the right.
 3. At the top enter your server's ip with the port provided (by default archipelago.gg:38281).
-4. In Manual Game ID put "Manual_SMO_empathymp3" then press the Connect button on the top right.
+4. In Manual Game ID put "Manual_SMO_mp3" then press the Connect button on the top right.
 5. In the command field at the bottom enter the name of your slot you chose in your Player.yaml then press enter
 
 ## Manual Client
