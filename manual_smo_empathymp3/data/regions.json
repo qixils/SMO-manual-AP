@@ -61,7 +61,8 @@
     "Night Metro": {
         "requires": "|Lost Kingdom Power Moon:10|",
         "connects_to": [
-            "Cloud Kingdom"
+            "Cloud Kingdom",
+            "Metro Kingdom"
         ]
     },
     "Metro Kingdom": {
