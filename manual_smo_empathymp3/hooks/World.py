@@ -40,27 +40,26 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
-    include_post_peace_moons = get_option_value(multiworld, player, "include_post_peace_moons") or True
-    capturesanity = get_option_value(multiworld, player, "capturesanity") or False
-    coin_shops = get_option_value(multiworld, player, "coin_shops") or False
-    regional_shops = get_option_value(multiworld, player, "regional_shops") or False
-    action_rando = get_option_value(multiworld, player, "action_rando") or False
+    include_post_peace_moons = is_option_enabled(multiworld, player, "include_post_peace_moons")
+    capturesanity = is_option_enabled(multiworld, player, "capturesanity")
+    coin_shops = is_option_enabled(multiworld, player, "coin_shops")
+    regional_shops = is_option_enabled(multiworld, player, "regional_shops")
+    action_rando = is_option_enabled(multiworld, player, "action_rando")
 
     locationNamesToRemove = []
 
     for location in world.location_table:
-        if location["name"] == "Moon: Defeat Bowser": continue
         if "Capture" in location.get("category", []) and not capturesanity:
-            locations_to_remove.append(location["name"])
-        elif "Coin" in location.get("category", []) and coin_shops:
-            locations_to_remove.append(location["name"])
-        elif "Regional" in location.get("category", []) and regional_shops:
-            locations_to_remove.append(location["name"])
+            locationNamesToRemove.append(location["name"])
+        elif "Coin" in location.get("category", []) and not coin_shops:
+            locationNamesToRemove.append(location["name"])
+        elif "Regional" in location.get("category", []) and not regional_shops:
+            locationNamesToRemove.append(location["name"])
         elif "Action" in location.get("category", []) and not action_rando:
-            locations_to_remove.append(location["name"])
+            locationNamesToRemove.append(location["name"])
         elif not include_post_peace_moons:
             if not set(["Sand Peace", "Lake Peace", "Wooded Peace", "Metro Peace", "Snow Peace", "Seaside Peace", "Snow/Seaside Peace", "Luncheon Peace", "Bowser's Peace"]).isdisjoint(location.get("category", [])):
-                locations_to_remove.append(location["name"])
+                locationNamesToRemove.append(location["name"])
 
     # Add your code here to calculate which locations to remove
 

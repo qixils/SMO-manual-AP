@@ -45,7 +45,7 @@
             "Cap Kingdom"
         ],
         "region": "Cap Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Paragoomba|"
+        "requires": "{OptOne(Paragoomba)}"
     },
     {
         "name": "Cap: Slipping Through the Poison Tide",
@@ -53,7 +53,7 @@
             "Cap Kingdom"
         ],
         "region": "Cap Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Bullet Bill|"
+        "requires": "{OptOne(Paragoomba)}"
     },
     {
         "name": "Cap: Push-Block Peril",
@@ -228,8 +228,8 @@
         "category": [
             "Cascade Kingdom"
         ],
-        "region": "Metro Kingdom",
-        "requires": "( |Metro Kingdom Power Moon:20| OR ( |Metro Kingdom Multi-Moon| AND |Metro Kingdom Power Moon:17| ) OR ( |Metro Kingdom Multi-Moon:2| AND |Metro Kingdom Power Moon:14| ) ) and {SnowSeasidePeace()}"
+        "region": "Post-Metro",
+        "requires": "{SnowSeasidePeace()}"
     },
     {
         "name": "Cascade: A Tourist in the Cascade Kingdom",
@@ -357,7 +357,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Bullet Bill|"
+        "requires": "{OptOne(Bullet Bill)}"
     },
     {
         "name": "Sand: On the Statue's Tail",
@@ -382,7 +382,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Ground Pound|"
+        "requires": "{OptOne(Ground Pound)}"
     },
     {
         "name": "Sand: Top of a Dune",
@@ -390,7 +390,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Ground Pound|"
+        "requires": "{OptOne(Ground Pound)}"
     },
     {
         "name": "Sand: Lost in the Luggage",
@@ -398,7 +398,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Ground Pound|"
+        "requires": "{OptOne(Ground Pound)}"
     },
     {
         "name": "Sand: Bullet Bill Breakthrough",
@@ -406,7 +406,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Bullet Bill|"
+        "requires": "{OptOne(Bullet Bill)}"
     },
     {
         "name": "Sand: Inside a Block is a Hard Place",
@@ -440,7 +440,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(action_rando)} or |Ground Pound|)"
+        "requires": "{SandPeace()} and {OptOne(Ground Pound)}"
     },
     {
         "name": "Sand: The Treasure of Jaxi Ruins",
@@ -456,7 +456,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Sand: Desert Gardening: Ruins Seed",
@@ -464,7 +464,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Sand: Desert Gardening: Seed on the Cliff",
@@ -472,7 +472,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Sand: Sand Kingdom Timer Challenge 1",
@@ -481,7 +481,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(action_rando)} or (|Roll| and |Wall Jump|))"
+        "requires": "{SandPeace()} and {OptAll(|Roll| and |Wall Jump|)}"
     },
     {
         "name": "Sand: Sand Kingdom Timer Challenge 2",
@@ -499,7 +499,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(action_rando)} OR (|Jaxi| or (|Long Jump| and |Roll|)))"
+        "requires": "{SandPeace()} and {OptAll(|Jaxi| or (|Long Jump| and |Roll|))}"
     },
     {
         "name": "Sand: Found in the Sand! Good Dog!",
@@ -508,7 +508,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(action_rando)} or |Ground Pound|)"
+        "requires": "{SandPeace()} and {OptOne(Ground Pound)}"
     },
     {
         "name": "Sand: Taking Notes: Jump on the Palm",
@@ -533,7 +533,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(capturesanity)} or |Lakitu|)"
+        "requires": "{SandPeace()} and {OptOne(Lakitu)}"
     },
     {
         "name": "Sand: Love in the Heart of the Desert",
@@ -542,7 +542,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(capturesanity)} or |Goomba|)"
+        "requires": "{SandPeace()} and {OptOne(Goomba)}"
     },
     {
         "name": "Sand: Among the Five Cactuses",
@@ -550,7 +550,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Jaxi|"
+        "requires": "{OptOne(Jaxi)}"
     },
     {
         "name": "Sand: You're Quite a Catch, Captain Toad!",
@@ -559,7 +559,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(capturesanity)} or |Lakitu|)"
+        "requires": "{SandPeace()} and {OptOne(Lakitu)}"
     },
     {
         "name": "Sand: Jaxi Reunion!",
@@ -568,7 +568,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(action_rando)} or |Jaxi|)"
+        "requires": "{SandPeace()} and {OptOne(Jaxi)}"
     },
     {
         "name": "Sand: Welcome Back, Jaxi!",
@@ -577,7 +577,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(action_rando)} or |Jaxi|)"
+        "requires": "{SandPeace()} and {OptOne(Jaxi)}"
     },
     {
         "name": "Sand: Wandering Cactus",
@@ -585,7 +585,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Cactus|"
+        "requires": "{OptOne(Cactus)}"
     },
     {
         "name": "Sand: Sand Quiz: Wonderful!",
@@ -641,7 +641,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Bullet Bill|"
+        "requires": "{OptOne(Bullet Bill)}"
     },
     {
         "name": "Sand: Goomba Tower Assembly",
@@ -649,7 +649,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Goomba|"
+        "requires": "{OptOne(Goomba)}"
     },
     {
         "name": "Sand: Under the Mummy's Curse",
@@ -666,7 +666,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Sand: Sphynx's Treasure Vault",
@@ -682,7 +682,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Ground Pound|"
+        "requires": "{OptOne(Ground Pound)}"
     },
     {
         "name": "Sand: Dancing with New Friends",
@@ -730,7 +730,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Jaxi|"
+        "requires": "{OptOne(Jaxi)}"
     },
     {
         "name": "Sand: Jaxi Stunt Driving",
@@ -738,7 +738,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Jaxi|"
+        "requires": "{OptOne(Jaxi)}"
     },
     {
         "name": "Sand: Strange Neighborhood",
@@ -747,7 +747,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(capturesanity)} or |Mini Rocket|)"
+        "requires": "{SandPeace()} and {OptOne(Mini Rocket)}"
     },
     {
         "name": "Sand: Above a Strange Neighborhood",
@@ -756,7 +756,7 @@
             "Sand Peace"
         ],
         "region": "Sand Kingdom",
-        "requires": "{SandPeace()} and ({YamlDisabled(capturesanity)} or |Mini Rocket|)"
+        "requires": "{SandPeace()} and {OptOne(Mini Rocket)}"
     },
     {
         "name": "Sand: Secret Path to Tostarena!",
@@ -796,7 +796,7 @@
             "Lake Kingdom"
         ],
         "region": "Lake Kingdom",
-        "requires": "{IntoTheLake()} and ({YamlDisabled(capturesanity)} or |Zipper|)"
+        "requires": "{IntoTheLake()} and {OptOne(Zipper)}"
     },
     {
         "name": "Lake: What's in the Box?",
@@ -814,7 +814,7 @@
             "Ground Pound"
         ],
         "region": "Lake Kingdom",
-        "requires": "{IntoTheLake()} and ({YamlDisabled(action_rando)} or |Ground Pound|)"
+        "requires": "{IntoTheLake()} and {OptOne(Ground Pound)}"
     },
     {
         "name": "Lake: From the Broken Pillar",
@@ -848,7 +848,7 @@
             "Lake Peace"
         ],
         "region": "Lake Kingdom",
-        "requires": "{LakePeace()} and ({YamlDisabled(action_rando)} or |Ground Pound|)"
+        "requires": "{LakePeace()} and {OptOne(Ground Pound)}"
     },
     {
         "name": "Lake: Lake Kingdom Timer Challenge 2",
@@ -873,7 +873,7 @@
             "Lake Kingdom"
         ],
         "region": "Lake Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Lake: Taking Notes: In the Cliffside",
@@ -881,7 +881,7 @@
             "Lake Kingdom"
         ],
         "region": "Lake Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Dash (2D)|"
+        "requires": "{OptOne(|Dash (2D)|)}"
     },
     {
         "name": "Lake: Lake Fishing",
@@ -890,7 +890,7 @@
             "Lake Peace"
         ],
         "region": "Lake Kingdom",
-        "requires": "{LakePeace()} and ({YamlDisabled(capturesanity)} or |Lakitu|)"
+        "requires": "{LakePeace()} and {OptOne(Lakitu)}"
     },
     {
         "name": "Lake: I Met a Lake Cheep Cheep!",
@@ -899,7 +899,7 @@
             "Lake Peace"
         ],
         "region": "Lake Kingdom",
-        "requires": "{LakePeace()} and ({YamlDisabled(capturesanity)} or |Cheep Cheep|)"
+        "requires": "{LakePeace()} and {OptOne(Cheep Cheep)}"
     },
     {
         "name": "Lake: Our Secret Little Room",
@@ -932,7 +932,7 @@
             "Lake Peace"
         ],
         "region": "Lake Kingdom",
-        "requires": "{LakePeace()} and ({YamlDisabled(capturesanity)} or |Puzzle Part|)"
+        "requires": "{LakePeace()} and {OptOne(Puzzle Part)}"
     },
     {
         "name": "Lake: I Feel Underdressed",
@@ -948,7 +948,7 @@
             "Lake Kingdom"
         ],
         "region": "Lake Kingdom",
-        "requires": "{IntoTheLake()} and ({YamlDisabled(capturesanity)} or |Zipper|)"
+        "requires": "{IntoTheLake()} and {OptOne(Zipper)}"
     },
     {
         "name": "Lake: Super-Secret Zipper",
@@ -956,7 +956,7 @@
             "Lake Kingdom"
         ],
         "region": "Lake Kingdom",
-        "requires": "{IntoTheLake()} and ({YamlDisabled(capturesanity)} or |Zipper|)"
+        "requires": "{IntoTheLake()} and {OptOne(Zipper)}"
     },
     {
         "name": "Lake: Jump, Grab, Cling, and Climb",
@@ -990,7 +990,7 @@
             "Lake Peace"
         ],
         "region": "Lake Kingdom",
-        "requires": "{LakePeace()} and ({YamlDisabled(action_rando)} or |Ground Pound|)"
+        "requires": "{LakePeace()} and {OptOne(Ground Pound)}"
     },
     {
         "name": "Wooded: Road to Sky Garden",
@@ -1014,7 +1014,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Sherm|)"
+        "requires": "{MazeSkip()} and {OptOne(Sherm)}"
     },
     {
         "name": "Wooded: Defend the Secret Flower Field",
@@ -1022,7 +1022,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or (|Sherm| or |Uproot|))"
+        "requires": "{MazeSkip()} and {OptAll(|Sherm| or |Uproot|)}"
     },
     {
         "name": "Wooded: Behind the Rock Wall",
@@ -1030,7 +1030,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Sherm|)"
+        "requires": "{MazeSkip()} and {OptOne(Sherm)}"
     },
     {
         "name": "Wooded: Back Way Up the Mountain",
@@ -1070,7 +1070,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Wooded: Tucked Away Inside the Tunnel",
@@ -1086,7 +1086,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Sherm|)"
+        "requires": "{MazeSkip()} and {OptOne(Sherm)}"
     },
     {
         "name": "Wooded: The Nut 'Round the Corner",
@@ -1102,7 +1102,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Wooded: The Nut in the Red Maze",
@@ -1110,7 +1110,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Wooded: The Nut at the Dead End",
@@ -1118,7 +1118,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Wooded: Cracked Nut on a Crumbling Tower",
@@ -1151,7 +1151,7 @@
             "Wooded Peace"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{WoodedPeace()} and ({YamlDisabled(capturesanity)} or |Glydon|)"
+        "requires": "{WoodedPeace()} and {OptOne(|Glydon|)}"
     },
     {
         "name": "Wooded: Love in the Forest Ruins",
@@ -1159,7 +1159,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Goomba|)"
+        "requires": "{MazeSkip()} and {OptOne(Goomba)}"
     },
     {
         "name": "Wooded: Inside a Rock in the Forest",
@@ -1184,7 +1184,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} OR {YamlDisabled(capturesanity)} OR (|Uproot| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault| or |Wall Jump|)"
+        "requires": "{OptOne(Uproot)} or {OptAll((|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault| or |Wall Jump|)}"
     },
     {
         "name": "Wooded: Stretching Your Legs",
@@ -1192,7 +1192,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Wooded: Spinning-Platforms Treasure",
@@ -1216,7 +1216,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: Glowing in the Deep Woods",
@@ -1224,7 +1224,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: Past the Peculiar Pipes",
@@ -1232,7 +1232,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: By the Babbling Brook in Deep Woods",
@@ -1240,7 +1240,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: The Hard Rock in Deep Woods",
@@ -1248,7 +1248,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: A Treasure Made from Coins",
@@ -1256,7 +1256,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "({YamlDisabled(action_rando)} or |Hold/Throw|) and ({YamlDisabled(capturesanity)} or |Coin Coffer|)"
+        "requires": "{OptOne(Hold/Throw)} and {OptOne(Coin Coffer)}"
     },
     {
         "name": "Wooded: Beneath the Roots of the Moving Tree",
@@ -1264,7 +1264,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "({YamlDisabled(action_rando)} or |Hold/Throw|) and ({YamlDisabled(capturesanity)} or |Tree|)"
+        "requires": "{OptOne(Hold/Throw)} and {OptOne(Tree)}"
     },
     {
         "name": "Wooded: Deep Woods Treasure Trap",
@@ -1272,7 +1272,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: Exploring for Treasure",
@@ -1280,7 +1280,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{Explorer()} and ({YamlDisabled(action_rando)} or |Hold/Throw|)"
+        "requires": "{Explorer()} and {OptOne(Hold/Throw)}"
     },
     {
         "name": "Wooded: Wooded Kingdom Timer Challenge 1",
@@ -1306,7 +1306,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or (|Wall Jump| and |Swim|)"
+        "requires": "{OptAll(|Wall Jump| and |Swim|)}"
     },
     {
         "name": "Wooded: Flooding Pipeway Ceiling Secret",
@@ -1314,7 +1314,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} OR (|Swim| and |Wall Jump| and ((|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault| or (|Dive| and |Cap Jump|)))"
+        "requires": "{OptAll(|Swim| and |Wall Jump| and ((|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault| or (|Dive| and |Cap Jump|)))}"
     },
     {
         "name": "Wooded: Wandering in the Fog",
@@ -1322,7 +1322,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or (|Mini Rocket| and |Paragoomba|))"
+        "requires": "{MazeSkip()} and {OptAll(|Mini Rocket| and |Paragoomba|)}"
     },
     {
         "name": "Wooded: Nut Hidden in the Fog",
@@ -1330,7 +1330,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or (|Mini Rocket| and |Paragoomba|))"
+        "requires": "{MazeSkip()} and {OptAll(|Mini Rocket| and |Paragoomba|)}"
     },
     {
         "name": "Wooded: Flower Road Run",
@@ -1338,7 +1338,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(action_rando)} or |Wall Jump|)"
+        "requires": "{MazeSkip()} and ({OptOne(Wall Jump)})"
     },
     {
         "name": "Wooded: Flower Road Reach",
@@ -1346,7 +1346,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Goomba|)"
+        "requires": "{MazeSkip()} and {OptOne(Goomba)}"
     },
     {
         "name": "Wooded: Elevator Escalation",
@@ -1354,7 +1354,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Sherm|)"
+        "requires": "{MazeSkip()} and {OptOne(Sherm)}"
     },
     {
         "name": "Wooded: Elevator Blind Spot",
@@ -1362,7 +1362,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} and ({YamlDisabled(capturesanity)} or |Sherm|)"
+        "requires": "{MazeSkip()} and {OptOne(Sherm)}"
     },
     {
         "name": "Wooded: Walking on Clouds",
@@ -1388,8 +1388,8 @@
             "Wooded Kingdom",
             "Snow/Seaside Peace"
         ],
-        "region": "Metro Kingdom",
-        "requires": "(|Metro Kingdom Power Moon:20| OR ( |Metro Kingdom Multi-Moon| AND |Metro Kingdom Power Moon:17| ) OR ( |Metro Kingdom Multi-Moon:2| AND |Metro Kingdom Power Moon:14| )) and {MazeSkip()} and {SnowSeasidePeace()}"
+        "region": "Post-Metro",
+        "requires": "{MazeSkip()} and {SnowSeasidePeace()}"
     },
     {
         "name": "Wooded: Found With Wooded Kingdom Art",
@@ -1397,7 +1397,7 @@
             "Wooded Kingdom"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Ground Pound|"
+        "requires": "{OptOne(Ground Pound)}"
     },
     {
         "name": "Cloud: Picture Match: Basically a Goomba",
@@ -1405,7 +1405,7 @@
             "Cloud Kingdom"
         ],
         "region": "Cloud Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Picture Match Part|"
+        "requires": "{OptOne(Picture Match Part)}"
     },
     {
         "name": "Lost: Atop a Propeller Pillar",
@@ -1437,7 +1437,7 @@
             "Lost Kingdom"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(action_rando)} OR {YamlDisabled(capturesanity)} OR (|Tropical Wiggler| or (|Cap Jump| and |Dive|) or (|Wall Jump| and |Glydon|))"
+        "requires": "{OptAll(|Tropical Wiggler| or (|Cap Jump| and |Dive|) or (|Wall Jump| and |Glydon|))}"
     },
     {
         "name": "Lost: Over the Fuzzies, Above the Swamp",
@@ -1470,7 +1470,7 @@
             "Wall Jump"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Lost: On the Mountain Road",
@@ -1503,7 +1503,7 @@
             "Wall Jump"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Lost: Caught Hopping in the Jungle!",
@@ -1520,7 +1520,7 @@
             "Wall Jump"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Lost: Moon Shards in the Jungle",
@@ -1529,7 +1529,7 @@
             "Tropical Wiggler"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Tropical Wiggler|"
+        "requires": "{OptOne(Tropical Wiggler)}"
     },
     {
         "name": "Lost: Peeking Out from Under the Bridge",
@@ -1537,7 +1537,7 @@
             "Lost Kingdom"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(action_rando)} OR {YamlDisabled(capturesanity)} OR (|Tropical Wiggler| or |Dive|)"
+        "requires": "{OptAll(|Tropical Wiggler| or |Dive|)}"
     },
     {
         "name": "Lost: Twist 'n' Turn-Up Treasure",
@@ -1546,7 +1546,7 @@
             "Tropical Wiggler"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Tropical Wiggler|"
+        "requires": "{OptOne(Tropical Wiggler)}"
     },
     {
         "name": "Lost: Soaring Over Forgotten Isle!",
@@ -1556,7 +1556,7 @@
             "Wall Jump"
         ],
         "region": "Lost Kingdom",
-        "requires": "({YamlDisabled(action_rando)} or |Wall Jump|) and ({YamlDisabled(capturesanity)} and |Glydon|)"
+        "requires": "({OptOne(Wall Jump)}) and {OptOne(Glydon)}"
     },
     {
         "name": "Lost: The Caged Gold",
@@ -1573,7 +1573,7 @@
             "Tropical Wiggler"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Tropical Wiggler|"
+        "requires": "{OptOne(Tropical Wiggler)}"
     },
     {
         "name": "Lost: Shopping on Forgotten Isle",
@@ -1582,7 +1582,7 @@
             "Wall Jump"
         ],
         "region": "Lost Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Metro: New Donk City's Pest Problem",
@@ -1630,7 +1630,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{PostTrumpeter()} and ({YamlDisabled(capturesanity)} or |Manhole|)"
+        "requires": "{PostTrumpeter()} and {OptOne(Manhole)}"
     },
     {
         "name": "Metro: A Traditional Festival!",
@@ -1638,7 +1638,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{PostTrumpeter()} and ({YamlDisabled(capturesanity)} or |Manhole|)"
+        "requires": "{PostTrumpeter()} and {OptOne(Manhole)}"
     },
     {
         "name": "Metro: Inside an Iron Girder",
@@ -1745,7 +1745,7 @@
             "Metro Peace"
         ],
         "region": "Metro Kingdom",
-        "requires": "{MetroPeace()} and ({YamlDisabled(action_rando)} or |Motor scooter|)"
+        "requires": "{MetroPeace()} and ({OptOne(Motor scooter)})"
     },
     {
         "name": "Metro: City Gardening: Building Planter",
@@ -1753,7 +1753,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Metro: City Gardening: Plaza Planter",
@@ -1761,7 +1761,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Metro: City Gardening: Rooftop Planter",
@@ -1769,7 +1769,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "({YamlDisabled(action_rando)} or |Hold/Throw|) and {WallJumpOrPole()}"
+        "requires": "{OptOne(Hold/Throw)} and {WallJumpOrPole()}"
     },
     {
         "name": "Metro: How You Doin', Captain Toad?",
@@ -1785,7 +1785,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Motor scooter|"
+        "requires": "{OptOne(Motor scooter)}"
     },
     {
         "name": "Metro: Bench Friends",
@@ -1833,7 +1833,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |RC Car|"
+        "requires": "{OptOne(RC Car)}"
     },
     {
         "name": "Metro: RC Car Pro!",
@@ -1841,7 +1841,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |RC Car|"
+        "requires": "{OptOne(RC Car)}"
     },
     {
         "name": "Metro: Taking Notes: In the Private Room",
@@ -1857,7 +1857,7 @@
             "Metro Kingdom"
         ],
         "region": "Night Metro",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Metro: Sewer Treasure",
@@ -1914,7 +1914,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Taxi|"
+        "requires": "{OptOne(Taxi)}"
     },
     {
         "name": "Metro: Sharpshooting Under Siege",
@@ -1922,7 +1922,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Taxi|"
+        "requires": "{OptOne(Taxi)}"
     },
     {
         "name": "Metro: Inside the Rotating Maze",
@@ -1930,7 +1930,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Manhole|"
+        "requires": "{OptOne(Manhole)}"
     },
     {
         "name": "Metro: Outside the Rotating Maze",
@@ -1938,7 +1938,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "({YamlDisabled(capturesanity)} or |Manhole|) and {ScaleAWall()}"
+        "requires": "{OptOne(Manhole)} and {ScaleAWall()}"
     },
     {
         "name": "Metro: Hanging from a High-Rise",
@@ -1946,7 +1946,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Mini Rocket|"
+        "requires": "{OptOne(Mini Rocket)}"
     },
     {
         "name": "Metro: Vaulting up a High-Rise",
@@ -1954,7 +1954,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "({YamlDisabled(capturesanity)} or |Mini Rocket|) and ({YamlDisabled(action_rando)} or |Wall Jump|)"
+        "requires": "{OptOne(Mini Rocket)} and {OptOne(Wall Jump)}"
     },
     {
         "name": "Metro: Bullet Billding",
@@ -1978,7 +1978,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Motor scooter|"
+        "requires": "{OptOne(Motor scooter)}"
     },
     {
         "name": "Metro: Big Jump: Escape!",
@@ -1986,7 +1986,7 @@
             "Metro Kingdom"
         ],
         "region": "Metro Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Motor scooter)}"
     },
     {
         "name": "Metro: Secret Path to New Donk City!",
@@ -2029,7 +2029,7 @@
             "Snow Kingdom"
         ],
         "region": "Snow Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Ty-foo|"
+        "requires": "{OptOne(Ty-foo)}"
     },
     {
         "name": "Snow: The Ice Wall Barrier",
@@ -2045,7 +2045,7 @@
             "Snow Kingdom"
         ],
         "region": "Snow Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Ty-foo|"
+        "requires": "{OptOne(Ty-foo)}"
     },
     {
         "name": "Snow: The Snowy Mountain Barrier",
@@ -2061,7 +2061,7 @@
             "Snow Kingdom"
         ],
         "region": "Snow Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Ty-foo| or |Shiverian Racer|"
+        "requires": "{OptOne(Ty-foo)} or {OptOne(Shiverian Racer)}"
     },
     {
         "name": "Snow: Entrance to Shiveria",
@@ -2136,7 +2136,7 @@
             "Snow Peace"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(action_rando)} or |Swim|)"
+        "requires": "{SnowPeace()} and {OptOne(Swim)}"
     },
     {
         "name": "Snow: Moon Shards in the Snow",
@@ -2164,7 +2164,7 @@
             "Lakitu"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(capturesanity)} or |Lakitu|)"
+        "requires": "{SnowPeace()} and {OptOne(Lakitu)}"
     },
     {
         "name": "Snow: Ice-Dodging Goomba Stack",
@@ -2173,7 +2173,7 @@
             "Goomba"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(capturesanity)} or |Lakitu|)"
+        "requires": "{SnowPeace()} and {OptOne(Lakitu)}"
     },
     {
         "name": "Snow: Captain Toad is Chilly!",
@@ -2225,7 +2225,7 @@
             "Snow Peace"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(action_rando)} or (|Swim| or |Cap Jump|))"
+        "requires": "{SnowPeace()} and {OptAll(|Swim| or |Cap Jump|)}"
     },
     {
         "name": "Snow: Dashing Above and Beyond!",
@@ -2234,7 +2234,7 @@
             "Snow Peace"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(action_rando)} or (|Swim| or |Cap Jump|))"
+        "requires": "{SnowPeace()} and {OptAll(|Swim| or |Cap Jump|)}"
     },
     {
         "name": "Snow: Jump 'n' Swim in the Freezing Water",
@@ -2243,7 +2243,7 @@
             "Snow Peace"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(action_rando)} or |Swim|)"
+        "requires": "{SnowPeace()} and {OptOne(Swim)}"
     },
     {
         "name": "Snow: Freezing Water Near the Ceiling",
@@ -2252,7 +2252,7 @@
             "Snow Peace"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and ({YamlDisabled(action_rando)} or |Swim|)"
+        "requires": "{SnowPeace()} and {OptOne(Swim)}"
     },
     {
         "name": "Snow: Blowing and Sliding",
@@ -2320,7 +2320,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Gushen|"
+        "requires": "{OptOne(Gushen)}"
     },
     {
         "name": "Seaside: The Lighthouse Seal",
@@ -2336,7 +2336,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Gushen|"
+        "requires": "{OptOne(Gushen)}"
     },
     {
         "name": "Seaside: The Seal Above the Canyon",
@@ -2352,7 +2352,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Gushen|"
+        "requires": "{OptOne(Gushen)}"
     },
     {
         "name": "Seaside: On the Cliff Overlooking the Beach",
@@ -2360,7 +2360,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} OR {YamlDisabled(capturesanity)} OR (|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|))"
+        "requires": "{OptAll(|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|))}"
     },
     {
         "name": "Seaside: Ride the Jetstream",
@@ -2368,7 +2368,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} OR {YamlDisabled(capturesanity)} OR (|Gushen| or (|Wall Jump| and |Long Jump| and |Cap Jump| and |Dive|))"
+        "requires": "{OptAll(|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|))}"
     },
     {
         "name": "Seaside: Ocean-Bottom Maze: Treasure",
@@ -2392,7 +2392,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Cheep Cheep|"
+        "requires": "{OptOne(Cheep Cheep)}"
     },
     {
         "name": "Seaside: Shh! It's a Shortcut!",
@@ -2400,7 +2400,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Cheep Cheep|"
+        "requires": "{OptOne(Cheep Cheep)}"
     },
     {
         "name": "Seaside: Gap in the Ocean Trench",
@@ -2408,7 +2408,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Cheep Cheep|"
+        "requires": "{OptOne(Cheep Cheep)}"
     },
     {
         "name": "Seaside: Slip Through the Nesting Spot",
@@ -2416,7 +2416,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Cheep Cheep|"
+        "requires": "{OptOne(Cheep Cheep)}"
     },
     {
         "name": "Seaside: Merci, Dorrie!",
@@ -2497,7 +2497,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Seaside: Sea Gardening: Canyon Seed",
@@ -2521,7 +2521,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Seaside: Seaside Kingdom Timer Challenge 1",
@@ -2538,7 +2538,7 @@
             "Seaside Peace"
         ],
         "region": "Seaside Kingdom",
-        "requires": "({YamlDisabled(action_rando)} or (|Swim| and |Quick Swim|)) and {SeasidePeace()}"
+        "requires": "{OptAll(|Swim| and |Quick Swim|)} and {SeasidePeace()}"
     },
     {
         "name": "Seaside: Found on the Beach! Good Dog!",
@@ -2555,7 +2555,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Seaside: Taking Notes: Ocean Surface Dash",
@@ -2571,7 +2571,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Goomba|"
+        "requires": "{OptOne(Goomba)}"
     },
     {
         "name": "Seaside: Lighthouse Leaper",
@@ -2580,7 +2580,7 @@
             "Seaside Peace"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{SeasidePeace()} and ({YamlDisabled(capturesanity)} or |Glydon|)"
+        "requires": "{SeasidePeace()} and {OptOne(|Glydon|)}"
     },
     {
         "name": "Seaside: Good Job, Captain Toad!",
@@ -2588,7 +2588,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Gushen|"
+        "requires": "{OptOne(Gushen)}"
     },
     {
         "name": "Seaside: Ocean Quiz: Good!",
@@ -2604,7 +2604,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Seaside: Beach Volleyball: Champ",
@@ -2630,7 +2630,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Cheep Cheep|"
+        "requires": "{OptOne(Cheep Cheep)}"
     },
     {
         "name": "Seaside: The Sphynx's Underwater Vault",
@@ -2638,7 +2638,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Seaside: A Rumble on the Seaside Floor",
@@ -2662,7 +2662,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Mini Rocket|"
+        "requires": "{OptOne(Mini Rocket)}"
     },
     {
         "name": "Seaside: Sunken Treasure in the Cloud Sea",
@@ -2670,7 +2670,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Mini Rocket|"
+        "requires": "{OptOne(Mini Rocket)}"
     },
     {
         "name": "Seaside: Fly Through the Narrow Valley",
@@ -2678,7 +2678,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Gushen|"
+        "requires": "{OptOne(Gushen)}"
     },
     {
         "name": "Seaside: Treasure Chest in the Narrow Valley",
@@ -2686,7 +2686,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Gushen|"
+        "requires": "{OptOne(Gushen)}"
     },
     {
         "name": "Seaside: Hurry and Stretch",
@@ -2694,7 +2694,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Seaside: Stretch on the Side Path",
@@ -2702,7 +2702,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Uproot|"
+        "requires": "{OptOne(Uproot)}"
     },
     {
         "name": "Seaside: Secret Path to Bubblaine!",
@@ -2710,7 +2710,7 @@
             "Seaside Kingdom"
         ],
         "region": "Seaside Kingdom",
-        "requires": "({YamlDisabled(action_rando)} OR (|Wall Jump| and |Cap Jump| and |Dive|)) and ({YamlDisabled(capturesanity)} or |Gushen|)"
+        "requires": "{OptAll(|Wall Jump| and |Cap Jump| and |Dive|)} and {OptOne(Gushen)}"
     },
     {
         "name": "Seaside: Found with Seaside Kingdom Art",
@@ -2734,7 +2734,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Hammer Bro|"
+        "requires": "{OptOne(Hammer Bro)}"
     },
     {
         "name": "Luncheon: Big Pot on the Volcano: Dive In!",
@@ -2806,7 +2806,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "({YamlDisabled(capturesanity)} or |Hammer Bro|) and {ClimbToTheMeat()}"
+        "requires": "{OptOne(Hammer Bro)} and {ClimbToTheMeat()}"
     },
     {
         "name": "Luncheon: Island of Salt Floating in the Lava",
@@ -2814,7 +2814,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Lava Bubble|"
+        "requires": "{OptOne(Lava Bubble)}"
     },
     {
         "name": "Luncheon: Overlooking a Bunch of Ingredients",
@@ -2830,7 +2830,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Lava Bubble| and |Hammer Bro|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Golden Turnip Recipe 1",
@@ -2838,7 +2838,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Luncheon: Golden Turnip Recipe 2",
@@ -2846,7 +2846,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Luncheon: Golden Turnip Recipe 3",
@@ -2854,7 +2854,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "({YamlDisabled(action_rando)} or |Hold/Throw|) and ({YamlDisabled(capturesanity)} or |Hammer Bro|)"
+        "requires": "{OptOne(Hold/Throw)} and {OptOne(Hammer Bro)}"
     },
     {
         "name": "Luncheon: Luncheon Kingdom Timer Challenge 1",
@@ -2863,7 +2863,7 @@
             "Wall Jump"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Wall Jump|"
+        "requires": "{OptOne(Wall Jump)}"
     },
     {
         "name": "Luncheon: Luncheon Kingdom Timer Challenge 2",
@@ -2887,7 +2887,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Lava Bubble| and |Hammer Bro|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: All the Cracks Are Fixed",
@@ -2895,7 +2895,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Lava Bubble| and |Hammer Bro|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Taking Notes: Swimming in Magma",
@@ -2903,7 +2903,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Lava Bubble| and |Hammer Bro|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Love Above the Lava",
@@ -2911,7 +2911,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Very Early Luncheon",
-        "requires": "{YamlDisabled(capturesanity)} or |Goomba|"
+        "requires": "{OptOne(Goomba)}"
     },
     {
         "name": "Luncheon: Shopping in Mount Volbono",
@@ -2935,7 +2935,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "({YamlDisabled(capturesanity)} or |Lava Bubble|) or {Chef()}"
+        "requires": "{OptOne(Lava Bubble)} or {Chef()}"
     },
     {
         "name": "Luncheon: An Extreme Simmer",
@@ -2943,7 +2943,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "({YamlDisabled(capturesanity)} or |Lava Bubble|) or {Chef()}"
+        "requires": "{OptOne(Lava Bubble)} or {Chef()}"
     },
     {
         "name": "Luncheon: Alcove Behind the Pillars of Magma",
@@ -2951,7 +2951,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "({YamlDisabled(capturesanity)} or |Lava Bubble|) or {Meat()}"
+        "requires": "{OptOne(Lava Bubble)} or {Meat()}"
     },
     {
         "name": "Luncheon: Treasure Beneath the Cheese Rocks",
@@ -2967,7 +2967,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{Meat()} and ({YamlDisabled(capturesanity)} or |Fire Bro|)"
+        "requires": "{Meat()} and {OptOne(Fire Bro)}"
     },
     {
         "name": "Luncheon: Light the Far-Off Lanterns",
@@ -2975,7 +2975,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{Meat()} and ({YamlDisabled(capturesanity)} or |Lava Bubble|)"
+        "requires": "{Meat()} and {OptOne(Lava Bubble)}"
     },
     {
         "name": "Luncheon: Bon Appetit, Captain Toad!",
@@ -2983,7 +2983,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{Meat()} and ({YamlDisabled(capturesanity)} or |Lava Bubble|)"
+        "requires": "{Meat()} and {OptOne(Lava Bubble)}"
     },
     {
         "name": "Luncheon: The Treasure Chest in the Veggies",
@@ -3033,7 +3033,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Lava Bubble| and |Hammer Bro|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Crossing to the Magma",
@@ -3041,7 +3041,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Lava Bubble| and |Hammer Bro|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Fork Flickin' to the Summit",
@@ -3049,7 +3049,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Volbonan|"
+        "requires": "{OptAll(|Lava Bubble| and |Volbonan|)}"
     },
     {
         "name": "Luncheon: Fork Flickin' Detour",
@@ -3057,7 +3057,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Volbonan|"
+        "requires": "{OptAll(|Lava Bubble| and |Volbonan|)}"
     },
     {
         "name": "Luncheon: Excavate 'n' Search the Cheese Rocks",
@@ -3065,7 +3065,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Hammer Bro|"
+        "requires": "{OptOne(Hammer Bro)}"
     },
     {
         "name": "Luncheon: Climb the Cheese Rocks",
@@ -3073,7 +3073,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Hammer Bro|"
+        "requires": "{OptOne(Hammer Bro)}"
     },
     {
         "name": "Luncheon: Spinning Athletics End Goal",
@@ -3081,7 +3081,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Hammer Bro| and |Lava Bubble|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Taking Notes: Spinning Athletics",
@@ -3089,15 +3089,15 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Hammer Bro| and |Lava Bubble|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Luncheon: Secret Path to Mount Volbono",
         "category": [
             "Luncheon Kingdom"
         ],
-        "region": "Sand Kingdom",
-        "requires": "{MazeSkip()} and (|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ))"
+        "region": "Wooded Kingdom",
+        "requires": "{MazeSkip()}"
     },
     {
         "name": "Luncheon: A Tourist in the Luncheon Kingdom!",
@@ -3124,7 +3124,7 @@
             "Mushroom Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or (|Hammer Bro| and |Lava Bubble|)"
+        "requires": "{OptAll(|Lava Bubble| and |Hammer Bro|)}"
     },
     {
         "name": "Ruined: Battle with the Lord of Lightning!",
@@ -3148,7 +3148,7 @@
             "Ruined Kingdom"
         ],
         "region": "Ruined Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Mini Rocket|"
+        "requires": "{OptOne(Mini Rocket)}"
     },
     {
         "name": "Ruined: Roulette Tower: Stopped",
@@ -3156,7 +3156,7 @@
             "Ruined Kingdom"
         ],
         "region": "Ruined Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Mini Rocket|"
+        "requires": "{OptOne(Mini Rocket)}"
     },
     {
         "name": "Bowser's: Infiltrate Bowser's Castle!",
@@ -3220,7 +3220,7 @@
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Swim|"
+        "requires": "{OptOne(Swim)}"
     },
     {
         "name": "Bowser's: Past the Moving Wall",
@@ -3312,7 +3312,7 @@
             "Bowser's Kingdom"
         ],
         "region": "Pokino",
-        "requires": "{YamlDisabled(capturesanity)} or |Goomba|"
+        "requires": "{OptOne(Goomba)}"
     },
     {
         "name": "Bowser's: Hidden Corridor Under the Floor",
@@ -3352,7 +3352,7 @@
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Jizo|"
+        "requires": "{OptOne(Jizo)}"
     },
     {
         "name": "Bowser's: Underground Jizo",
@@ -3360,7 +3360,7 @@
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Jizo|"
+        "requires": "{OptOne(Jizo)}"
     },
     {
         "name": "Bowser's: Found Behind Bars!",
@@ -3377,7 +3377,7 @@
             "Bowser's Peace"
         ],
         "region": "Bowser's Kingdom",
-        "requires": "{BowserPeace()} and ({YamlDisabled(capturesanity)} or |Lakitu|)"
+        "requires": "{BowserPeace()} and {OptOne(Lakitu)}"
     },
     {
         "name": "Bowser's: Good to See You, Captain Toad!",
@@ -3447,7 +3447,7 @@
             "Bowser's Peace"
         ],
         "region": "Bowser's Kingdom",
-        "requires": "{BowserPeace()} and ({YamlDisabled(capturesanity)} or |Jizo|) and ({YamlDisabled(action_rando)} or |Wall Jump|)"
+        "requires": "{BowserPeace()} and {OptOne(Jizo)} and {OptOne(Wall Jump)}"
     },
     {
         "name": "Bowser's: Jizo and the Hidden Room",
@@ -3456,7 +3456,7 @@
             "Bowser's Peace"
         ],
         "region": "Bowser's Kingdom",
-        "requires": "{BowserPeace()} and ({YamlDisabled(capturesanity)} or |Jizo|) and ({YamlDisabled(action_rando)} or |Wall Jump|)"
+        "requires": "{BowserPeace()} and {OptOne(Jizo)} and {OptOne(Wall Jump)}"
     },
     {
         "name": "Bowser's: Dashing Above the Clouds",
@@ -3496,7 +3496,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|) and ({YamlDisabled(action_rando)} or |Wall Jump|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)} and ({OptOne(Wall Jump)})"
     },
     {
         "name": "Moon: Rolling Rock on the Moon",
@@ -3528,7 +3528,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Long Jump|"
+        "requires": "{OptOne(|Long Jump|)}"
     },
     {
         "name": "Moon: Taking Notes: On the Moon's Surface",
@@ -3536,7 +3536,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Long Jump|"
+        "requires": "{OptOne(|Long Jump|)}"
     },
     {
         "name": "Moon: Under the Bowser Statue",
@@ -3544,7 +3544,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Bowser Statue|"
+        "requires": "{OptOne(|Bowser Statue|)}"
     },
     {
         "name": "Moon: In a Hole in the Magma",
@@ -3552,7 +3552,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{YamlDisabled(capturesanity)} or |Parabones|"
+        "requires": "{OptOne(|Parabones|)}"
     },
     {
         "name": "Moon: Around the Barrier Wall",
@@ -3560,7 +3560,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)}"
     },
     {
         "name": "Moon: On Top of the Cannon",
@@ -3568,7 +3568,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)}"
     },
     {
         "name": "Moon: Fly to the Treasure Chest and Back",
@@ -3576,7 +3576,7 @@
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)}"
     },
     {
         "name": "Moon: Up in the Rafters",
@@ -3587,7 +3587,7 @@
             "Wall Jump"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|) and ({YamlDisabled(action_rando)} or |Wall Jump|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)} and ({OptOne(Wall Jump)})"
     },
     {
         "name": "Defeat Bowser and Escape the Moon",
@@ -3596,7 +3596,7 @@
         ],
         "region": "Moon Kingdom",
         "victory": true,
-        "requires": "({YamlDisabled(capturesanity)} or (|Banzai Bill| and |Bowser|)) and {ParabonesSkip()}"
+        "requires": "{OptAll(|Banzai Bill| and |Bowser|)} and {ParabonesSkip()}"
     },
     {
         "name": "Capture: Paragoomba",
@@ -3668,7 +3668,7 @@
             "Capture"
         ],
         "region": "Sand Kingdom",
-        "requires": "( {YamlDisabled(action_rando)} and ( |Bullet Bill| AND |Knucklotec's Fist| ) OR ( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ) ) or ( ( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ) and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|))) )"
+        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ) and {LakePeace()}))"
     },
     {
         "name": "Capture: Glydon",
@@ -3676,7 +3676,7 @@
             "Capture"
         ],
         "region": "Sand Kingdom",
-        "requires": "( {YamlDisabled(action_rando)} and ( |Bullet Bill| AND |Knucklotec's Fist| ) OR ( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ) OR ( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) ) or ( ( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ) and ((((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|))) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| )) and (|Wall Jump| or |Tropical Wiggler|)) )"
+        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ) and {IntoTheLake()} and {MazeSkip()}) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and {IntoTheLake()} and {MazeSkip()} and {OptOne(Wall Jump)}) )"
     },
     {
         "name": "Capture: Lakitu",
@@ -3684,7 +3684,7 @@
             "Capture"
         ],
         "region": "Sand Kingdom",
-        "requires": "( {YamlDisabled(action_rando)} and ( |Bullet Bill| AND |Knucklotec's Fist| ) OR ( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) ) or ( ( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) )"
+        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR ( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) ) or ( ( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) )"
     },
     {
         "name": "Capture: Zipper",
@@ -3748,7 +3748,7 @@
             "Capture"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{MazeSkip()} or {YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{MazeSkip()} or {OptOne(Hold/Throw)}"
     },
     {
         "name": "Capture: Tree",
@@ -3756,7 +3756,7 @@
             "Capture"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Capture: Boulder",
@@ -3764,7 +3764,7 @@
             "Capture"
         ],
         "region": "Wooded Kingdom",
-        "requires": "{YamlDisabled(action_rando)} or |Hold/Throw|"
+        "requires": "{OptOne(Hold/Throw)}"
     },
     {
         "name": "Capture: Picture Match Part",
@@ -3932,7 +3932,7 @@
             "Capture"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)}"
     },
     {
         "name": "Capture: Bowser",
@@ -3940,7 +3940,7 @@
             "Capture"
         ],
         "region": "Moon Kingdom",
-        "requires": "{ParabonesSkip()} and ({YamlDisabled(capturesanity)} or |Banzai Bill|)"
+        "requires": "{ParabonesSkip()} and {OptOne(Banzai Bill)}"
     },
     {
         "name": "Shop: Black Top Hat",
@@ -4732,6 +4732,6 @@
         ],
         "region": "Moon Kingdom",
         "victory": true,
-        "requires": "({YamlDisabled(capturesanity)} or (|Banzai Bill| and |Bowser|)) and {ParabonesSkip()} and {SandPeace()} and {LakePeace()} and {WoodedPeace()} and {MetroPeace()} and {SnowPeace()} and {SeasidePeace()} and {SnowSeasidePeace()} and {LuncheonPeace()} and {BowserPeace()}"
+        "requires": "{OptAll(|Banzai Bill| and |Bowser|)} and {ParabonesSkip()} and {SandPeace()} and {LakePeace()} and {WoodedPeace()} and {MetroPeace()} and {SnowPeace()} and {SeasidePeace()} and {SnowSeasidePeace()} and {LuncheonPeace()} and {BowserPeace()}"
     }
 ]
