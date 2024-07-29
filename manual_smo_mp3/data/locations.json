@@ -226,7 +226,8 @@
     {
         "name": "Cascade: Secret Path to Fossil Falls!",
         "category": [
-            "Cascade Kingdom"
+            "Cascade Kingdom",
+            "post-metro"
         ],
         "region": "Post-Metro",
         "requires": "{SnowSeasidePeace()}"
@@ -764,7 +765,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| )"
+        "requires": "|Power Moon:21| or (|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ))"
     },
     {
         "name": "Lake: Broodals Over the Lake",
@@ -978,10 +979,11 @@
         "name": "Lake: Secret Path to Lake Lamode!",
         "category": [
             "Lake Kingdom",
-            "Snow/Seaside Peace"
+            "Snow/Seaside Peace",
+            "post-metro"
         ],
-        "region": "Metro Kingdom",
-        "requires": "(|Metro Kingdom Power Moon:20| OR ( |Metro Kingdom Multi-Moon| AND |Metro Kingdom Power Moon:17| ) OR ( |Metro Kingdom Multi-Moon:2| AND |Metro Kingdom Power Moon:14| )) and {SnowSeasidePeace()}"
+        "region": "Post-Metro",
+        "requires": "((|Metro Kingdom Power Moon:75| OR ( |Metro Kingdom Multi-Moon| AND |Metro Kingdom Power Moon:17| ) OR ( |Metro Kingdom Multi-Moon:2| AND |Metro Kingdom Power Moon:14| ))) and {SnowSeasidePeace()}"
     },
     {
         "name": "Lake: Found with Lake Kingdom Art",
@@ -1386,7 +1388,8 @@
         "name": "Wooded: Secret Path to the Steam Gardens!",
         "category": [
             "Wooded Kingdom",
-            "Snow/Seaside Peace"
+            "Snow/Seaside Peace",
+            "post-metro"
         ],
         "region": "Post-Metro",
         "requires": "{MazeSkip()} and {SnowSeasidePeace()}"
@@ -2026,7 +2029,8 @@
     {
         "name": "Snow: The Icicle Barrier",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{OptOne(Ty-foo)}"
@@ -2034,7 +2038,8 @@
     {
         "name": "Snow: The Ice Wall Barrier",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2042,7 +2047,8 @@
     {
         "name": "Snow: The Gusty Barrier",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{OptOne(Ty-foo)}"
@@ -2050,7 +2056,8 @@
     {
         "name": "Snow: The Snowy Mountain Barrier",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2058,7 +2065,8 @@
     {
         "name": "Snow: The Bound Bowl Grand Prix",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{OptOne(Ty-foo)} or {OptOne(Shiverian Racer)}"
@@ -2066,7 +2074,8 @@
     {
         "name": "Snow: Entrance to Shiveria",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{ScaleAWall()}"
@@ -2074,7 +2083,8 @@
     {
         "name": "Snow: Behind Snowy Mountain",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2082,7 +2092,8 @@
     {
         "name": "Snow: Shining in the Snow in Town",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2090,7 +2101,8 @@
     {
         "name": "Snow: Atop a Blustery Arch",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{TyfooOrScaleATallWall()}"
@@ -2099,7 +2111,8 @@
         "name": "Snow: Caught Hopping in the Snow!",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2107,7 +2120,8 @@
     {
         "name": "Snow: The Shiverian Treasure Chest",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2115,7 +2129,8 @@
     {
         "name": "Snow: Treasure in the Ice Wall",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2124,7 +2139,8 @@
         "name": "Snow: Snow Kingdom Timer Challenge 1",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2133,7 +2149,8 @@
         "name": "Snow: Snow Kingdom Timer Challenge 2",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptOne(Swim)}"
@@ -2142,7 +2159,8 @@
         "name": "Snow: Moon Shards in the Snow",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2151,7 +2169,8 @@
         "name": "Snow: Taking Notes: Snow Path Dash",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2161,7 +2180,8 @@
         "category": [
             "Snow Kingdom",
             "Snow Peace",
-            "Lakitu"
+            "Lakitu",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptOne(Lakitu)}"
@@ -2170,7 +2190,8 @@
         "name": "Snow: Ice-Dodging Goomba Stack",
         "category": [
             "Snow Kingdom",
-            "Goomba"
+            "Goomba",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptOne(Lakitu)}"
@@ -2178,7 +2199,8 @@
     {
         "name": "Snow: Captain Toad is Chilly!",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2187,7 +2209,8 @@
         "name": "Snow: I'm Not Cold!",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {Boxers()}"
@@ -2195,7 +2218,8 @@
     {
         "name": "Snow: Shopping in Shiveria",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2204,7 +2228,8 @@
         "name": "Snow: Walking on Ice!",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2213,7 +2238,8 @@
         "name": "Snow: Snowline Circuit Class S",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2222,7 +2248,8 @@
         "name": "Snow: Dashing Over Cold Water!",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptAll(|Swim| or |Cap Jump|)}"
@@ -2231,7 +2258,8 @@
         "name": "Snow: Dashing Above and Beyond!",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptAll(|Swim| or |Cap Jump|)}"
@@ -2240,7 +2268,8 @@
         "name": "Snow: Jump 'n' Swim in the Freezing Water",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptOne(Swim)}"
@@ -2249,7 +2278,8 @@
         "name": "Snow: Freezing Water Near the Ceiling",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()} and {OptOne(Swim)}"
@@ -2258,7 +2288,8 @@
         "name": "Snow: Blowing and Sliding",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2266,7 +2297,8 @@
     {
         "name": "Snow: Moon Shards in the Cold Room",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{Snowsuit()}"
@@ -2274,7 +2306,8 @@
     {
         "name": "Snow: Slip Behind the Ice",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{Snowsuit()}"
@@ -2283,7 +2316,8 @@
         "name": "Snow: Spinning Above the Clouds",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2292,7 +2326,8 @@
         "name": "Snow: High-Altitude Spinning",
         "category": [
             "Snow Kingdom",
-            "Snow Peace"
+            "Snow Peace",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": "{SnowPeace()}"
@@ -2301,7 +2336,8 @@
         "name": "Snow: Secret Path to Shiveria!",
         "category": [
             "Snow Kingdom",
-            "Bowser Peace"
+            "Bowser Peace",
+            "post-metro"
         ],
         "region": "Moon Kingdom",
         "requires": "{BowserPeace()}"
@@ -2309,7 +2345,8 @@
     {
         "name": "Snow: Found with Snow Kingdom Art",
         "category": [
-            "Snow Kingdom"
+            "Snow Kingdom",
+            "post-metro"
         ],
         "region": "Snow Kingdom",
         "requires": []
@@ -2317,7 +2354,8 @@
     {
         "name": "Seaside: The Stone Pillar Seal",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Gushen)}"
@@ -2325,7 +2363,8 @@
     {
         "name": "Seaside: The Lighthouse Seal",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{Lighthouse()}"
@@ -2333,7 +2372,8 @@
     {
         "name": "Seaside: The Hot Spring Seal",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Gushen)}"
@@ -2341,7 +2381,8 @@
     {
         "name": "Seaside: The Seal Above the Canyon",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2349,7 +2390,8 @@
     {
         "name": "Seaside: The Glass is Half Full!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Gushen)}"
@@ -2357,7 +2399,8 @@
     {
         "name": "Seaside: On the Cliff Overlooking the Beach",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptAll(|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|))}"
@@ -2365,7 +2408,8 @@
     {
         "name": "Seaside: Ride the Jetstream",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptAll(|Gushen| or (|Wall Jump| and |Triple Jump| and |Cap Jump| and |Dive|))}"
@@ -2373,7 +2417,8 @@
     {
         "name": "Seaside: Ocean-Bottom Maze: Treasure",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2381,7 +2426,8 @@
     {
         "name": "Seaside: Ocean-Bottom Maze: Hidden Room",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2389,7 +2435,8 @@
     {
         "name": "Seaside: Underwater Highway Tunnel",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Cheep Cheep)}"
@@ -2397,7 +2444,8 @@
     {
         "name": "Seaside: Shh! It's a Shortcut!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Cheep Cheep)}"
@@ -2405,7 +2453,8 @@
     {
         "name": "Seaside: Gap in the Ocean Trench",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Cheep Cheep)}"
@@ -2413,7 +2462,8 @@
     {
         "name": "Seaside: Slip Through the Nesting Spot",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Cheep Cheep)}"
@@ -2421,7 +2471,8 @@
     {
         "name": "Seaside: Merci, Dorrie!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2430,7 +2481,8 @@
         "name": "Seaside: Bonjour, Dorrie!",
         "category": [
             "Seaside Kingdom",
-            "Seaside Peace"
+            "Seaside Peace",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SeasidePeace()}"
@@ -2438,7 +2490,8 @@
     {
         "name": "Seaside: Under a Dangerous Ceiling",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2446,7 +2499,8 @@
     {
         "name": "Seaside: What the Waves Left Behind",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2454,7 +2508,8 @@
     {
         "name": "Seaside: The Back Canyon: Excavate!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2462,7 +2517,8 @@
     {
         "name": "Seaside: Bubblaine Northern Reaches",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2470,7 +2526,8 @@
     {
         "name": "Seaside: Wriggling on the Sandy Bottom",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2478,7 +2535,8 @@
     {
         "name": "Seaside: Glass Palace Treasure Chest",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2486,7 +2544,8 @@
     {
         "name": "Seaside: Treasure Trap Hidden in the Inlet",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2494,7 +2553,8 @@
     {
         "name": "Seaside: Sea Gardening: Inlet Seed",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Swim)}"
@@ -2502,7 +2562,8 @@
     {
         "name": "Seaside: Sea Gardening: Canyon Seed",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2510,7 +2571,8 @@
     {
         "name": "Seaside: Sea Gardening: Hot-Spring Seed",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2518,7 +2580,8 @@
     {
         "name": "Seaside: Sea Gardening: Ocean Trench Seed",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Swim)}"
@@ -2526,7 +2589,8 @@
     {
         "name": "Seaside: Seaside Kingdom Timer Challenge 1",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2535,7 +2599,8 @@
         "name": "Seaside: Seaside Kingdom Timer Challenge 2",
         "category": [
             "Seaside Kingdom",
-            "Seaside Peace"
+            "Seaside Peace",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptAll(|Swim| and |Quick Swim|)} and {SeasidePeace()}"
@@ -2544,7 +2609,8 @@
         "name": "Seaside: Found on the Beach! Good Dog!",
         "category": [
             "Seaside Kingdom",
-            "Seaside Peace"
+            "Seaside Peace",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SeasidePeace()}"
@@ -2552,7 +2618,8 @@
     {
         "name": "Seaside: Moon Shards in the Sea",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Swim)}"
@@ -2560,7 +2627,8 @@
     {
         "name": "Seaside: Taking Notes: Ocean Surface Dash",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2568,7 +2636,8 @@
     {
         "name": "Seaside: Love by the Seaside",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Goomba)}"
@@ -2577,7 +2646,8 @@
         "name": "Seaside: Lighthouse Leaper",
         "category": [
             "Seaside Kingdom",
-            "Seaside Peace"
+            "Seaside Peace",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SeasidePeace()} and {OptOne(|Glydon|)}"
@@ -2585,7 +2655,8 @@
     {
         "name": "Seaside: Good Job, Captain Toad!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Gushen)}"
@@ -2593,7 +2664,8 @@
     {
         "name": "Seaside: Ocean Quiz: Good!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SwimOrCheepCheep()}"
@@ -2601,7 +2673,8 @@
     {
         "name": "Seaside: Shopping in Bubblaine",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Swim)}"
@@ -2610,7 +2683,8 @@
         "name": "Seaside: Beach Volleyball: Champ",
         "category": [
             "Seaside Kingdom",
-            "Seaside Peace"
+            "Seaside Peace",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SeasidePeace()}"
@@ -2619,7 +2693,8 @@
         "name": "Seaside: Beach Volleyball: Hero of the Beach!",
         "category": [
             "Seaside Kingdom",
-            "Seaside Peace"
+            "Seaside Peace",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{SeasidePeace()}"
@@ -2627,7 +2702,8 @@
     {
         "name": "Seaside: Looking Back in the Dark Waterway",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Cheep Cheep)}"
@@ -2635,7 +2711,8 @@
     {
         "name": "Seaside: The Sphynx's Underwater Vault",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Swim)}"
@@ -2643,7 +2720,8 @@
     {
         "name": "Seaside: A Rumble on the Seaside Floor",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2651,7 +2729,8 @@
     {
         "name": "Seaside: A Relaxing Dance",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{Resort()}"
@@ -2659,7 +2738,8 @@
     {
         "name": "Seaside: Wading in the Cloud Sea",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Mini Rocket)}"
@@ -2667,7 +2747,8 @@
     {
         "name": "Seaside: Sunken Treasure in the Cloud Sea",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Mini Rocket)}"
@@ -2675,7 +2756,8 @@
     {
         "name": "Seaside: Fly Through the Narrow Valley",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Gushen)}"
@@ -2683,7 +2765,8 @@
     {
         "name": "Seaside: Treasure Chest in the Narrow Valley",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Gushen)}"
@@ -2691,7 +2774,8 @@
     {
         "name": "Seaside: Hurry and Stretch",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Uproot)}"
@@ -2699,7 +2783,8 @@
     {
         "name": "Seaside: Stretch on the Side Path",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptOne(Uproot)}"
@@ -2707,7 +2792,8 @@
     {
         "name": "Seaside: Secret Path to Bubblaine!",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": "{OptAll(|Wall Jump| and |Cap Jump| and |Dive|)} and {OptOne(Gushen)}"
@@ -2715,7 +2801,8 @@
     {
         "name": "Seaside: Found with Seaside Kingdom Art",
         "category": [
-            "Seaside Kingdom"
+            "Seaside Kingdom",
+            "post-metro"
         ],
         "region": "Seaside Kingdom",
         "requires": []
@@ -2723,7 +2810,8 @@
     {
         "name": "Luncheon: The Broodals Are After Some Cookin'",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": []
@@ -2731,7 +2819,8 @@
     {
         "name": "Luncheon: Under the Cheese Rocks",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": "{OptOne(Hammer Bro)}"
@@ -2739,7 +2828,8 @@
     {
         "name": "Luncheon: Big Pot on the Volcano: Dive In!",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": "{Meat()}"
@@ -2747,7 +2837,8 @@
     {
         "name": "Luncheon: Climb Up the Cascading Magma",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": "{LuncheonPeace()}"
@@ -2755,7 +2846,8 @@
     {
         "name": "Luncheon: Cookatiel Showdown!",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": "{LuncheonPeace()}"
@@ -2763,7 +2855,8 @@
     {
         "name": "Luncheon: Piled on the Salt",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": []
@@ -2771,7 +2864,8 @@
     {
         "name": "Luncheon: Lurking in the Pillar's Shadow",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": []
@@ -2779,7 +2873,8 @@
     {
         "name": "Luncheon: Atop the Jutting Crag",
         "category": [
-            "Luncheon Kingdom"
+            "Luncheon Kingdom",
+            "post-metro"
         ],
         "region": "Luncheon Kingdom",
         "requires": []
@@ -2787,6 +2882,7 @@
     {
         "name": "Luncheon: Is This an Ingredient Too?!",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2795,6 +2891,7 @@
     {
         "name": "Luncheon: Atop a Column in a Row",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2803,6 +2900,7 @@
     {
         "name": "Luncheon: Surrounded by Tall Mountains",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2811,6 +2909,7 @@
     {
         "name": "Luncheon: Island of Salt Floating in the Lava",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2819,6 +2918,7 @@
     {
         "name": "Luncheon: Overlooking a Bunch of Ingredients",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2827,6 +2927,7 @@
     {
         "name": "Luncheon: Light the Lantern on the Small Island",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2835,6 +2936,7 @@
     {
         "name": "Luncheon: Golden Turnip Recipe 1",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2843,6 +2945,7 @@
     {
         "name": "Luncheon: Golden Turnip Recipe 2",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2851,6 +2954,7 @@
     {
         "name": "Luncheon: Golden Turnip Recipe 3",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2859,6 +2963,7 @@
     {
         "name": "Luncheon: Luncheon Kingdom Timer Challenge 1",
         "category": [
+            "post-metro",
             "Luncheon Kingdom",
             "Wall Jump"
         ],
@@ -2868,6 +2973,7 @@
     {
         "name": "Luncheon: Luncheon Kingdom Timer Challenge 2",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2876,6 +2982,7 @@
     {
         "name": "Luncheon: Luncheon Kingdom Timer Challenge 3",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2884,6 +2991,7 @@
     {
         "name": "Luncheon: Beneath the Rolling Vegetables",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2892,6 +3000,7 @@
     {
         "name": "Luncheon: All the Cracks Are Fixed",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2900,6 +3009,7 @@
     {
         "name": "Luncheon: Taking Notes: Swimming in Magma",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2908,6 +3018,7 @@
     {
         "name": "Luncheon: Love Above the Lava",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Very Early Luncheon",
@@ -2916,6 +3027,7 @@
     {
         "name": "Luncheon: Shopping in Mount Volbono",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2924,6 +3036,7 @@
     {
         "name": "Luncheon: Luncheon Kingdom Slots",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2932,6 +3045,7 @@
     {
         "name": "Luncheon: A Strong Simmer",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2940,6 +3054,7 @@
     {
         "name": "Luncheon: An Extreme Simmer",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2948,6 +3063,7 @@
     {
         "name": "Luncheon: Alcove Behind the Pillars of Magma",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2956,6 +3072,7 @@
     {
         "name": "Luncheon: Treasure Beneath the Cheese Rocks",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2964,6 +3081,7 @@
     {
         "name": "Luncheon: Light the Two Flames",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2972,6 +3090,7 @@
     {
         "name": "Luncheon: Light the Far-Off Lanterns",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2980,6 +3099,7 @@
     {
         "name": "Luncheon: Bon Appetit, Captain Toad!",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2988,6 +3108,7 @@
     {
         "name": "Luncheon: The Treasure Chest in the Veggies",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -2996,6 +3117,7 @@
     {
         "name": "Luncheon: Caught Hopping at the Volcano!",
         "category": [
+            "post-metro",
             "Luncheon Kingdom",
             "Luncheon Peace"
         ],
@@ -3005,6 +3127,7 @@
     {
         "name": "Luncheon: Taking Notes: Big Pot Swim",
         "category": [
+            "post-metro",
             "Luncheon Kingdom",
             "Luncheon Peace"
         ],
@@ -3014,6 +3137,7 @@
     {
         "name": "Luncheon: Magma Swamp: Floating and Sinking",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3022,6 +3146,7 @@
     {
         "name": "Luncheon: Corner of the Magma Swamp",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3030,6 +3155,7 @@
     {
         "name": "Luncheon: Magma Narrow Path",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3038,6 +3164,7 @@
     {
         "name": "Luncheon: Crossing to the Magma",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3046,6 +3173,7 @@
     {
         "name": "Luncheon: Fork Flickin' to the Summit",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3054,6 +3182,7 @@
     {
         "name": "Luncheon: Fork Flickin' Detour",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3062,6 +3191,7 @@
     {
         "name": "Luncheon: Excavate 'n' Search the Cheese Rocks",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3070,6 +3200,7 @@
     {
         "name": "Luncheon: Climb the Cheese Rocks",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3078,6 +3209,7 @@
     {
         "name": "Luncheon: Spinning Athletics End Goal",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3086,6 +3218,7 @@
     {
         "name": "Luncheon: Taking Notes: Spinning Athletics",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3102,6 +3235,7 @@
     {
         "name": "Luncheon: A Tourist in the Luncheon Kingdom!",
         "category": [
+            "post-metro",
             "Luncheon Kingdom",
             "Sand Peace",
             "Metro Peace",
@@ -3113,6 +3247,7 @@
     {
         "name": "Luncheon: Found with Luncheon Kingdom Art",
         "category": [
+            "post-metro",
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3121,6 +3256,7 @@
     {
         "name": "Mushroom: Secret Path to Peach's Castle!",
         "category": [
+            "post-metro",
             "Mushroom Kingdom"
         ],
         "region": "Luncheon Kingdom",
@@ -3129,6 +3265,7 @@
     {
         "name": "Ruined: Battle with the Lord of Lightning!",
         "category": [
+            "post-metro",
             "Ruined Kingdom"
         ],
         "region": "Ruined Kingdom",
@@ -3137,6 +3274,7 @@
     {
         "name": "Ruined: In the Ancient Treasure Chest",
         "category": [
+            "post-metro",
             "Ruined Kingdom"
         ],
         "region": "Ruined Kingdom",
@@ -3145,6 +3283,7 @@
     {
         "name": "Ruined: Roulette Tower: Climbed",
         "category": [
+            "post-metro",
             "Ruined Kingdom"
         ],
         "region": "Ruined Kingdom",
@@ -3153,6 +3292,7 @@
     {
         "name": "Ruined: Roulette Tower: Stopped",
         "category": [
+            "post-metro",
             "Ruined Kingdom"
         ],
         "region": "Ruined Kingdom",
@@ -3161,6 +3301,7 @@
     {
         "name": "Bowser's: Infiltrate Bowser's Castle!",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3169,6 +3310,7 @@
     {
         "name": "Bowser's: Smart Bombing",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3177,6 +3319,7 @@
     {
         "name": "Bowser's: Big Broodal Battle",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3185,6 +3328,7 @@
     {
         "name": "Bowser's: Showdown at Bowser's Castle",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3193,6 +3337,7 @@
     {
         "name": "Bowser's: Behind the Big Wall",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3201,6 +3346,7 @@
     {
         "name": "Bowser's: Treasure Inside the Turret",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3209,6 +3355,7 @@
     {
         "name": "Bowser's: From the Side Above the Castle Gate",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3217,6 +3364,7 @@
     {
         "name": "Bowser's: Sunken Treasure in the Moat",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3225,6 +3373,7 @@
     {
         "name": "Bowser's: Past the Moving Wall",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3234,6 +3383,7 @@
     {
         "name": "Bowser's: Above the Poison Swamp",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3243,6 +3393,7 @@
     {
         "name": "Bowser's: Knocking Down the Nice Frame",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3252,6 +3403,7 @@
     {
         "name": "Bowser's: Caught on the Iron Fence",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Pokino",
@@ -3260,6 +3412,7 @@
     {
         "name": "Bowser's: On the Giant Bowser Statue's Nose",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3268,6 +3421,7 @@
     {
         "name": "Bowser's: Inside a Block in the Castle",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3276,6 +3430,7 @@
     {
         "name": "Bowser's: Caught Hopping at Bowser's Castle!",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3285,6 +3440,7 @@
     {
         "name": "Bowser's: Exterminate the Ogres!",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3293,6 +3449,7 @@
     {
         "name": "Bowser's: Bowser's Kingdom Timer Challenge 1",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3301,6 +3458,7 @@
     {
         "name": "Bowser's: Taking Notes: Between Spinies",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3309,6 +3467,7 @@
     {
         "name": "Bowser's: Stack Up Above the Wall",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Pokino",
@@ -3317,6 +3476,7 @@
     {
         "name": "Bowser's: Hidden Corridor Under the Floor",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3325,6 +3485,7 @@
     {
         "name": "Bowser's: Poking Your Nose in the Plaster Wall",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3333,6 +3494,7 @@
     {
         "name": "Bowser's: Poking the Turret Wall",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3341,6 +3503,7 @@
     {
         "name": "Bowser's: Poking Your Nose by the Great Gate",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3349,6 +3512,7 @@
     {
         "name": "Bowser's: Jizo All in a Row",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3357,6 +3521,7 @@
     {
         "name": "Bowser's: Underground Jizo",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3365,6 +3530,7 @@
     {
         "name": "Bowser's: Found Behind Bars!",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3373,6 +3539,7 @@
     {
         "name": "Bowser's: Fishing(?) in Bowser's Castle",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3382,6 +3549,7 @@
     {
         "name": "Bowser's: Good to See You, Captain Toad!",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3390,6 +3558,7 @@
     {
         "name": "Bowser's: Shopping at Bowser's Castle",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3398,6 +3567,7 @@
     {
         "name": "Bowser's: Bowser's Castle Treasure Vault",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3407,6 +3577,7 @@
     {
         "name": "Bowser's: Scene of Crossing the Poison Swamp",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Samurai"
         ],
@@ -3416,6 +3587,7 @@
     {
         "name": "Bowser's: Taking Notes: In the Folding Screen",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Samurai"
         ],
@@ -3425,6 +3597,7 @@
     {
         "name": "Bowser's: On Top of the Spinning Tower",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3434,6 +3607,7 @@
     {
         "name": "Bowser's: Down and Up the Spinning Tower",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3443,6 +3617,7 @@
     {
         "name": "Bowser's: Jizo's Big Adventure",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3452,6 +3627,7 @@
     {
         "name": "Bowser's: Jizo and the Hidden Room",
         "category": [
+            "post-metro",
             "Bowser's Kingdom",
             "Bowser's Peace"
         ],
@@ -3461,6 +3637,7 @@
     {
         "name": "Bowser's: Dashing Above the Clouds",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3469,6 +3646,7 @@
     {
         "name": "Bowser's: Dashing Through the Clouds",
         "category": [
+            "post-metro",
             "Bowser's Kingdom"
         ],
         "region": "Bowser's Kingdom",
@@ -3477,6 +3655,7 @@
     {
         "name": "Moon: Shining Above the Moon",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3485,6 +3664,7 @@
     {
         "name": "Moon: Along the Cliff Face",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3493,6 +3673,7 @@
     {
         "name": "Moon: The Tip of a White Spire",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3501,6 +3682,7 @@
     {
         "name": "Moon: Rolling Rock on the Moon",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3509,6 +3691,7 @@
     {
         "name": "Moon: Caught Hopping on the Moon!",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3517,6 +3700,7 @@
     {
         "name": "Moon: Cliffside Treasure Chest",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3525,6 +3709,7 @@
     {
         "name": "Moon: Moon Kingdom Timer Challenge 1",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3533,6 +3718,7 @@
     {
         "name": "Moon: Taking Notes: On the Moon's Surface",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3541,6 +3727,7 @@
     {
         "name": "Moon: Under the Bowser Statue",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3549,6 +3736,7 @@
     {
         "name": "Moon: In a Hole in the Magma",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3557,6 +3745,7 @@
     {
         "name": "Moon: Around the Barrier Wall",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3565,6 +3754,7 @@
     {
         "name": "Moon: On Top of the Cannon",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3573,6 +3763,7 @@
     {
         "name": "Moon: Fly to the Treasure Chest and Back",
         "category": [
+            "post-metro",
             "Moon Kingdom"
         ],
         "region": "Moon Kingdom",
@@ -3581,6 +3772,7 @@
     {
         "name": "Moon: Up in the Rafters",
         "category": [
+            "post-metro",
             "Moon Kingdom",
             "Banzai Bill",
             "Parabones Skip",
@@ -3668,7 +3860,7 @@
             "Capture"
         ],
         "region": "Sand Kingdom",
-        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ) and {LakePeace()}))"
+        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (|Power Moon:29| or ((( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) ))) and {LakePeace()}))"
     },
     {
         "name": "Capture: Glydon",
@@ -3676,7 +3868,7 @@
             "Capture"
         ],
         "region": "Sand Kingdom",
-        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ) and {IntoTheLake()} and {MazeSkip()}) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and {IntoTheLake()} and {MazeSkip()} and {OptOne(Wall Jump)}) )"
+        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (|Power Moon:37| or ((( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND |Sherm| AND |Uproot| ))) and {IntoTheLake()} and {MazeSkip()}) OR (|Power Moon:53| or ((( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Lake Kingdom Power Moon:8| OR ( |Lake Kingdom Multi-Moon| AND |Lake Kingdom Power Moon:5| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ))) and {IntoTheLake()} and {MazeSkip()} and {OptOne(Wall Jump)}) )"
     },
     {
         "name": "Capture: Lakitu",
@@ -3684,7 +3876,7 @@
             "Capture"
         ],
         "region": "Sand Kingdom",
-        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR ( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) ) or ( ( |Bullet Bill| AND |Knucklotec's Fist| ) OR (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) )"
+        "requires": "( ({OptAll(|Bullet Bill| AND |Knucklotec's Fist|)}) OR (|Power Moon:29| or (( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ) ))) or ( ( |Bullet Bill| AND |Knucklotec's Fist| ) OR (|Power Moon:37| or ((( ( |Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ) ) AND ( |Wooded Kingdom Power Moon:16| OR ( |Wooded Kingdom Multi-Moon| AND |Wooded Kingdom Power Moon:13| ) OR ( |Wooded Kingdom Multi-Moon:2| AND |Wooded Kingdom Power Moon:10| ) ) ))) and (|Uproot| or ( ( ( |Ground Pound Jump| and |Ground Pound| ) or |Backward Somersault| or |Side Somersault| or ( |Wall Jump| and |Dive| ) or |Triple Jump| ) and ( |Long Jump| or |Triple Jump| or |Backward Somersault| or |Side Somersault| ) and |Cap Jump| and |Dive| ))) )"
     },
     {
         "name": "Capture: Zipper",
@@ -3825,6 +4017,7 @@
     {
         "name": "Capture: Ty-foo",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Snow Kingdom",
@@ -3833,6 +4026,7 @@
     {
         "name": "Capture: Shiverian Racer",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Snow Kingdom",
@@ -3841,6 +4035,7 @@
     {
         "name": "Capture: Snow Cheep Cheep",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Snow Kingdom",
@@ -3849,6 +4044,7 @@
     {
         "name": "Capture: Gushen",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Seaside Kingdom",
@@ -3857,6 +4053,7 @@
     {
         "name": "Capture: Lava Bubble",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Very Early Luncheon",
@@ -3865,6 +4062,7 @@
     {
         "name": "Capture: Volbonan",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Luncheon Kingdom",
@@ -3873,6 +4071,7 @@
     {
         "name": "Capture: Hammer Bro",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Luncheon Kingdom",
@@ -3881,6 +4080,7 @@
     {
         "name": "Capture: Meat",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Luncheon Kingdom",
@@ -3889,6 +4089,7 @@
     {
         "name": "Capture: Fire Piranha Plant",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Luncheon Kingdom",
@@ -3897,6 +4098,7 @@
     {
         "name": "Capture: Pokio",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Pokino",
@@ -3905,6 +4107,7 @@
     {
         "name": "Capture: Jizo",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Bowser's Kingdom",
@@ -3913,6 +4116,7 @@
     {
         "name": "Capture: Parabones",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Moon Kingdom",
@@ -3921,6 +4125,7 @@
     {
         "name": "Capture: Banzai Bill",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Moon Kingdom",
@@ -3929,6 +4134,7 @@
     {
         "name": "Capture: Chargin' Chuck",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Moon Kingdom",
@@ -3937,6 +4143,7 @@
     {
         "name": "Capture: Bowser",
         "category": [
+            "post-metro",
             "Capture"
         ],
         "region": "Moon Kingdom",
@@ -4125,6 +4332,7 @@
     {
         "name": "Shop: Snow Hood",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4134,6 +4342,7 @@
     {
         "name": "Shop: Snow Suit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4143,6 +4352,7 @@
     {
         "name": "Shop: Resort Hat",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4152,6 +4362,7 @@
     {
         "name": "Shop: Resort Outfit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4161,6 +4372,7 @@
     {
         "name": "Shop: Sailor Hat",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4170,6 +4382,7 @@
     {
         "name": "Shop: Sailor Suit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4179,6 +4392,7 @@
     {
         "name": "Shop: Chef Hat",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4188,6 +4402,7 @@
     {
         "name": "Shop: Chef Suit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4197,6 +4412,7 @@
     {
         "name": "Shop: Painter's Cap",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4206,6 +4422,7 @@
     {
         "name": "Shop: Painter's Outfit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4215,6 +4432,7 @@
     {
         "name": "Shop: Samurai Helmet",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4224,6 +4442,7 @@
     {
         "name": "Shop: Samurai Armor",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4233,6 +4452,7 @@
     {
         "name": "Shop: Happi Headband",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4242,6 +4462,7 @@
     {
         "name": "Shop: Happi Outfit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4251,6 +4472,7 @@
     {
         "name": "Shop: Space Helmet",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4260,6 +4482,7 @@
     {
         "name": "Shop: Space Suit",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4350,6 +4573,7 @@
     {
         "name": "Shop: Pirate Hat",
         "category": [
+            "post-metro",
             "Shop",
             "Coin"
         ],
@@ -4359,6 +4583,7 @@
     {
         "name": "Shop: Pirate Outfit",
         "category": [
+            "post-metro",
             "Shop",
             "Coin"
         ],
@@ -4368,6 +4593,7 @@
     {
         "name": "Shop: Clown Hat",
         "category": [
+            "post-metro",
             "Shop",
             "Coin"
         ],
@@ -4377,6 +4603,7 @@
     {
         "name": "Shop: Clown Suit",
         "category": [
+            "post-metro",
             "Shop",
             "Coin"
         ],
@@ -4386,6 +4613,7 @@
     {
         "name": "Shop: Football Helmet",
         "category": [
+            "post-metro",
             "Shop",
             "Coin"
         ],
@@ -4395,6 +4623,7 @@
     {
         "name": "Shop: Football Uniform",
         "category": [
+            "post-metro",
             "Shop",
             "Coin"
         ],
@@ -4530,6 +4759,7 @@
     {
         "name": "Shop: Shiverian Rug",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4539,6 +4769,7 @@
     {
         "name": "Shop: Shiverian Nesting Dolls",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4548,6 +4779,7 @@
     {
         "name": "Shop: Sand Jar",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4557,6 +4789,7 @@
     {
         "name": "Shop: Glass Tower Model",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4566,6 +4799,7 @@
     {
         "name": "Shop: Souvenir Forks",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4575,6 +4809,7 @@
     {
         "name": "Shop: Vegetable Plate",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4584,6 +4819,7 @@
     {
         "name": "Shop: Paper Lantern",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4593,6 +4829,7 @@
     {
         "name": "Shop: Jizo Statue",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4602,6 +4839,7 @@
     {
         "name": "Shop: Moon Rock Fragment",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4611,6 +4849,7 @@
     {
         "name": "Shop: Moon Lamp",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4683,6 +4922,7 @@
     {
         "name": "Shop: Snow Kingdom Sticker",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4692,6 +4932,7 @@
     {
         "name": "Shop: Seaside Kingdom Sticker",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4701,6 +4942,7 @@
     {
         "name": "Shop: Luncheon Kingdom Sticker",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4710,6 +4952,7 @@
     {
         "name": "Shop: Bowser's Kingdom Sticker",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],
@@ -4719,6 +4962,7 @@
     {
         "name": "Shop: Moon Kingdom Sticker",
         "category": [
+            "post-metro",
             "Shop",
             "Regional"
         ],

@@ -57,7 +57,22 @@ Proceed through Cap Kingdom, and once you reach Cascade Kingdom you can start ge
 You'll need to receive 5 moons (or 2 moons and a multi-moon) to leave the kingdom.
 Each kingdom requires the necessary amount of moon items to leave, listed below:
 
-## How many moons do you need for each kingdom?
+## How many moons do you need to leave each kingdom?
+
+For generic moons:
+
+- Cascade: 5
+- Sand: 21
+- Lake/Wooded: 45
+  - In Generic Moons Mode specifically, you can visit either kingdom after leaving sand but can't leave to Cloud until you get 45.
+- Lost: 55
+- Metro: 75
+- Snow/Seaside: 95 (same as lake/wooded)
+- Luncheon: 113
+- Ruined: 116
+- Bowser's: 124
+
+For specific moons:
 
 Keep in mind that a Multi-Moon counts as 3!
 - Cascade: 5
@@ -74,7 +89,7 @@ Keep in mind that a Multi-Moon counts as 3!
 
 ## What actions are randomized (if enabled)
 
-Until you receive the items for these, you can't do these things.
+If you're playing with `action_rando` enabled, until you receive the items for these, you can't do these things.
 Similar actions that other captures have are *not* randomized (like Bowser's Triple Jump)
 
 - Long Jump
@@ -98,3 +113,12 @@ Similar actions that other captures have are *not* randomized (like Bowser's Tri
 - Dash (2D)
 - Jaxi
 - Motor scooter
+
+# How do traps work?
+
+If you're playing with generic moons, you'll probably have some filler items, and I recommend replacing them with traps!
+Here's the list:
+
+- Return Trap: When you receive it, warp back to the Odyssey and walk back to where you were manually.
+- Upside Down Trap: Until you collect a moon, play with your controller upside down.
+- Cappyless Trap: Until you collect a moon, play without using cappy.

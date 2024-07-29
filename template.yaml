@@ -1,0 +1,172 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify that your Archipelago options are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game, limited to 16 characters.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: Player{number}
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Manual_SMO_mp3 Template
+
+game: Manual_SMO_mp3
+requires:
+  version: 0.5.0 # Version of Archipelago required for this yaml to work as expected.
+
+Manual_SMO_mp3:
+  # Game Options
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # 
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # 
+    # - **Locations:** ensure everything can be reached and acquired.
+    # - **Items:** ensure all logically relevant items can be acquired.
+    # - **Minimal:** ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  include_post_peace_moons:
+    # Turning this off will remove all moons that cannot be obtained before completing the given kingdom's story.
+    # Short kingdoms where the story is required (such as Cascade) are unaffected.
+    # This will remove roughly 70 locations.
+    'false': 0
+    'true': 50
+
+  capturesanity:
+    # Shuffle all captures into the pool.
+    # Captures found in Cap or Cascade on the first visit are considered to be given for free and will not grant checks.
+    'false': 50
+    'true': 0
+
+  coin_shops:
+    # Shuffles all clothing that can be purchased with regular coins. Shop Moons are always shuffled.
+    'false': 50
+    'true': 0
+
+  regional_shops:
+    # Shuffles all clothing, souvenirs, and stickers that can be purchased with regional coins.
+    'false': 50
+    'true': 0
+
+  action_rando:
+    # Shuffle all Basic Actions (as listed in the Action Guide) into the pool. 
+    # You start with the "Capture" and "Enter Pipe" and "Cap Throw and Hold" actions. 
+    # There are 2 locations for getting on Jaxi and the Motor scooter.
+    'false': 50
+    'true': 0
+
+  generic_moons:
+    # If enabled, there will be several Power Moon items, and you need 124 to beat the game, and specific amounts to leave each kingdom.
+    # If disabled, there will be several different kinds of Power Moons, and you need specific types of Power Moons to leave each kingdom.
+    'false': 50
+    'true': 0
+
+  generic_moon_count:
+    # If Generic Moons are turned on, this will adjust the amount of Power Moon items. 
+    # If you're playing with Action Rando and no additional locations, 
+    # or if you're removing Post-Peace moon locations, decrease this amount.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 124
+    # Maximum value is 463
+    410: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  include_post_metro_moons:
+    # Turning this off will remove every location and item that isn't relevant before Metro Kingdom. Mostly for the Festival goal.
+    # If you're doing generic moons, make sure to lower the count WAY down. This removes roughly 200 locations, depending on your settings.
+    'false': 0
+    'true': 50
+
+  goal:
+    # Choose your victory condition.
+    complete the festival: 50
+    defeat bowser and escape the moon: 0
+    world peace: 0
+
+  filler_traps:
+    # How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  death_link:
+    # When you die, everyone dies. Of course the reverse is true too.
+    'false': 50
+    'true': 0
+
+  # Item & Location Options
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []

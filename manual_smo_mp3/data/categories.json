@@ -210,6 +210,24 @@
             "action_rando"
         ]
     },
+    "post-metro": {
+        "yaml_option": [
+            "include_post_metro_moons"
+        ],
+        "hidden": true
+    },
+    "genericmoon": {
+        "yaml_option": [
+            "generic_moons"
+        ],
+        "hidden": true
+    },
+    "specificmoon": {
+        "yaml_option": [
+            "!generic_moons"
+        ],
+        "hidden": true
+    },
     "Bullet Bill Skip": {
         "hidden": true
     },

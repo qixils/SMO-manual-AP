@@ -45,6 +45,9 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     coin_shops = is_option_enabled(multiworld, player, "coin_shops")
     regional_shops = is_option_enabled(multiworld, player, "regional_shops")
     action_rando = is_option_enabled(multiworld, player, "action_rando")
+    generic_moons = is_option_enabled(multiworld, player, "generic_moons")
+    include_post_metro_moons = is_option_enabled(multiworld, player, "include_post_metro_moons")
+
 
     locationNamesToRemove = []
 
@@ -56,6 +59,8 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         elif "Regional" in location.get("category", []) and not regional_shops:
             locationNamesToRemove.append(location["name"])
         elif "Action" in location.get("category", []) and not action_rando:
+            locationNamesToRemove.append(location["name"])
+        elif "post-metro" in location.get("category", []) and not include_post_metro_moons:
             locationNamesToRemove.append(location["name"])
         elif not include_post_peace_moons:
             if not set(["Sand Peace", "Lake Peace", "Wooded Peace", "Metro Peace", "Snow Peace", "Seaside Peace", "Snow/Seaside Peace", "Luncheon Peace", "Bowser's Peace"]).isdisjoint(location.get("category", [])):
@@ -77,8 +82,16 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+
+    generic_moons = is_option_enabled(multiworld, player, "generic_moons")
+    generic_moon_count = get_option_value(multiworld, player, "generic_moon_count")
+
     # Use this hook to remove items from the item pool
     itemNamesToRemove = [] # List of item names
+
+    if generic_moons:
+        for i in range(463-generic_moon_count):
+            itemNamesToRemove.append("Power Moon")
 
     # Add your code here to calculate which items to remove.
     #
@@ -150,6 +163,18 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         return True
 
     if action_rando and capturesanity:
+        # apply rule to entrances
+        for exit_obj in multiworld.get_region("Lake Kingdom", player).entrances:
+            set_rule(exit_obj, lake_entrance)
+        for exit_obj in multiworld.get_region("Wooded Kingdom", player).entrances:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), wooded_entrance)
+        for exit_obj in multiworld.get_region("Metro Kingdom", player).entrances:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), metro_entrance)
+        for exit_obj in multiworld.get_region("Snow Kingdom", player).entrances:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), snow_entrance)
+        for exit_obj in multiworld.get_region("Ruined Kingdom", player).entrances:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), ruined_entrance)
+        # apply rule to exits
         for exit_obj in multiworld.get_region("Lake Kingdom", player).exits:
             set_rule(multiworld.get_entrance(exit_obj.name, player), lake_entrance)
         for exit_obj in multiworld.get_region("Wooded Kingdom", player).exits:
@@ -161,6 +186,10 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
         for exit_obj in multiworld.get_region("Ruined Kingdom", player).exits:
             set_rule(multiworld.get_entrance(exit_obj.name, player), ruined_entrance)
     elif action_rando and not capturesanity:
+        # apply rule to entrances
+        for exit_obj in multiworld.get_region("Wooded Kingdom", player).entrances:
+            set_rule(multiworld.get_entrance(exit_obj.name, player), wooded_entrance)
+        # apply rule to exits
         for exit_obj in multiworld.get_region("Wooded Kingdom", player).exits:
             set_rule(multiworld.get_entrance(exit_obj.name, player), wooded_entrance)
 

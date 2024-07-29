@@ -1,0 +1,121 @@
+﻿name: Pauline
+# Used to describe your yaml. Useful if you have multiple files.
+description: Festival Goal sample yaml (with capturesanity, action_rando, and traps)
+
+game: Manual_SMO_mp3
+requires:
+  version: 0.5.0 # Version of Archipelago required for this yaml to work as expected.
+
+Manual_SMO_mp3:
+  # Game Options
+  progression_balancing: 50
+  accessibility: items
+  include_post_peace_moons:
+    # Turning this off will remove all moons that cannot be obtained before completing the given kingdom's story.
+    # Short kingdoms where the story is required (such as Cascade) are unaffected.
+    # This will remove roughly 70 locations.
+    'false': 0
+    'true': 50
+
+  capturesanity:
+    # Shuffle all captures into the pool.
+    # Captures found in Cap or Cascade on the first visit are considered to be given for free and will not grant checks.
+    'false': 0
+    'true': 50
+
+  coin_shops:
+    # Shuffles all clothing that can be purchased with regular coins. Shop Moons are always shuffled.
+    'false': 50
+    'true': 0
+
+  regional_shops:
+    # Shuffles all clothing, souvenirs, and stickers that can be purchased with regional coins.
+    'false': 50
+    'true': 0
+
+  action_rando:
+    # Shuffle all Basic Actions (as listed in the Action Guide) into the pool. 
+    # You start with the "Capture" and "Enter Pipe" and "Cap Throw and Hold" actions. 
+    # There are 2 locations for getting on Jaxi and the Motor scooter.
+    'false': 0
+    'true': 50
+
+  generic_moons:
+    # If enabled, there will be several Power Moon items, and you need 124 to beat the game, and specific amounts to leave each kingdom.
+    # If disabled, there will be several different kinds of Power Moons, and you need specific types of Power Moons to leave each kingdom.
+    'false': 0
+    'true': 50
+
+  generic_moon_count:
+    # If Generic Moons are turned on, this will adjust the amount of Power Moon items. 
+    # If you're playing with Action Rando and no additional locations, 
+    # or if you're removing Post-Peace moon locations, decrease this amount.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 124
+    # Maximum value is 463
+    180: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  include_post_metro_moons:
+    # Turning this off will remove every location and item that isn't relevant before Metro Kingdom. Mostly for the Festival goal.
+    # If you're doing generic moons, make sure to lower the count WAY down. This removes roughly 200 locations, depending on your settings.
+    'false': 50
+    'true': 0
+
+  goal:
+    # Choose your victory condition.
+    complete the festival: 50
+    defeat bowser and escape the moon: 0
+    world peace: 0
+
+  filler_traps:
+    # How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    100: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  death_link:
+    # When you die, everyone dies. Of course the reverse is true too.
+    'false': 50
+    'true': 0
+
+  # Item & Location Options
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
