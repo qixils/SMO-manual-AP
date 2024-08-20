@@ -1,6 +1,6 @@
 ﻿name: Luigi
 # Used to describe your yaml. Useful if you have multiple files.
-description: World Peace Goal sample yaml (with capturesanity, action_rando, and traps)
+description: World Peace Goal sample yaml (with capturesanity and action_rando)
 
 game: Manual_SMO_mp3
 requires:
