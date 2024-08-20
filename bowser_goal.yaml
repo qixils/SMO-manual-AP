@@ -1,6 +1,6 @@
-﻿name: Luigi
+﻿name: Bowser
 # Used to describe your yaml. Useful if you have multiple files.
-description: World Peace Goal sample yaml (with capturesanity, action_rando, and traps)
+description: Bowser Goal sample yaml (with capturesanity, action_rando, and traps)
 
 game: Manual_SMO_mp3
 requires:
@@ -67,9 +67,9 @@ Manual_SMO_mp3:
 
   goal:
     # Choose your victory condition.
-    complete the festival: 0
+    complete the festival: 50
     defeat bowser and escape the moon: 0
-    world peace: 50
+    world peace: 0
 
   filler_traps:
     # How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps.
@@ -77,7 +77,7 @@ Manual_SMO_mp3:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
     # Maximum value is 100
-    100: 50
+    0: 50
     random: 0
     random-low: 0
     random-high: 0

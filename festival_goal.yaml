@@ -77,7 +77,7 @@ Manual_SMO_mp3:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
     # Maximum value is 100
-    100: 50
+    0: 50
     random: 0
     random-low: 0
     random-high: 0

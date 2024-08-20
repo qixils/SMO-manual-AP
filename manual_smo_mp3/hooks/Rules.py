@@ -100,9 +100,9 @@ def PostTrumpeter(world: World, multiworld: MultiWorld, state: CollectionState, 
 def MetroPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get metro peace"""
     if is_option_enabled(multiworld, player, "action_rando") and is_option_enabled(multiworld, player, "capturesanity"):
-        return "|Sherm| and (|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|)"
+        return "|Sherm| and |Manhole| and (|Long Jump| or |Pole| or |Roll| or |Ground Pound Jump| or |Dive| or |Triple Jump|)"
     if not is_option_enabled(multiworld, player, "action_rando") and is_option_enabled(multiworld, player, "capturesanity"):
-        return "|Sherm|"
+        return "|Sherm| and |Manhole|"
     return True
 
 def FromTheTopOfTheTower(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
@@ -127,7 +127,7 @@ def TyfooOrScaleATallWall(world: World, multiworld: MultiWorld, state: Collectio
 
 def SnowPeace(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get snow peace"""
-    if is_option_enabled(multiworld, player, "action_rando") and is_option_enabled(multiworld, player, "capturesanity"):
+    if is_option_enabled(multiworld, player, "capturesanity"):
         return "|Ty-foo| and |Shiverian Racer|"
     return True
 
@@ -268,7 +268,9 @@ def RegionalSnow(world: World, multiworld: MultiWorld, state: CollectionState, p
 def RegionalSeaside(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """can the player get regional coins in snow"""
     if is_option_enabled(multiworld, player, "action_rando") and is_option_enabled(multiworld, player, "capturesanity"):
-        return "|Cheep Cheep| or |Swim|"
+        return "|Gushen| and (|Cheep Cheep| or |Swim|)"
+    elif not is_option_enabled(multiworld, player, "action_rando") and is_option_enabled(multiworld, player, "capturesanity"):
+        return "|Gushen|"
     return True
 
 def RegionalLuncheon(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
@@ -313,43 +315,43 @@ def Lighthouse(world: World, multiworld: MultiWorld, state: CollectionState, pla
 
 def Sombrero(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Sombrero| and |Poncho|"
     return True
 
 def Explorer(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Explorer Hat| and |Explorer Outfit|"
     return True
 
 def Builder(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Builder Helmet| and |Builder Outfit|"
     return True
 
 def Snowsuit(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Snow Hood| and |Snow Suit|"
     return True
 
 def Resort(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Resort Hat| and |Resort Outfit|"
     return True
 
 def Chef(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Chef Hat| and |Chef Suit|"
     return True
 
 def Samurai(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops"):
+    if is_option_enabled(multiworld, player, "regional_shops"):
         return "|Samurai Helmet| and |Samurai Armor|"
     return True
 
@@ -361,7 +363,7 @@ def Boxers(world: World, multiworld: MultiWorld, state: CollectionState, player:
 
 def Swimwear(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """clothes"""
-    if is_option_enabled(multiworld, player, "regionalshops") and is_option_enabled(multiworld, player, "coin_shops"):
+    if is_option_enabled(multiworld, player, "regional_shops") and is_option_enabled(multiworld, player, "coin_shops"):
         return "(|Swim Goggles| and |Swimwear|) or |Boxer Shorts|"
     return True
 

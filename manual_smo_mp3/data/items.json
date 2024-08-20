@@ -1101,26 +1101,6 @@
         "filler": true
     },
     {
-        "name": "Space Helmet",
-        "category": [
-            "Shop",
-            "Regional",
-            "post-metro"
-        ],
-        "count": 1,
-        "filler": true
-    },
-    {
-        "name": "Space Suit",
-        "category": [
-            "Shop",
-            "Regional",
-            "post-metro"
-        ],
-        "count": 1,
-        "filler": true
-    },
-    {
         "name": "Employee Cap",
         "category": [
             "Shop",
@@ -1468,26 +1448,6 @@
         "filler": true
     },
     {
-        "name": "Moon Rock Fragment",
-        "category": [
-            "Shop",
-            "Regional",
-            "post-metro"
-        ],
-        "count": 1,
-        "filler": true
-    },
-    {
-        "name": "Moon Lamp",
-        "category": [
-            "Shop",
-            "Regional",
-            "post-metro"
-        ],
-        "count": 1,
-        "filler": true
-    },
-    {
         "name": "Cap Kingdom Sticker",
         "category": [
             "Shop",
@@ -1582,16 +1542,6 @@
     },
     {
         "name": "Bowser's Kingdom Sticker",
-        "category": [
-            "Shop",
-            "Regional",
-            "post-metro"
-        ],
-        "count": 1,
-        "filler": true
-    },
-    {
-        "name": "Moon Kingdom Sticker",
         "category": [
             "Shop",
             "Regional",

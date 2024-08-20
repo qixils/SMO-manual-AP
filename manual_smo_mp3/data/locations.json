@@ -2033,7 +2033,7 @@
             "post-metro"
         ],
         "region": "Snow Kingdom",
-        "requires": "{OptOne(Ty-foo)}"
+        "requires": ""
     },
     {
         "name": "Snow: The Ice Wall Barrier",
@@ -2194,7 +2194,7 @@
             "post-metro"
         ],
         "region": "Snow Kingdom",
-        "requires": "{SnowPeace()} and {OptOne(Lakitu)}"
+        "requires": "{OptOne(Goomba)}"
     },
     {
         "name": "Snow: Captain Toad is Chilly!",
@@ -3049,7 +3049,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{OptOne(Lava Bubble)} or {Chef()}"
+        "requires": "{OptOne(Lava Bubble)} and {Chef()}"
     },
     {
         "name": "Luncheon: An Extreme Simmer",
@@ -3058,7 +3058,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{OptOne(Lava Bubble)} or {Chef()}"
+        "requires": "{OptOne(Lava Bubble)} and {Chef()}"
     },
     {
         "name": "Luncheon: Alcove Behind the Pillars of Magma",
@@ -3067,7 +3067,7 @@
             "Luncheon Kingdom"
         ],
         "region": "Luncheon Kingdom",
-        "requires": "{OptOne(Lava Bubble)} or {Meat()}"
+        "requires": "{LuncheonPeace()}"
     },
     {
         "name": "Luncheon: Treasure Beneath the Cheese Rocks",
@@ -4114,6 +4114,15 @@
         "requires": []
     },
     {
+        "name": "Capture: Bowser Statue",
+        "category": [
+            "post-metro",
+            "Capture"
+        ],
+        "region": "Moon Kingdom",
+        "requires": []
+    },
+    {
         "name": "Capture: Parabones",
         "category": [
             "post-metro",
@@ -4470,26 +4479,6 @@
         "requires": "{RegionalBowser()}"
     },
     {
-        "name": "Shop: Space Helmet",
-        "category": [
-            "post-metro",
-            "Shop",
-            "Regional"
-        ],
-        "region": "Moon Kingdom",
-        "requires": "{RegionalBowser()}"
-    },
-    {
-        "name": "Shop: Space Suit",
-        "category": [
-            "post-metro",
-            "Shop",
-            "Regional"
-        ],
-        "region": "Moon Kingdom",
-        "requires": "{RegionalMoon()}"
-    },
-    {
         "name": "Shop: Employee Cap",
         "category": [
             "Shop",
@@ -4837,26 +4826,6 @@
         "requires": "{RegionalBowser()}"
     },
     {
-        "name": "Shop: Moon Rock Fragment",
-        "category": [
-            "post-metro",
-            "Shop",
-            "Regional"
-        ],
-        "region": "Moon Kingdom",
-        "requires": "{RegionalMoon()}"
-    },
-    {
-        "name": "Shop: Moon Lamp",
-        "category": [
-            "post-metro",
-            "Shop",
-            "Regional"
-        ],
-        "region": "Moon Kingdom",
-        "requires": "{RegionalMoon()}"
-    },
-    {
         "name": "Shop: Cap Kingdom Sticker",
         "category": [
             "Shop",
@@ -4958,16 +4927,6 @@
         ],
         "region": "Bowser's Kingdom",
         "requires": "{RegionalBowser()}"
-    },
-    {
-        "name": "Shop: Moon Kingdom Sticker",
-        "category": [
-            "post-metro",
-            "Shop",
-            "Regional"
-        ],
-        "region": "Moon Kingdom",
-        "requires": "{RegionalMoon()}"
     },
     {
         "name": "World Peace",
