@@ -84,7 +84,7 @@ Keep in mind that a Multi-Moon counts as 3!
 - Snow: 10
 - Seaside: 10
 - Luncheon: 18
-- Ruined: 3 (you just need the multi-moon)
+- Ruined: 3
 - Bowser's: 8
 
 ## What actions are randomized (if enabled)

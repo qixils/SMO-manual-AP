@@ -765,7 +765,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "|Power Moon:21| or (|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ))"
+        "requires": "{IntoTheLake()} and {MazeSkip()} and (|Power Moon:21| or (|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| )))"
     },
     {
         "name": "Lake: Broodals Over the Lake",
