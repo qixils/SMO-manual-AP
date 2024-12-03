@@ -2069,7 +2069,7 @@
             "post-metro"
         ],
         "region": "Snow Kingdom",
-        "requires": "{OptOne(Ty-foo)} or {OptOne(Shiverian Racer)}"
+        "requires": "{SnowPeace()}"
     },
     {
         "name": "Snow: Entrance to Shiveria",
@@ -4039,7 +4039,7 @@
             "Capture"
         ],
         "region": "Snow Kingdom",
-        "requires": []
+        "requires": "{SnowPeace()}"
     },
     {
         "name": "Capture: Gushen",
